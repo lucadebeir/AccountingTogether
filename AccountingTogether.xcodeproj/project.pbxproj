@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F33D1FBC224665A900CEF876 /* TripExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FBB224665A900CEF876 /* TripExtension.swift */; };
+		F33D1FBE2246668E00CEF876 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FBD2246668E00CEF876 /* AddTripViewController.swift */; };
+		F33D1FC0224666A100CEF876 /* EditTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FBF224666A100CEF876 /* EditTripViewController.swift */; };
+		F33D1FC22246676600CEF876 /* ShowTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FC12246676500CEF876 /* ShowTripViewController.swift */; };
+		F33D1FC42246685E00CEF876 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FC32246685E00CEF876 /* CoreDataManager.swift */; };
+		F33D1FC62246687E00CEF876 /* FormValidatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FC52246687E00CEF876 /* FormValidatorHelper.swift */; };
+		F33D1FC8224668A000CEF876 /* DialogBoxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FC7224668A000CEF876 /* DialogBoxHelper.swift */; };
+		F33D1FCA224668C000CEF876 /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FC9224668C000CEF876 /* NotificationHelper.swift */; };
+		F33D1FCC22466AAF00CEF876 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FCB22466AAE00CEF876 /* TripTableViewCell.swift */; };
 		F3D0A3482239613900D1DEF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A3472239613900D1DEF6 /* AppDelegate.swift */; };
-		F3D0A34A2239613900D1DEF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A3492239613900D1DEF6 /* ViewController.swift */; };
+		F3D0A34A2239613900D1DEF6 /* ShowTripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A3492239613900D1DEF6 /* ShowTripTableViewController.swift */; };
 		F3D0A34D2239613900D1DEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D0A34B2239613900D1DEF6 /* Main.storyboard */; };
 		F3D0A3502239613900D1DEF6 /* AccountingTogether.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A34E2239613900D1DEF6 /* AccountingTogether.xcdatamodeld */; };
 		F3D0A3522239613C00D1DEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D0A3512239613C00D1DEF6 /* Assets.xcassets */; };
@@ -35,9 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F33D1FBB224665A900CEF876 /* TripExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripExtension.swift; sourceTree = "<group>"; };
+		F33D1FBD2246668E00CEF876 /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
+		F33D1FBF224666A100CEF876 /* EditTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTripViewController.swift; sourceTree = "<group>"; };
+		F33D1FC12246676500CEF876 /* ShowTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTripViewController.swift; sourceTree = "<group>"; };
+		F33D1FC32246685E00CEF876 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		F33D1FC52246687E00CEF876 /* FormValidatorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidatorHelper.swift; sourceTree = "<group>"; };
+		F33D1FC7224668A000CEF876 /* DialogBoxHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBoxHelper.swift; sourceTree = "<group>"; };
+		F33D1FC9224668C000CEF876 /* NotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
+		F33D1FCB22466AAE00CEF876 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		F3D0A3442239613900D1DEF6 /* AccountingTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountingTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D0A3472239613900D1DEF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3D0A3492239613900D1DEF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3D0A3492239613900D1DEF6 /* ShowTripTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTripTableViewController.swift; sourceTree = "<group>"; };
 		F3D0A34C2239613900D1DEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3D0A34F2239613900D1DEF6 /* AccountingTogether.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AccountingTogether.xcdatamodel; sourceTree = "<group>"; };
 		F3D0A3512239613C00D1DEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +94,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F33D1FB72246649500CEF876 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3D0A3492239613900D1DEF6 /* ShowTripTableViewController.swift */,
+				F33D1FBD2246668E00CEF876 /* AddTripViewController.swift */,
+				F33D1FBF224666A100CEF876 /* EditTripViewController.swift */,
+				F33D1FC12246676500CEF876 /* ShowTripViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F33D1FB8224664AA00CEF876 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F33D1FBA224664D900CEF876 /* Helders */,
+				F33D1FBB224665A900CEF876 /* TripExtension.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F33D1FB9224664CA00CEF876 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F33D1FCB22466AAE00CEF876 /* TripTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F33D1FBA224664D900CEF876 /* Helders */ = {
+			isa = PBXGroup;
+			children = (
+				F33D1FC32246685E00CEF876 /* CoreDataManager.swift */,
+				F33D1FC52246687E00CEF876 /* FormValidatorHelper.swift */,
+				F33D1FC7224668A000CEF876 /* DialogBoxHelper.swift */,
+				F33D1FC9224668C000CEF876 /* NotificationHelper.swift */,
+			);
+			path = Helders;
+			sourceTree = "<group>";
+		};
 		F3D0A33B2239613900D1DEF6 = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +156,10 @@
 		F3D0A3462239613900D1DEF6 /* AccountingTogether */ = {
 			isa = PBXGroup;
 			children = (
+				F33D1FB9224664CA00CEF876 /* Cells */,
+				F33D1FB8224664AA00CEF876 /* Model */,
+				F33D1FB72246649500CEF876 /* Controller */,
 				F3D0A3472239613900D1DEF6 /* AppDelegate.swift */,
-				F3D0A3492239613900D1DEF6 /* ViewController.swift */,
 				F3D0A34B2239613900D1DEF6 /* Main.storyboard */,
 				F3D0A3512239613C00D1DEF6 /* Assets.xcassets */,
 				F3D0A3532239613C00D1DEF6 /* LaunchScreen.storyboard */,
@@ -259,9 +318,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3D0A34A2239613900D1DEF6 /* ViewController.swift in Sources */,
+				F33D1FCC22466AAF00CEF876 /* TripTableViewCell.swift in Sources */,
+				F33D1FBE2246668E00CEF876 /* AddTripViewController.swift in Sources */,
+				F33D1FC8224668A000CEF876 /* DialogBoxHelper.swift in Sources */,
+				F3D0A34A2239613900D1DEF6 /* ShowTripTableViewController.swift in Sources */,
 				F3D0A3482239613900D1DEF6 /* AppDelegate.swift in Sources */,
+				F33D1FC62246687E00CEF876 /* FormValidatorHelper.swift in Sources */,
+				F33D1FC22246676600CEF876 /* ShowTripViewController.swift in Sources */,
+				F33D1FC0224666A100CEF876 /* EditTripViewController.swift in Sources */,
+				F33D1FBC224665A900CEF876 /* TripExtension.swift in Sources */,
+				F33D1FC42246685E00CEF876 /* CoreDataManager.swift in Sources */,
 				F3D0A3502239613900D1DEF6 /* AccountingTogether.xcdatamodeld in Sources */,
+				F33D1FCA224668C000CEF876 /* NotificationHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
