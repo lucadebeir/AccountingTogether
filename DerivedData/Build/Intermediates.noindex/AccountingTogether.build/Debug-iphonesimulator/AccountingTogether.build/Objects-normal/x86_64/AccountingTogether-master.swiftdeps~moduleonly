@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "2c8af96a937d08d290a3b5ae6b190179"
+build_time: [1553275992, 223234000]
+inputs:
+  "/Users/lucadebeir/AccountingTogether/AccountingTogether/ViewController.swift": [1552492985, 0]
+  "/Users/lucadebeir/AccountingTogether/AccountingTogether/AppDelegate.swift": [1552492985, 0]
