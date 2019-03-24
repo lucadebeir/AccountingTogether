@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreData
+import Foundation
 
-class ShowTripeTableViewController: UIViewController {
+class ShowTripDetailViewController: UIViewController {
 
     var tableTrip: Trip? = nil
     
@@ -17,7 +19,7 @@ class ShowTripeTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTripLabel.text = tableTrip?.nameTrip
-        self.title = "\(tableTrip!.nameTrip!)"
+        //self.title = "\(tableTrip!.nameTrip!)"
     }
     
     override func didReceiveMemoryWarning() {

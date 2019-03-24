@@ -17,7 +17,7 @@
 		F33D1FCA224668C000CEF876 /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FC9224668C000CEF876 /* NotificationHelper.swift */; };
 		F33D1FCC22466AAF00CEF876 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FCB22466AAE00CEF876 /* TripTableViewCell.swift */; };
 		F3D0A3482239613900D1DEF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A3472239613900D1DEF6 /* AppDelegate.swift */; };
-		F3D0A34A2239613900D1DEF6 /* ShowTripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A3492239613900D1DEF6 /* ShowTripTableViewController.swift */; };
+		F3D0A34A2239613900D1DEF6 /* ShowTripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A3492239613900D1DEF6 /* ShowTripDetailViewController.swift */; };
 		F3D0A34D2239613900D1DEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D0A34B2239613900D1DEF6 /* Main.storyboard */; };
 		F3D0A3502239613900D1DEF6 /* AccountingTogether.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A34E2239613900D1DEF6 /* AccountingTogether.xcdatamodeld */; };
 		F3D0A3522239613C00D1DEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D0A3512239613C00D1DEF6 /* Assets.xcassets */; };
@@ -55,7 +55,7 @@
 		F33D1FCB22466AAE00CEF876 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		F3D0A3442239613900D1DEF6 /* AccountingTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountingTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D0A3472239613900D1DEF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3D0A3492239613900D1DEF6 /* ShowTripTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTripTableViewController.swift; sourceTree = "<group>"; };
+		F3D0A3492239613900D1DEF6 /* ShowTripDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTripDetailViewController.swift; sourceTree = "<group>"; };
 		F3D0A34C2239613900D1DEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3D0A34F2239613900D1DEF6 /* AccountingTogether.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AccountingTogether.xcdatamodel; sourceTree = "<group>"; };
 		F3D0A3512239613C00D1DEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		F33D1FB72246649500CEF876 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F3D0A3492239613900D1DEF6 /* ShowTripTableViewController.swift */,
+				F3D0A3492239613900D1DEF6 /* ShowTripDetailViewController.swift */,
 				F33D1FBD2246668E00CEF876 /* AddTripViewController.swift */,
 				F33D1FBF224666A100CEF876 /* EditTripViewController.swift */,
 				F33D1FC12246676500CEF876 /* ShowTripViewController.swift */,
@@ -321,7 +321,7 @@
 				F33D1FCC22466AAF00CEF876 /* TripTableViewCell.swift in Sources */,
 				F33D1FBE2246668E00CEF876 /* AddTripViewController.swift in Sources */,
 				F33D1FC8224668A000CEF876 /* DialogBoxHelper.swift in Sources */,
-				F3D0A34A2239613900D1DEF6 /* ShowTripTableViewController.swift in Sources */,
+				F3D0A34A2239613900D1DEF6 /* ShowTripDetailViewController.swift in Sources */,
 				F3D0A3482239613900D1DEF6 /* AppDelegate.swift in Sources */,
 				F33D1FC62246687E00CEF876 /* FormValidatorHelper.swift in Sources */,
 				F33D1FC22246676600CEF876 /* ShowTripViewController.swift in Sources */,

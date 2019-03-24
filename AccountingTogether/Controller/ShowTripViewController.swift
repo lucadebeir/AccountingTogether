@@ -6,7 +6,6 @@
 //  Copyright © 2019 Luca Debeir. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import CoreData
 
@@ -49,13 +48,17 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
+    var count: Int {
+        return self.listTrip!.count
+    }
+    
     @IBAction func uwindToListTrip(segue: UIStoryboardSegue) {
         trip.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showTrip"{
-            let destinationVC = segue.destination as! ShowTripeTableViewController
+            let destinationVC = segue.destination as! ShowTripDetailViewController
             destinationVC.tableTrip = tripSelected
         }
     }
