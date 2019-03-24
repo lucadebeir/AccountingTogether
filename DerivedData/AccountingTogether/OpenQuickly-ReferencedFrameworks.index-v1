@@ -3,8 +3,8 @@
 <plist version="1.0">
 <array>
 	<string>XCTest</string>
-	<string>AccountingTogether</string>
 	<string>UserNotifications</string>
+	<string>AccountingTogether</string>
 	<string>CoreData</string>
 	<string>UIKit</string>
 	<string>Foundation</string>

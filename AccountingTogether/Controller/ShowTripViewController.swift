@@ -48,10 +48,6 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
-    var count: Int {
-        return self.listTrip!.count
-    }
-    
     @IBAction func uwindToListTrip(segue: UIStoryboardSegue) {
         trip.reloadData()
     }

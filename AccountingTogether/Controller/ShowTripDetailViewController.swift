@@ -18,7 +18,7 @@ class ShowTripDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameTripLabel.text = tableTrip?.nameTrip
+        self.nameTripLabel.text = tableTrip?.nameTrip
         //self.title = "\(tableTrip!.nameTrip!)"
     }
     
@@ -29,7 +29,7 @@ class ShowTripDetailViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! EditTripViewController
-        destinationVC.trip = tableTrip!
+        destinationVC.trip! = tableTrip!
     }
 
 

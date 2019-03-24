@@ -33,7 +33,6 @@ class AddTripViewController: UIViewController, UITextFieldDelegate {
         if FormValidatorHelper.validateForm(inputs){
             do{
                 newTrip = try Trip.create(withName: nameTF.text!)
-                DialogBoxHelper.alert(view: self, WithTitle: "Adding the trip", andMessage: "Successfully added")
                 self.dismiss(animated: true, completion: nil)
             }catch{
                 DialogBoxHelper.alert(view: self, errorMessage: "Ajout du voyage échoué")
