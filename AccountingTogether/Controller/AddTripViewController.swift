@@ -51,8 +51,10 @@ class AddTripViewController: UIViewController, UITextFieldDelegate {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as! ShowTripViewController
-        destinationVC.listTrip!.append(newTrip!)
+        if newTrip != nil {
+            let destinationVC = segue.destination as! ShowTripViewController
+            destinationVC.listTrip!.append(newTrip!)
+        }
     }
     
 }

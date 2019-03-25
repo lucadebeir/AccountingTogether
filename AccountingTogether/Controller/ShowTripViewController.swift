@@ -49,13 +49,28 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     @IBAction func uwindToListTrip(segue: UIStoryboardSegue) {
-        trip.reloadData()
+        if let controller = segue.source as? AddTripViewController {
+            if let newTrip = controller.newTrip {
+                self.listTrip?.append(newTrip)
+                self.trip.reloadData()
+            }
+        }
+        else if segue.source is EditTripViewController {
+            self.trip.reloadData()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showTrip"{
+            if let cell = sender as? UITableViewCell {
+                guard let indexPath = self.trip.indexPath(for: cell)
+                    else{
+                    return
+                }
+                self.tripSelected = listTrip?[indexPath.row]
+            }
             let destinationVC = segue.destination as! ShowTripDetailViewController
-            destinationVC.tableTrip = tripSelected
+            destinationVC.tableTrip = self.tripSelected
         }
     }
     
