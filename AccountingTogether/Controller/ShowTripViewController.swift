@@ -69,7 +69,9 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
                 }
                 self.tripSelected = listTrip?[indexPath.row]
             }
-            let destinationVC = segue.destination as! ShowTripDetailViewController
+            guard let tabBarController = segue.destination as? UITabBarController, let destinationVC = tabBarController.viewControllers?[0] as? ShowTripDetailViewController else {
+                return
+            }
             destinationVC.tableTrip = self.tripSelected
         }
     }

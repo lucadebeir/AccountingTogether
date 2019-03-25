@@ -19,6 +19,8 @@ class ShowTripDetailViewController: UIViewController {
     override func viewDidLoad() {
         self.nameTripLabel.text = tableTrip?.nameTrip
         super.viewDidLoad()
+        print("viewDidLoadDetailVC")
+        print(tableTrip?.nameTrip)
     }
     
     override func didReceiveMemoryWarning() {

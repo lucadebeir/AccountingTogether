@@ -238,7 +238,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameTrip" destination="7oH-sl-qjh" id="oag-6f-AEd"/>
-                                            <segue destination="fe0-GE-WyS" kind="presentation" id="d3A-Wk-bWM"/>
+                                            <segue destination="fe0-GE-WyS" kind="presentation" identifier="showTrip" id="d3A-Wk-bWM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

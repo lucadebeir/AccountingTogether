@@ -24,6 +24,7 @@
 		F3D0A3552239613C00D1DEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D0A3532239613C00D1DEF6 /* LaunchScreen.storyboard */; };
 		F3D0A3602239613C00D1DEF6 /* AccountingTogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A35F2239613C00D1DEF6 /* AccountingTogetherTests.swift */; };
 		F3D0A36B2239613C00D1DEF6 /* AccountingTogetherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A36A2239613C00D1DEF6 /* AccountingTogetherUITests.swift */; };
+		F3FB7C792249681200B94F10 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB7C782249681200B94F10 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F3D0A3662239613C00D1DEF6 /* AccountingTogetherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountingTogetherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D0A36A2239613C00D1DEF6 /* AccountingTogetherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountingTogetherUITests.swift; sourceTree = "<group>"; };
 		F3D0A36C2239613C00D1DEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FB7C782249681200B94F10 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				F33D1FBD2246668E00CEF876 /* AddTripViewController.swift */,
 				F33D1FBF224666A100CEF876 /* EditTripViewController.swift */,
 				F33D1FC12246676500CEF876 /* ShowTripViewController.swift */,
+				F3FB7C782249681200B94F10 /* TabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F33D1FCC22466AAF00CEF876 /* TripTableViewCell.swift in Sources */,
+				F3FB7C792249681200B94F10 /* TabBarController.swift in Sources */,
 				F33D1FBE2246668E00CEF876 /* AddTripViewController.swift in Sources */,
 				F33D1FC8224668A000CEF876 /* DialogBoxHelper.swift in Sources */,
 				F3D0A34A2239613900D1DEF6 /* ShowTripDetailViewController.swift in Sources */,
