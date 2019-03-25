@@ -81,7 +81,75 @@
             </objects>
             <point key="canvasLocation" x="369" y="1331"/>
         </scene>
-        <!--Show Trip Detail View Controller-->
+        <!--Repayment-->
+        <scene sceneID="G6x-Tw-WZI">
+            <objects>
+                <viewController id="1tA-A5-jSn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y1I-oH-2tm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jZY-E6-DUj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Repayment" id="6Dj-pf-c50"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L75-Bf-PPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2150" y="773"/>
+        </scene>
+        <!--Expense-->
+        <scene sceneID="HMx-Hz-aj0">
+            <objects>
+                <viewController id="29F-y7-gb0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ra0-wA-8fn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tVf-UP-UNw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Expense" id="Aix-jT-1WZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxc-aU-ghT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2150" y="109"/>
+        </scene>
+        <!--Travellers-->
+        <scene sceneID="fJs-xw-On2">
+            <objects>
+                <viewController id="Ple-k6-Gxx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DxF-Ra-FWv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="XLT-0H-ncY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Travellers" id="e4G-d0-Pbd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddX-jz-B2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4289" y="700"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jDT-2T-KXU">
+            <objects>
+                <tabBarController id="fe0-GE-WyS" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ucR-Uz-Rbr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="o9D-LE-AYh" kind="relationship" relationship="viewControllers" id="TIf-Ea-Jx5"/>
+                        <segue destination="29F-y7-gb0" kind="relationship" relationship="viewControllers" id="7DX-ZT-BcD"/>
+                        <segue destination="1tA-A5-jSn" kind="relationship" relationship="viewControllers" id="BSS-Dr-3dP"/>
+                        <segue destination="Ple-k6-Gxx" kind="relationship" relationship="viewControllers" id="HSq-l8-Dfd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BKO-2Q-ilr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3103" y="441"/>
+        </scene>
+        <!--Sharing status-->
         <scene sceneID="8HP-2p-A2r">
             <objects>
                 <viewController id="o9D-LE-AYh" customClass="ShowTripDetailViewController" customModule="AccountingTogether" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,16 +157,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2a-qD-cGV">
-                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Partition state" id="kJe-31-abV"/>
-                                    <tabBarItem title="Expense" id="zCM-ET-s3Q"/>
-                                    <tabBarItem title="Payback" id="LU3-1d-FaD"/>
-                                    <tabBarItem title="Travellers" id="HfK-k3-OsH"/>
-                                </items>
-                            </tabBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Travel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7Q-Ux-D6d">
                                 <rect key="frame" x="130" y="45" width="115" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -121,17 +179,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="r2a-qD-cGV" firstAttribute="leading" secondItem="n3L-0k-fe2" secondAttribute="leading" id="51I-N8-qLs"/>
-                            <constraint firstItem="r2a-qD-cGV" firstAttribute="bottom" secondItem="n15-8w-b9i" secondAttribute="bottom" id="AYv-Rv-MA8"/>
                             <constraint firstItem="3qp-Mf-pMC" firstAttribute="leading" secondItem="n3L-0k-fe2" secondAttribute="leadingMargin" id="GIu-L0-mZX"/>
                             <constraint firstItem="3qp-Mf-pMC" firstAttribute="top" secondItem="n15-8w-b9i" secondAttribute="top" constant="20" id="GOM-Ek-jOX"/>
-                            <constraint firstAttribute="trailing" secondItem="r2a-qD-cGV" secondAttribute="trailing" id="Onx-nn-b3O"/>
                             <constraint firstItem="c7Q-Ux-D6d" firstAttribute="top" secondItem="n15-8w-b9i" secondAttribute="top" constant="25" id="WrN-AV-qSx"/>
                             <constraint firstItem="c7Q-Ux-D6d" firstAttribute="centerY" secondItem="3qp-Mf-pMC" secondAttribute="centerY" id="pT4-ZQ-v5S"/>
                             <constraint firstItem="n15-8w-b9i" firstAttribute="trailing" secondItem="c7Q-Ux-D6d" secondAttribute="trailing" constant="130" id="u79-GW-D0A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="n15-8w-b9i"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Sharing status" id="kWs-MN-8Ho"/>
                     <connections>
                         <outlet property="nameTripLabel" destination="c7Q-Ux-D6d" id="48j-cP-PLK"/>
                     </connections>
@@ -182,7 +238,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameTrip" destination="7oH-sl-qjh" id="oag-6f-AEd"/>
-                                            <segue destination="o9D-LE-AYh" kind="presentation" identifier="showTrip" id="kmE-yR-Ik7"/>
+                                            <segue destination="fe0-GE-WyS" kind="presentation" id="d3A-Wk-bWM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
