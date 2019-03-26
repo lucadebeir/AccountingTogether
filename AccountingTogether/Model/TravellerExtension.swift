@@ -27,7 +27,7 @@ extension Traveller {
         let traveller = Traveller(context: CoreDataManager.context)
         
         /// nom du contactPerso
-        traveller.nameTraveller = withName
+        traveller.lastNameTraveller = withName
         do{
             try CoreDataManager.save()
         }catch let error as NSError{
@@ -38,7 +38,7 @@ extension Traveller {
     
     func edit(withName: String) throws {
         /// nom du contactPerso
-        self.nameTraveller = withName
+        self.lastNameTraveller = withName
         do{
             try CoreDataManager.save()
         }catch let error as NSError{

@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G5019" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Expense" representedClassName="Expense" syncable="YES" codeGenerationType="class">
+        <attribute name="amountExpense" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nameExpense" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="paidBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="paye" inverseEntity="Traveller" syncable="YES"/>
-        <relationship name="paidFor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="isPaidFor" inverseEntity="Traveller" syncable="YES"/>
+        <relationship name="paidFor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="bePaid" inverseEntity="Traveller" syncable="YES"/>
+    </entity>
+    <entity name="Repayment" representedClassName="Repayment" syncable="YES" codeGenerationType="class">
+        <attribute name="amountRepayment" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nameRepayment" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="refundBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="refund" inverseEntity="Traveller" syncable="YES"/>
+        <relationship name="refundFor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="getARefund" inverseEntity="Traveller" syncable="YES"/>
     </entity>
     <entity name="Traveller" representedClassName="Traveller" syncable="YES" codeGenerationType="class">
         <attribute name="arrivalDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="birthdate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="currentlyTravelling" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="firstNameTraveller" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="nameTraveller" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastNameTraveller" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="priceTrip" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="isPaidFor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="paidFor" inverseEntity="Expense" syncable="YES"/>
-        <relationship name="paye" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="paidBy" inverseEntity="Expense" syncable="YES"/>
+        <relationship name="bePaid" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="paidFor" inverseEntity="Expense" syncable="YES"/>
+        <relationship name="getARefund" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repayment" inverseName="refundFor" inverseEntity="Repayment" syncable="YES"/>
+        <relationship name="paye" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="paidBy" inverseEntity="Expense" syncable="YES"/>
+        <relationship name="refund" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repayment" inverseName="refundBy" inverseEntity="Repayment" syncable="YES"/>
         <relationship name="trip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="travellers" inverseEntity="Trip" syncable="YES"/>
     </entity>
     <entity name="Trip" representedClassName="Trip" syncable="YES" codeGenerationType="class">
         <attribute name="nameTrip" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="travellers" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="trip" inverseEntity="Traveller" syncable="YES"/>
+        <relationship name="travellers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Traveller" inverseName="trip" inverseEntity="Traveller" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Expense" positionX="-36" positionY="63" width="128" height="105"/>
-        <element name="Traveller" positionX="-54" positionY="0" width="128" height="180"/>
-        <element name="Trip" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="Expense" positionX="79.23828125" positionY="-1513.984375" width="128" height="105"/>
+        <element name="Traveller" positionX="-210.6875" positionY="-1516.09375" width="128" height="210"/>
+        <element name="Trip" positionX="-223.359375" positionY="-1257.125" width="128" height="75"/>
+        <element name="Repayment" positionX="41.0546875" positionY="-1284.55859375" width="128" height="105"/>
     </elements>
 </model>

@@ -17,7 +17,7 @@ class ShowTravellerDetailViewController: UIViewController {
     @IBOutlet weak var nameTravellerLabel: UILabel!
     
     override func viewDidLoad() {
-        self.nameTravellerLabel.text = tableTraveller?.nameTraveller
+        self.nameTravellerLabel.text = tableTraveller?.lastNameTraveller
         super.viewDidLoad()
     }
     

@@ -36,6 +36,8 @@ class ShowTravellersViewController: UIViewController, UITableViewDataSource, UIT
         return 1
     }
     
+     //MARK: - TableView data source protocol
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listTraveller!.count
     }
@@ -43,7 +45,7 @@ class ShowTravellersViewController: UIViewController, UITableViewDataSource, UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellTraveller", for: indexPath) as! TravellerTableViewCell
         
-        cell.nameTraveller.text = "\(String(describing: listTraveller![indexPath.row].nameTraveller!)) \(String(describing: listTraveller![indexPath.row].firstNameTraveller!))"
+        cell.nameTraveller.text = "\(String(describing: listTraveller![indexPath.row].lastNameTraveller!)) \(String(describing: listTraveller![indexPath.row].firstNameTraveller!))"
         
         return cell
     }
@@ -66,6 +68,8 @@ class ShowTravellersViewController: UIViewController, UITableViewDataSource, UIT
         }
     }
     
+    //MARK: - Navigation
+    
     @IBAction func uwindToListTravellers(segue: UIStoryboardSegue) {
         if let controller = segue.source as? AddTravellerViewController {
             if let newTraveller = controller.newTraveller {
@@ -81,7 +85,11 @@ class ShowTravellersViewController: UIViewController, UITableViewDataSource, UIT
         }
     }
     
+    //In a storyboard-based application, you will often want to do a little prepare navigation
+    //prepare la transition pour le segue qui a provoqué la tansition et le sender est la vue qui envoie cette transition.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Get the new view controller using segue.destinationViewController.
+        //Pass the selected object to the new view controller.
         if segue.identifier == "showTraveller"{
             if let cell = sender as? UITableViewCell {
                 guard let indexPath = self.travellers.indexPath(for: cell)
