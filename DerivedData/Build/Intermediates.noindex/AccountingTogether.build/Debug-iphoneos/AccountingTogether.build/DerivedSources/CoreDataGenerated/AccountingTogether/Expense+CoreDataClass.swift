@@ -1,5 +1,5 @@
 //
-//  AccountingTogether+CoreDataModel.swift
+//  Expense+CoreDataClass.swift
 //  
 //
 //  Created by Luca Debeir on 26/03/2019.
@@ -10,4 +10,7 @@
 import Foundation
 import CoreData
 
+@objc(Expense)
+public class Expense: NSManagedObject {
 
+}
