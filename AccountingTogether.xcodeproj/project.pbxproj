@@ -26,8 +26,6 @@
 		F35EA1882249E783009C021B /* ShowRepaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA1872249E783009C021B /* ShowRepaymentsViewController.swift */; };
 		F35EA18A2249E799009C021B /* AddRepaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA1892249E799009C021B /* AddRepaymentViewController.swift */; };
 		F35EA18C2249E7C5009C021B /* ShowSharingStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA18B2249E7C5009C021B /* ShowSharingStatusViewController.swift */; };
-		F35EA190224A2238009C021B /* TravellerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA18F224A2238009C021B /* TravellerTableViewCell.swift */; };
-		F35EA192224A226D009C021B /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA191224A226D009C021B /* ExpenseTableViewCell.swift */; };
 		F3D0A3482239613900D1DEF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A3472239613900D1DEF6 /* AppDelegate.swift */; };
 		F3D0A34A2239613900D1DEF6 /* ShowTripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A3492239613900D1DEF6 /* ShowTripDetailViewController.swift */; };
 		F3D0A34D2239613900D1DEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D0A34B2239613900D1DEF6 /* Main.storyboard */; };
@@ -75,8 +73,6 @@
 		F35EA1872249E783009C021B /* ShowRepaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepaymentsViewController.swift; sourceTree = "<group>"; };
 		F35EA1892249E799009C021B /* AddRepaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRepaymentViewController.swift; sourceTree = "<group>"; };
 		F35EA18B2249E7C5009C021B /* ShowSharingStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSharingStatusViewController.swift; sourceTree = "<group>"; };
-		F35EA18F224A2238009C021B /* TravellerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravellerTableViewCell.swift; sourceTree = "<group>"; };
-		F35EA191224A226D009C021B /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
 		F3D0A3442239613900D1DEF6 /* AccountingTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountingTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D0A3472239613900D1DEF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3D0A3492239613900D1DEF6 /* ShowTripDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTripDetailViewController.swift; sourceTree = "<group>"; };
@@ -145,8 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				F33D1FCB22466AAE00CEF876 /* TripTableViewCell.swift */,
-				F35EA18F224A2238009C021B /* TravellerTableViewCell.swift */,
-				F35EA191224A226D009C021B /* ExpenseTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -394,7 +388,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35EA192224A226D009C021B /* ExpenseTableViewCell.swift in Sources */,
 				F33D1FCC22466AAF00CEF876 /* TripTableViewCell.swift in Sources */,
 				F33D1FBE2246668E00CEF876 /* AddTripViewController.swift in Sources */,
 				F35EA1782249CEEB009C021B /* ExpenseExtension.swift in Sources */,
@@ -413,7 +406,6 @@
 				F35EA17C2249D126009C021B /* ShowTravellersViewController.swift in Sources */,
 				F35EA1842249E73F009C021B /* ShowExpensesViewController.swift in Sources */,
 				F3D0A3502239613900D1DEF6 /* AccountingTogether.xcdatamodeld in Sources */,
-				F35EA190224A2238009C021B /* TravellerTableViewCell.swift in Sources */,
 				F35EA1862249E75F009C021B /* AddExpenseViewController.swift in Sources */,
 				F33D1FCA224668C000CEF876 /* NotificationHelper.swift in Sources */,
 				F35EA17A2249CEFB009C021B /* TravellerExtension.swift in Sources */,
