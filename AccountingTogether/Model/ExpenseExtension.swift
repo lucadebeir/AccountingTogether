@@ -1,44 +1,44 @@
 //
-//  TripExtension.swift
+//  ExpenseExtension.swift
 //  AccountingTogether
 //
-//  Created by Luca Debeir on 23/03/2019.
+//  Created by Luca Debeir on 26/03/2019.
 //  Copyright © 2019 Luca Debeir. All rights reserved.
 //
 
 import Foundation
 import CoreData
 
-extension Trip {
+extension Expense {
     
-    static func getAll() throws -> [Trip] {
-        let request: NSFetchRequest<Trip> = Trip.fetchRequest()
-        request.sortDescriptors = [NSSortDescriptor(key: "nameTrip", ascending: true)]
+    static func getAll() throws -> [Expense] {
+        let request: NSFetchRequest<Expense> = Expense.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(key: "nameExpense", ascending: true)]
         do {
-            let trip: [Trip] = try CoreDataManager.context.fetch(request)
-            return trip
+            let expenses: [Expense] = try CoreDataManager.context.fetch(request)
+            return expenses
         } catch let error as NSError {
             throw error
         }
     }
     
-    static func create(withName: String) throws -> Trip {
+    static func create(withName: String) throws -> Expense {
         
-        let trip = Trip(context: CoreDataManager.context)
+        let expense = Expense(context: CoreDataManager.context)
         
         /// nom du contactPerso
-        trip.nameTrip = withName
+        expense.nameExpense = withName
         do{
             try CoreDataManager.save()
         }catch let error as NSError{
             throw error
         }
-        return trip
+        return expense
     }
     
     func edit(withName: String) throws {
         /// nom du contactPerso
-        self.nameTrip = withName
+        self.nameExpense = withName
         do{
             try CoreDataManager.save()
         }catch let error as NSError{

@@ -36,6 +36,19 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
         return 1
     }
     
+    func delete(index: Int) {
+        let t = listTrip![index]
+        // supprime de la BD
+        do {
+            try t.delete()
+            // supprime du model
+            listTrip?.remove(at: index)
+        } catch let e as NSError {
+            print("Erreur a la suppression de VC :  \(e)")
+            return
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listTrip!.count
     }
@@ -48,6 +61,24 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (commit == UITableViewCell.EditingStyle.delete) {
+            tableView.beginUpdates()
+            do {
+                try self.listTrip?[indexPath.row].delete()
+                //self.listTrip?.remove(at: indexPath.row)
+            } catch let e as NSError {
+                print("Erreur a la suppression de VC :  \(e)")
+                return
+            }
+            tableView.endUpdates()
+        }
+    }
+    
     @IBAction func uwindToListTrip(segue: UIStoryboardSegue) {
         if let controller = segue.source as? AddTripViewController {
             if let newTrip = controller.newTrip {
@@ -56,6 +87,9 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
             }
         }
         else if segue.source is EditTripViewController {
+            self.trip.reloadData()
+        }
+        else {
             self.trip.reloadData()
         }
     }

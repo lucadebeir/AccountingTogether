@@ -1,44 +1,44 @@
 //
-//  TripExtension.swift
+//  Traveller.swift
 //  AccountingTogether
 //
-//  Created by Luca Debeir on 23/03/2019.
+//  Created by Luca Debeir on 26/03/2019.
 //  Copyright © 2019 Luca Debeir. All rights reserved.
 //
 
 import Foundation
 import CoreData
 
-extension Trip {
+extension Traveller {
     
-    static func getAll() throws -> [Trip] {
-        let request: NSFetchRequest<Trip> = Trip.fetchRequest()
-        request.sortDescriptors = [NSSortDescriptor(key: "nameTrip", ascending: true)]
+    static func getAll() throws -> [Traveller] {
+        let request: NSFetchRequest<Traveller> = Traveller.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(key: "nameTraveller", ascending: true)]
         do {
-            let trip: [Trip] = try CoreDataManager.context.fetch(request)
-            return trip
+            let travellers: [Traveller] = try CoreDataManager.context.fetch(request)
+            return travellers
         } catch let error as NSError {
             throw error
         }
     }
     
-    static func create(withName: String) throws -> Trip {
+    static func create(withName: String) throws -> Traveller {
         
-        let trip = Trip(context: CoreDataManager.context)
+        let traveller = Traveller(context: CoreDataManager.context)
         
         /// nom du contactPerso
-        trip.nameTrip = withName
+        traveller.nameTraveller = withName
         do{
             try CoreDataManager.save()
         }catch let error as NSError{
             throw error
         }
-        return trip
+        return traveller
     }
     
     func edit(withName: String) throws {
         /// nom du contactPerso
-        self.nameTrip = withName
+        self.nameTraveller = withName
         do{
             try CoreDataManager.save()
         }catch let error as NSError{
