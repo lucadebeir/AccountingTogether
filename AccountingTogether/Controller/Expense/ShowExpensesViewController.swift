@@ -73,6 +73,9 @@ class ShowExpensesViewController: UIViewController, UITableViewDataSource, UITab
                 self.expenses.reloadData()
             }
         }
+        else if segue.source is ShowSharingStatusViewController {
+            self.expenses.reloadData()
+        }
             /*else if segue.source is EditTravellerViewController {
              self.travellers.reloadData()
              }*/

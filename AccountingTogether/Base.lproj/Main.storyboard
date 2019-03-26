@@ -84,7 +84,7 @@
         <!--Repayment-->
         <scene sceneID="G6x-Tw-WZI">
             <objects>
-                <viewController id="1tA-A5-jSn" sceneMemberID="viewController">
+                <viewController id="1tA-A5-jSn" customClass="ShowExpensesViewController" customModule="AccountingTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y1I-oH-2tm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -362,7 +362,7 @@
         <!--Expense-->
         <scene sceneID="HMx-Hz-aj0">
             <objects>
-                <viewController id="29F-y7-gb0" sceneMemberID="viewController">
+                <viewController id="29F-y7-gb0" customClass="ShowExpensesViewController" customModule="AccountingTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ra0-wA-8fn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
