@@ -13,7 +13,7 @@ extension Traveller {
     
     static func getAll() throws -> [Traveller] {
         let request: NSFetchRequest<Traveller> = Traveller.fetchRequest()
-        request.sortDescriptors = [NSSortDescriptor(key: "nameTraveller", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "lastNameTraveller", ascending: true)]
         do {
             let travellers: [Traveller] = try CoreDataManager.context.fetch(request)
             return travellers
@@ -22,12 +22,14 @@ extension Traveller {
         }
     }
     
-    static func create(withName: String) throws -> Traveller {
+    static func create(withName: String, withPrenom: String, withDate: Date) throws -> Traveller {
         
         let traveller = Traveller(context: CoreDataManager.context)
         
         /// nom du contactPerso
         traveller.lastNameTraveller = withName
+        traveller.firstNameTraveller = withPrenom
+        traveller.arrivalDate = withDate
         do{
             try CoreDataManager.save()
         }catch let error as NSError{

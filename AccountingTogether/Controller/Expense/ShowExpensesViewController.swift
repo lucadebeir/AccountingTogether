@@ -14,10 +14,14 @@ class ShowExpensesViewController: UIViewController, UITableViewDataSource, UITab
     var listExpense: [Expense]? = nil
     var expenseSelected: Expense? = nil
     
+    @IBOutlet weak var nameTripLabel: UILabel!
+    var tableTrip: Trip? = nil
+    
     @IBOutlet weak var expenses: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.nameTripLabel.text = tableTrip?.nameTrip
         do{
             listExpense = try Expense.getAll()
         }catch let error as NSError{
@@ -36,6 +40,9 @@ class ShowExpensesViewController: UIViewController, UITableViewDataSource, UITab
         return 1
     }
     
+    
+    //MARK: - table view
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listExpense!.count
     }
@@ -44,7 +51,6 @@ class ShowExpensesViewController: UIViewController, UITableViewDataSource, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellExpense", for: indexPath) as! ExpenseTableViewCell
         
         cell.nameExpense.text = "\(String(describing: listExpense![indexPath.row].nameExpense!))"
-        
         return cell
     }
     
@@ -66,6 +72,8 @@ class ShowExpensesViewController: UIViewController, UITableViewDataSource, UITab
         }
     }
     
+    //MARK: - Navigation
+    
     @IBAction func uwindToListExpenses(segue: UIStoryboardSegue) {
         if let controller = segue.source as? AddExpenseViewController {
             if let newExpense = controller.newExpense {
@@ -85,14 +93,12 @@ class ShowExpensesViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showExpense"{
-            if let cell = sender as? UITableViewCell {
-                guard let indexPath = self.expenses.indexPath(for: cell)
-                    else{
-                        return
-                }
-                self.expenseSelected = listExpense?[indexPath.row]
+        if let cell = sender as? UITableViewCell {
+            guard let indexPath = self.expenses.indexPath(for: cell)
+                else{
+                    return
             }
+            self.expenseSelected = listExpense?[indexPath.row]
         }
     }
     

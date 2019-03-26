@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3349E9D224A695200B3038B /* RepaymentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3349E9C224A695200B3038B /* RepaymentExtension.swift */; };
+		F3349E9F224A782A00B3038B /* RepaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3349E9E224A782A00B3038B /* RepaymentTableViewCell.swift */; };
 		F33D1FBC224665A900CEF876 /* TripExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FBB224665A900CEF876 /* TripExtension.swift */; };
 		F33D1FBE2246668E00CEF876 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FBD2246668E00CEF876 /* AddTripViewController.swift */; };
 		F33D1FC0224666A100CEF876 /* EditTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D1FBF224666A100CEF876 /* EditTripViewController.swift */; };
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3349E9C224A695200B3038B /* RepaymentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentExtension.swift; sourceTree = "<group>"; };
+		F3349E9E224A782A00B3038B /* RepaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentTableViewCell.swift; sourceTree = "<group>"; };
 		F33D1FBB224665A900CEF876 /* TripExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripExtension.swift; sourceTree = "<group>"; };
 		F33D1FBD2246668E00CEF876 /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
 		F33D1FBF224666A100CEF876 /* EditTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTripViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			children = (
 				F33D1FBA224664D900CEF876 /* Helders */,
 				F33D1FBB224665A900CEF876 /* TripExtension.swift */,
+				F3349E9C224A695200B3038B /* RepaymentExtension.swift */,
 				F35EA1772249CEEB009C021B /* ExpenseExtension.swift */,
 				F35EA1792249CEFB009C021B /* TravellerExtension.swift */,
 			);
@@ -147,6 +152,7 @@
 				F33D1FCB22466AAE00CEF876 /* TripTableViewCell.swift */,
 				F35EA193224A234D009C021B /* ExpenseTableViewCell.swift */,
 				F35EA195224A2370009C021B /* TravellerTableViewCell.swift */,
+				F3349E9E224A782A00B3038B /* RepaymentTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -399,6 +405,7 @@
 				F35EA1782249CEEB009C021B /* ExpenseExtension.swift in Sources */,
 				F33D1FC8224668A000CEF876 /* DialogBoxHelper.swift in Sources */,
 				F3D0A34A2239613900D1DEF6 /* ShowTripDetailViewController.swift in Sources */,
+				F3349E9F224A782A00B3038B /* RepaymentTableViewCell.swift in Sources */,
 				F35EA1882249E783009C021B /* ShowRepaymentsViewController.swift in Sources */,
 				F3D0A3482239613900D1DEF6 /* AppDelegate.swift in Sources */,
 				F35EA18A2249E799009C021B /* AddRepaymentViewController.swift in Sources */,
@@ -410,6 +417,7 @@
 				F33D1FC42246685E00CEF876 /* CoreDataManager.swift in Sources */,
 				F35EA1802249D159009C021B /* AddTravellerViewController.swift in Sources */,
 				F35EA17C2249D126009C021B /* ShowTravellersViewController.swift in Sources */,
+				F3349E9D224A695200B3038B /* RepaymentExtension.swift in Sources */,
 				F35EA194224A234D009C021B /* ExpenseTableViewCell.swift in Sources */,
 				F35EA1842249E73F009C021B /* ShowExpensesViewController.swift in Sources */,
 				F3D0A3502239613900D1DEF6 /* AccountingTogether.xcdatamodeld in Sources */,
@@ -593,7 +601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9UP2PC5G9L;
+				DEVELOPMENT_TEAM = BJP3N4QY3F;
 				INFOPLIST_FILE = AccountingTogether/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -611,7 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9UP2PC5G9L;
+				DEVELOPMENT_TEAM = BJP3N4QY3F;
 				INFOPLIST_FILE = AccountingTogether/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

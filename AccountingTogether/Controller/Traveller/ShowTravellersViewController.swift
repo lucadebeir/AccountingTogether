@@ -14,10 +14,14 @@ class ShowTravellersViewController: UIViewController, UITableViewDataSource, UIT
     var listTraveller: [Traveller]? = nil
     var travelerSelected: Traveller? = nil
     
+    @IBOutlet weak var nameTripLabel: UILabel!
+    var tableTrip: Trip? = nil
+    
     @IBOutlet weak var travellers: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.nameTripLabel.text = tableTrip?.nameTrip
         do{
             listTraveller = try Traveller.getAll()
         }catch let error as NSError{
@@ -46,6 +50,7 @@ class ShowTravellersViewController: UIViewController, UITableViewDataSource, UIT
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellTraveller", for: indexPath) as! TravellerTableViewCell
         
         cell.nameTraveller.text = "\(String(describing: listTraveller![indexPath.row].lastNameTraveller!)) \(String(describing: listTraveller![indexPath.row].firstNameTraveller!))"
+        cell.dateArrivalTraveller.text = "\(String(describing: listTraveller![indexPath.row].arrivalDate!))"
         
         return cell
     }
@@ -90,18 +95,12 @@ class ShowTravellersViewController: UIViewController, UITableViewDataSource, UIT
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Get the new view controller using segue.destinationViewController.
         //Pass the selected object to the new view controller.
-        if segue.identifier == "showTraveller"{
-            if let cell = sender as? UITableViewCell {
-                guard let indexPath = self.travellers.indexPath(for: cell)
-                    else{
-                        return
-                }
-                self.travelerSelected = listTraveller?[indexPath.row]
+        if let cell = sender as? UITableViewCell {
+            guard let indexPath = self.travellers.indexPath(for: cell)
+                else{
+                    return
             }
-            guard let tabBarController = segue.destination as? UITabBarController, let destinationVC = tabBarController.viewControllers?[0] as? ShowTravellerDetailViewController else {
-                return
-            }
-            destinationVC.tableTraveller = self.travelerSelected
+            self.travelerSelected = listTraveller?[indexPath.row]
         }
     }
     

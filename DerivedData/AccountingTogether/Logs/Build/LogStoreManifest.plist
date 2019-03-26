@@ -5,6 +5,1254 @@
 	<key>logFormatVersion</key>
 	<integer>9</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>00908754-681D-4770-A3CA-0341318B96F3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>00908754-681D-4770-A3CA-0341318B96F3.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575290193.41605997</real>
+			<key>timeStoppedRecording</key>
+			<real>575290201.108904</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>00908754-681D-4770-A3CA-0341318B96F3</string>
+		</dict>
+		<key>1621EC39-E7C4-4967-ADF8-82417870C86F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1621EC39-E7C4-4967-ADF8-82417870C86F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575300487.41175401</real>
+			<key>timeStoppedRecording</key>
+			<real>575300497.02890396</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>1621EC39-E7C4-4967-ADF8-82417870C86F</string>
+		</dict>
+		<key>1914C275-E034-4FBD-974D-1121F95A8890</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1914C275-E034-4FBD-974D-1121F95A8890.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575290896.85389304</real>
+			<key>timeStoppedRecording</key>
+			<real>575290900.80427301</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>1914C275-E034-4FBD-974D-1121F95A8890</string>
+		</dict>
+		<key>1B8F3D6C-BCBC-49E9-B1EA-7562233954D2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1B8F3D6C-BCBC-49E9-B1EA-7562233954D2.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575293847.34780204</real>
+			<key>timeStoppedRecording</key>
+			<real>575293855.53417397</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>1B8F3D6C-BCBC-49E9-B1EA-7562233954D2</string>
+		</dict>
+		<key>20103105-C287-4400-B091-A1256C8BBF8D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>20103105-C287-4400-B091-A1256C8BBF8D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575289767.86068904</real>
+			<key>timeStoppedRecording</key>
+			<real>575289768.49321604</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>20103105-C287-4400-B091-A1256C8BBF8D</string>
+		</dict>
+		<key>25E1BAA4-63E7-4586-B372-37505BD93B41</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>25E1BAA4-63E7-4586-B372-37505BD93B41.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575290489.69302905</real>
+			<key>timeStoppedRecording</key>
+			<real>575290504.312096</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>25E1BAA4-63E7-4586-B372-37505BD93B41</string>
+		</dict>
+		<key>2F4AD720-22A1-4E3A-837E-9482B833DD20</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2F4AD720-22A1-4E3A-837E-9482B833DD20.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575300215.022699</real>
+			<key>timeStoppedRecording</key>
+			<real>575300231.27878594</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>2F4AD720-22A1-4E3A-837E-9482B833DD20</string>
+		</dict>
+		<key>30210970-7A4F-47F3-9CBC-2C60EBBACE8D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>30210970-7A4F-47F3-9CBC-2C60EBBACE8D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575306603.72679806</real>
+			<key>timeStoppedRecording</key>
+			<real>575306604.88503206</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>30210970-7A4F-47F3-9CBC-2C60EBBACE8D</string>
+		</dict>
+		<key>36112814-91AF-4EF6-A9F3-3BBE30B579C3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>36112814-91AF-4EF6-A9F3-3BBE30B579C3.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575290455.10945797</real>
+			<key>timeStoppedRecording</key>
+			<real>575290459.37835097</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>36112814-91AF-4EF6-A9F3-3BBE30B579C3</string>
+		</dict>
+		<key>3D90C429-D325-4174-AE53-D6641B9AE613</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3D90C429-D325-4174-AE53-D6641B9AE613.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575291305.91345501</real>
+			<key>timeStoppedRecording</key>
+			<real>575291315.14044499</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>3D90C429-D325-4174-AE53-D6641B9AE613</string>
+		</dict>
+		<key>4461DAEE-433D-4BB9-B701-732EE2DA403E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4461DAEE-433D-4BB9-B701-732EE2DA403E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575289787.68996406</real>
+			<key>timeStoppedRecording</key>
+			<real>575289806.47539306</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>4461DAEE-433D-4BB9-B701-732EE2DA403E</string>
+		</dict>
+		<key>46AAD877-71EF-4213-9C48-B5EA9FDEC6B2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>46AAD877-71EF-4213-9C48-B5EA9FDEC6B2.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575300401.86149096</real>
+			<key>timeStoppedRecording</key>
+			<real>575300416.41652596</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>46AAD877-71EF-4213-9C48-B5EA9FDEC6B2</string>
+		</dict>
+		<key>540958D9-2937-4C8B-9906-20415969DD4E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>540958D9-2937-4C8B-9906-20415969DD4E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575289842.08983803</real>
+			<key>timeStoppedRecording</key>
+			<real>575289842.46767199</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>540958D9-2937-4C8B-9906-20415969DD4E</string>
+		</dict>
+		<key>55CC064E-0EBF-4A37-AF2D-69D6BF375072</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>55CC064E-0EBF-4A37-AF2D-69D6BF375072.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575300025.027035</real>
+			<key>timeStoppedRecording</key>
+			<real>575300029.65856504</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>55CC064E-0EBF-4A37-AF2D-69D6BF375072</string>
+		</dict>
+		<key>6002A429-5100-46BE-9185-5FAD287C4632</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6002A429-5100-46BE-9185-5FAD287C4632.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575306840.06967103</real>
+			<key>timeStoppedRecording</key>
+			<real>575306861.90555406</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>6002A429-5100-46BE-9185-5FAD287C4632</string>
+		</dict>
+		<key>634AC762-E975-4D69-856D-28524B8D6EA1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>634AC762-E975-4D69-856D-28524B8D6EA1.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575300320.12881505</real>
+			<key>timeStoppedRecording</key>
+			<real>575300327.133582</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>634AC762-E975-4D69-856D-28524B8D6EA1</string>
+		</dict>
+		<key>69BF77C6-0A1E-42E5-A2EB-B47BF0E7CAA8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>69BF77C6-0A1E-42E5-A2EB-B47BF0E7CAA8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575306626.01001501</real>
+			<key>timeStoppedRecording</key>
+			<real>575306646.66259003</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>69BF77C6-0A1E-42E5-A2EB-B47BF0E7CAA8</string>
+		</dict>
+		<key>7752B03F-F70A-438A-BEC4-EB40594AEC7B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7752B03F-F70A-438A-BEC4-EB40594AEC7B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575299219.50188196</real>
+			<key>timeStoppedRecording</key>
+			<real>575299238.78457499</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>7752B03F-F70A-438A-BEC4-EB40594AEC7B</string>
+		</dict>
+		<key>7BDB6B20-03DD-4C85-B559-E343DE7F6404</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7BDB6B20-03DD-4C85-B559-E343DE7F6404.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575299826.82065499</real>
+			<key>timeStoppedRecording</key>
+			<real>575299827.43906403</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>7BDB6B20-03DD-4C85-B559-E343DE7F6404</string>
+		</dict>
+		<key>88B43EA5-F414-43DD-B785-F35DFA1CA966</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>88B43EA5-F414-43DD-B785-F35DFA1CA966.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575289893.67982602</real>
+			<key>timeStoppedRecording</key>
+			<real>575289901.437024</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>88B43EA5-F414-43DD-B785-F35DFA1CA966</string>
+		</dict>
+		<key>90FE3AA4-F7E5-4984-AD70-688A9A0CB7B8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>90FE3AA4-F7E5-4984-AD70-688A9A0CB7B8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575293578.60284495</real>
+			<key>timeStoppedRecording</key>
+			<real>575293585.12829304</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>90FE3AA4-F7E5-4984-AD70-688A9A0CB7B8</string>
+		</dict>
+		<key>92F42B3D-36C3-4039-A523-91B6BFA79104</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>92F42B3D-36C3-4039-A523-91B6BFA79104.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575300057.39457297</real>
+			<key>timeStoppedRecording</key>
+			<real>575300063.76695204</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>92F42B3D-36C3-4039-A523-91B6BFA79104</string>
+		</dict>
+		<key>96907DDD-518F-4E3F-8992-6D238C5FB274</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>96907DDD-518F-4E3F-8992-6D238C5FB274.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575293402.30904698</real>
+			<key>timeStoppedRecording</key>
+			<real>575293411.705194</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>96907DDD-518F-4E3F-8992-6D238C5FB274</string>
+		</dict>
+		<key>9E7C04D5-222A-47A2-B9A9-E8A74130C43C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9E7C04D5-222A-47A2-B9A9-E8A74130C43C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575291062.65284598</real>
+			<key>timeStoppedRecording</key>
+			<real>575291071.62481701</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>9E7C04D5-222A-47A2-B9A9-E8A74130C43C</string>
+		</dict>
+		<key>A386A865-4DF4-4A22-9946-5EBB3E6B0D7A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A386A865-4DF4-4A22-9946-5EBB3E6B0D7A.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575298772.38785195</real>
+			<key>timeStoppedRecording</key>
+			<real>575298795.05607903</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>A386A865-4DF4-4A22-9946-5EBB3E6B0D7A</string>
+		</dict>
+		<key>A43F7F7D-7469-4D32-9054-D85D305AB420</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A43F7F7D-7469-4D32-9054-D85D305AB420.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575293700.197101</real>
+			<key>timeStoppedRecording</key>
+			<real>575293712.56932902</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>A43F7F7D-7469-4D32-9054-D85D305AB420</string>
+		</dict>
+		<key>A4ECAD2A-BE2C-4BCB-978E-E51DB5933455</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A4ECAD2A-BE2C-4BCB-978E-E51DB5933455.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575307745.01364994</real>
+			<key>timeStoppedRecording</key>
+			<real>575307763.13410997</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>A4ECAD2A-BE2C-4BCB-978E-E51DB5933455</string>
+		</dict>
+		<key>AAD0426E-7F26-46E3-B21B-1274034C5F10</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AAD0426E-7F26-46E3-B21B-1274034C5F10.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575308188.28143001</real>
+			<key>timeStoppedRecording</key>
+			<real>575308196.71495795</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>AAD0426E-7F26-46E3-B21B-1274034C5F10</string>
+		</dict>
+		<key>ABFE0898-E8A6-4C60-8337-049BB349B84C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ABFE0898-E8A6-4C60-8337-049BB349B84C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575308257.00728095</real>
+			<key>timeStoppedRecording</key>
+			<real>575308257.35402298</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>ABFE0898-E8A6-4C60-8337-049BB349B84C</string>
+		</dict>
+		<key>ADDA70D5-D0CB-41C1-938D-58ED65D13C1F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ADDA70D5-D0CB-41C1-938D-58ED65D13C1F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575291609.25652897</real>
+			<key>timeStoppedRecording</key>
+			<real>575291618.69964802</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>ADDA70D5-D0CB-41C1-938D-58ED65D13C1F</string>
+		</dict>
+		<key>B024D6BB-C3B4-4AA7-8C07-05A68A223A83</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B024D6BB-C3B4-4AA7-8C07-05A68A223A83.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575298896.35964298</real>
+			<key>timeStoppedRecording</key>
+			<real>575298907.36874104</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>B024D6BB-C3B4-4AA7-8C07-05A68A223A83</string>
+		</dict>
+		<key>B3CCEA30-6969-4E32-9CF3-C6F23EF2845D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B3CCEA30-6969-4E32-9CF3-C6F23EF2845D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575300376.19446802</real>
+			<key>timeStoppedRecording</key>
+			<real>575300379.06261301</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>B3CCEA30-6969-4E32-9CF3-C6F23EF2845D</string>
+		</dict>
+		<key>C613D581-B4BC-46F8-B562-95C3A0764217</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C613D581-B4BC-46F8-B562-95C3A0764217.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575290998.16586494</real>
+			<key>timeStoppedRecording</key>
+			<real>575291008.96546102</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>C613D581-B4BC-46F8-B562-95C3A0764217</string>
+		</dict>
+		<key>C974950D-ED52-4211-B43A-85C3302C20EB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C974950D-ED52-4211-B43A-85C3302C20EB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575291113.91648805</real>
+			<key>timeStoppedRecording</key>
+			<real>575291124.494102</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>C974950D-ED52-4211-B43A-85C3302C20EB</string>
+		</dict>
+		<key>D046B65E-1AEB-49C1-B94F-0C86AF2B946D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D046B65E-1AEB-49C1-B94F-0C86AF2B946D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575306317.333215</real>
+			<key>timeStoppedRecording</key>
+			<real>575306320.31954503</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>D046B65E-1AEB-49C1-B94F-0C86AF2B946D</string>
+		</dict>
+		<key>D9346E43-8909-434F-BD91-5B3C5BD9E3F7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D9346E43-8909-434F-BD91-5B3C5BD9E3F7.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575291186.93036497</real>
+			<key>timeStoppedRecording</key>
+			<real>575291200.91019595</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>D9346E43-8909-434F-BD91-5B3C5BD9E3F7</string>
+		</dict>
+		<key>E0D166DE-4B88-467A-A682-AA3F54FC1022</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E0D166DE-4B88-467A-A682-AA3F54FC1022.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575303402.30519605</real>
+			<key>timeStoppedRecording</key>
+			<real>575303407.272349</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>E0D166DE-4B88-467A-A682-AA3F54FC1022</string>
+		</dict>
+		<key>E431A2E8-73EC-4C5E-9B64-2F98FD4ADF9C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E431A2E8-73EC-4C5E-9B64-2F98FD4ADF9C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575319116.18291104</real>
+			<key>timeStoppedRecording</key>
+			<real>575319130.71268201</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>E431A2E8-73EC-4C5E-9B64-2F98FD4ADF9C</string>
+		</dict>
+		<key>EA7B543A-E641-4EFA-AEFC-18BA320038E4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EA7B543A-E641-4EFA-AEFC-18BA320038E4.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575290747.94745696</real>
+			<key>timeStoppedRecording</key>
+			<real>575290755.33234894</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>EA7B543A-E641-4EFA-AEFC-18BA320038E4</string>
+		</dict>
+		<key>F4EFE445-ADA2-4E47-9A72-44B0F56B1A9F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F4EFE445-ADA2-4E47-9A72-44B0F56B1A9F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575298632.90379703</real>
+			<key>timeStoppedRecording</key>
+			<real>575298645.31631899</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>F4EFE445-ADA2-4E47-9A72-44B0F56B1A9F</string>
+		</dict>
+		<key>F71C28D4-8DA6-4B4C-AEC1-3A3C25C823E1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F71C28D4-8DA6-4B4C-AEC1-3A3C25C823E1.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575300194.83006001</real>
+			<key>timeStoppedRecording</key>
+			<real>575300198.33547902</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>F71C28D4-8DA6-4B4C-AEC1-3A3C25C823E1</string>
+		</dict>
+		<key>FC1342BD-B4AC-4EB4-BE72-3A4FEB1FBDCC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FC1342BD-B4AC-4EB4-BE72-3A4FEB1FBDCC.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575290919.36352003</real>
+			<key>timeStoppedRecording</key>
+			<real>575290933.31787503</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>FC1342BD-B4AC-4EB4-BE72-3A4FEB1FBDCC</string>
+		</dict>
+		<key>FE9779D0-A314-4935-9C9A-78CB09823282</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FE9779D0-A314-4935-9C9A-78CB09823282.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575299762.37593806</real>
+			<key>timeStoppedRecording</key>
+			<real>575299780.601861</real>
+			<key>title</key>
+			<string>Build AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>FE9779D0-A314-4935-9C9A-78CB09823282</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

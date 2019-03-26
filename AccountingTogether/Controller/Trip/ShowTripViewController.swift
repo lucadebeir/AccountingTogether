@@ -103,10 +103,13 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
                 }
                 self.tripSelected = listTrip?[indexPath.row]
             }
-            guard let tabBarController = segue.destination as? UITabBarController, let destinationVC = tabBarController.viewControllers?[0] as? ShowTripDetailViewController else {
+            guard let tabBarController = segue.destination as? UITabBarController, let destinationVC = tabBarController.viewControllers?[0] as? ShowTripDetailViewController, let destinationVC1 = tabBarController.viewControllers?[1] as? ShowExpensesViewController, let destinationVC2 = tabBarController.viewControllers?[2] as? ShowRepaymentViewController, let destinationVC3 = tabBarController.viewControllers?[3] as? ShowTravellersViewController else {
                 return
             }
             destinationVC.tableTrip = self.tripSelected
+            destinationVC1.tableTrip = self.tripSelected
+            destinationVC2.tableTrip = self.tripSelected
+            destinationVC3.tableTrip = self.tripSelected
         }
     }
     

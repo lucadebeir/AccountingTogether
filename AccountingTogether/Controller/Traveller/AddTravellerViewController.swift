@@ -12,8 +12,10 @@ import CoreData
 
 class AddTravellerViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var nameTravellerTF: UITextField!
+    
+    @IBOutlet weak var lastNameTravellerTF: UITextField!
     @IBOutlet weak var firstNameTravellerTF: UITextField!
+    @IBOutlet weak var arrivalDateTraveller: UIDatePicker!
     
     var newTraveller: Traveller? = nil
     
@@ -29,10 +31,10 @@ class AddTravellerViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func addTraveller(_ sender: Any) {
-        let inputs: [String: UITextField] = ["name": nameTravellerTF]
+        let inputs: [String: UITextField] = ["name": lastNameTravellerTF, "prénom": firstNameTravellerTF]
         if FormValidatorHelper.validateForm(inputs){
             do{
-                newTraveller = try Traveller.create(withName: nameTravellerTF.text!)
+                newTraveller = try Traveller.create(withName: lastNameTravellerTF.text!, withPrenom: firstNameTravellerTF.text!, withDate: arrivalDateTraveller!.date)
                 self.dismiss(animated: true, completion: nil)
             }catch{
                 DialogBoxHelper.alert(view: self, errorMessage: "Ajout du voyageur échoué")
@@ -43,7 +45,7 @@ class AddTravellerViewController: UIViewController, UITextFieldDelegate {
         }
         
     }
-    
+    //MARK - 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

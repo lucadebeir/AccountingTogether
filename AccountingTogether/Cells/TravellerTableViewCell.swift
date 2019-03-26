@@ -12,6 +12,7 @@ import UIKit
 class TravellerTableViewCell: UITableViewCell {
     
     @IBOutlet weak var nameTraveller: UILabel!
+    @IBOutlet weak var dateArrivalTraveller: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
