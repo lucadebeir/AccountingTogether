@@ -1090,11 +1090,7 @@
                         <viewLayoutGuide key="safeArea" id="QgF-mN-UZF"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Trips" id="HsG-qi-NhU">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="3fD-5j-PdF">
-                            <connections>
-                                <segue destination="AZz-Yz-WA0" kind="presentation" id="4So-5F-VJY"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="3fD-5j-PdF"/>
                     </navigationItem>
                     <connections>
                         <outlet property="trip" destination="x1u-WC-8Qy" id="DQF-yb-5ni"/>
@@ -1135,9 +1131,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aWz-6Z-gnd">
-                                <rect key="frame" x="67" y="115" width="240" height="128"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of new Trip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXV-1D-PuZ">
                                 <rect key="frame" x="16" y="281" width="135" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1153,46 +1146,68 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZd-0g-CGI">
+                                <rect key="frame" x="80" y="222" width="48" height="30"/>
+                                <state key="normal" title="Gallery"/>
+                                <connections>
+                                    <action selector="btnSetProfileImageClickedFromGallery:" destination="AZz-Yz-WA0" eventType="touchUpInside" id="Fze-xH-4KN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilU-gz-ABr">
+                                <rect key="frame" x="234" y="222" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="btnSetProfileImageClickedCamera:" destination="AZz-Yz-WA0" eventType="touchUpInside" id="Mwn-9s-qeR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aWz-6Z-gnd">
+                                <rect key="frame" x="16" y="104" width="343" height="102"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="03a-nx-819" firstAttribute="bottom" secondItem="231-eg-t6M" secondAttribute="bottom" constant="361" id="2ez-Nk-zyy"/>
                             <constraint firstItem="7FZ-3E-J08" firstAttribute="height" secondItem="0cY-ug-0hf" secondAttribute="height" id="449-4O-Gum"/>
                             <constraint firstItem="0cY-ug-0hf" firstAttribute="top" secondItem="03a-nx-819" secondAttribute="top" id="5Mi-mt-wHk"/>
-                            <constraint firstItem="aWz-6Z-gnd" firstAttribute="top" secondItem="vD0-Km-3z3" secondAttribute="bottom" constant="65" id="6Mf-UR-DlB"/>
+                            <constraint firstItem="aWz-6Z-gnd" firstAttribute="top" secondItem="vD0-Km-3z3" secondAttribute="bottom" constant="54" id="6Mf-UR-DlB"/>
                             <constraint firstItem="231-eg-t6M" firstAttribute="centerY" secondItem="rXV-1D-PuZ" secondAttribute="centerY" id="9QH-2u-YbR"/>
                             <constraint firstItem="rXV-1D-PuZ" firstAttribute="leading" secondItem="0cY-ug-0hf" secondAttribute="leading" id="AN3-W1-nTK"/>
                             <constraint firstItem="vD0-Km-3z3" firstAttribute="top" secondItem="03a-nx-819" secondAttribute="top" id="Bix-L7-38G"/>
                             <constraint firstItem="0cY-ug-0hf" firstAttribute="top" secondItem="03a-nx-819" secondAttribute="top" id="By8-H5-bPk"/>
                             <constraint firstItem="7FZ-3E-J08" firstAttribute="leading" secondItem="vD0-Km-3z3" secondAttribute="trailing" constant="75" id="Cke-9D-VIA"/>
                             <constraint firstItem="0cY-ug-0hf" firstAttribute="top" secondItem="03a-nx-819" secondAttribute="top" id="Csj-qb-Nuy"/>
+                            <constraint firstItem="TZd-0g-CGI" firstAttribute="top" secondItem="aWz-6Z-gnd" secondAttribute="bottom" constant="16" id="Kt5-WM-obl"/>
                             <constraint firstItem="vD0-Km-3z3" firstAttribute="height" secondItem="0cY-ug-0hf" secondAttribute="height" id="KzG-cO-lOQ"/>
                             <constraint firstItem="231-eg-t6M" firstAttribute="trailing" secondItem="3IX-bv-qta" secondAttribute="trailingMargin" id="MZr-wD-3rU"/>
-                            <constraint firstItem="231-eg-t6M" firstAttribute="top" secondItem="aWz-6Z-gnd" secondAttribute="bottom" constant="33" id="Maf-A7-ldz"/>
+                            <constraint firstItem="231-eg-t6M" firstAttribute="top" secondItem="aWz-6Z-gnd" secondAttribute="bottom" constant="70" id="Maf-A7-ldz"/>
                             <constraint firstItem="0cY-ug-0hf" firstAttribute="leading" secondItem="3IX-bv-qta" secondAttribute="leadingMargin" id="OZd-t3-i0R"/>
                             <constraint firstItem="vD0-Km-3z3" firstAttribute="height" secondItem="0cY-ug-0hf" secondAttribute="height" id="XRu-Iv-b1W"/>
                             <constraint firstItem="vD0-Km-3z3" firstAttribute="leading" secondItem="0cY-ug-0hf" secondAttribute="trailing" constant="51" id="ZBa-8b-On3"/>
+                            <constraint firstItem="TZd-0g-CGI" firstAttribute="leading" secondItem="03a-nx-819" secondAttribute="leading" constant="80" id="ZW8-tJ-uLD"/>
                             <constraint firstItem="7FZ-3E-J08" firstAttribute="trailing" secondItem="3IX-bv-qta" secondAttribute="trailingMargin" id="cgO-Uq-uQD"/>
+                            <constraint firstItem="03a-nx-819" firstAttribute="trailing" secondItem="ilU-gz-ABr" secondAttribute="trailing" constant="87" id="dGC-nZ-VlW"/>
                             <constraint firstItem="7FZ-3E-J08" firstAttribute="top" secondItem="03a-nx-819" secondAttribute="top" id="dYp-cW-RiW"/>
-                            <constraint firstItem="03a-nx-819" firstAttribute="bottom" secondItem="aWz-6Z-gnd" secondAttribute="bottom" constant="424" id="eZ2-3l-STg"/>
+                            <constraint firstItem="03a-nx-819" firstAttribute="bottom" secondItem="aWz-6Z-gnd" secondAttribute="bottom" constant="461" id="eZ2-3l-STg"/>
                             <constraint firstItem="7FZ-3E-J08" firstAttribute="top" secondItem="03a-nx-819" secondAttribute="top" id="fjw-eT-3m3"/>
                             <constraint firstItem="aWz-6Z-gnd" firstAttribute="centerX" secondItem="3IX-bv-qta" secondAttribute="centerX" id="gSs-9T-uQr"/>
+                            <constraint firstItem="TZd-0g-CGI" firstAttribute="baseline" secondItem="ilU-gz-ABr" secondAttribute="baseline" id="jeO-iX-K9b"/>
                             <constraint firstItem="vD0-Km-3z3" firstAttribute="centerX" secondItem="3IX-bv-qta" secondAttribute="centerX" id="nXr-aE-KBJ"/>
                             <constraint firstItem="7FZ-3E-J08" firstAttribute="height" secondItem="0cY-ug-0hf" secondAttribute="height" id="qef-Rq-2ef"/>
-                            <constraint firstItem="aWz-6Z-gnd" firstAttribute="leading" secondItem="03a-nx-819" secondAttribute="leading" constant="67" id="uQh-q9-PIw"/>
-                            <constraint firstItem="rXV-1D-PuZ" firstAttribute="top" secondItem="aWz-6Z-gnd" secondAttribute="bottom" constant="38" id="wjj-3g-ZbP"/>
+                            <constraint firstItem="aWz-6Z-gnd" firstAttribute="leading" secondItem="03a-nx-819" secondAttribute="leading" constant="16" id="uQh-q9-PIw"/>
+                            <constraint firstItem="rXV-1D-PuZ" firstAttribute="top" secondItem="aWz-6Z-gnd" secondAttribute="bottom" constant="75" id="wjj-3g-ZbP"/>
                             <constraint firstItem="7FZ-3E-J08" firstAttribute="top" secondItem="03a-nx-819" secondAttribute="top" id="zKS-m9-ta8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="03a-nx-819"/>
                     </view>
                     <connections>
+                        <outlet property="imgView" destination="aWz-6Z-gnd" id="kZ6-cL-Qhd"/>
                         <outlet property="nameTF" destination="231-eg-t6M" id="6pQ-yq-7C9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8Q-nn-Olj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="jfm-ft-gdt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="127"/>
+            <point key="canvasLocation" x="3265" y="-807"/>
         </scene>
         <!--Edit Trip View Controller-->
         <scene sceneID="6Nf-at-Kan">
@@ -1310,7 +1325,7 @@
             </objects>
             <point key="canvasLocation" x="1537" y="-816"/>
         </scene>
-        <!--Voyages-->
+        <!--My Trips-->
         <scene sceneID="ZKX-nO-xrn">
             <objects>
                 <viewController id="DFS-T2-qdC" customClass="TripViewController" customModule="AccountingTogether" customModuleProvider="target" sceneMemberID="viewController">
@@ -1373,7 +1388,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="41a-Tv-HWK"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Voyages" id="zE6-Pz-hoU"/>
+                    <navigationItem key="navigationItem" title="My Trips" id="7MZ-Gm-T4Y">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="kfJ-5T-4WF">
+                            <connections>
+                                <segue destination="AZz-Yz-WA0" kind="presentation" id="xJT-19-j9a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="trip" destination="wIS-M9-Faz" id="kVh-yY-VTa"/>
                     </connections>

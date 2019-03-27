@@ -229,14 +229,22 @@ SWIFT_CLASS("_TtC18AccountingTogether26AddTravellerViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+@class UIButton;
+@class UIImagePickerController;
 
 SWIFT_CLASS("_TtC18AccountingTogether21AddTripViewController")
-@interface AddTripViewController : UIViewController <UITextFieldDelegate>
+@interface AddTripViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTF;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imgView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)addTrip:(id _Nonnull)sender;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (IBAction)btnSetProfileImageClickedCamera:(UIButton * _Nonnull)sender;
+- (IBAction)btnSetProfileImageClickedFromGallery:(UIButton * _Nonnull)sender;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -527,11 +535,11 @@ SWIFT_CLASS_NAMED("Trip")
 
 
 @interface Trip (SWIFT_EXTENSION(AccountingTogether))
+@property (nonatomic, strong) NSObject * _Nullable imageTrip;
 @property (nonatomic, copy) NSString * _Nullable nameTrip;
 @property (nonatomic, strong) NSSet * _Nullable travellers;
 @end
 
-@class UIImageView;
 
 SWIFT_CLASS("_TtC18AccountingTogether8TripCell")
 @interface TripCell : UICollectionViewCell
@@ -545,8 +553,7 @@ SWIFT_CLASS("_TtC18AccountingTogether8TripCell")
 SWIFT_CLASS("_TtC18AccountingTogether17TripTableViewCell")
 @interface TripTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameTrip;
-- (void)awakeFromNib;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageTrip;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

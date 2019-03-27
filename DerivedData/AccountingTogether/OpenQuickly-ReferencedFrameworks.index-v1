@@ -5,6 +5,7 @@
 	<string>XCTest</string>
 	<string>UserNotifications</string>
 	<string>AccountingTogether</string>
+	<string>Photos</string>
 	<string>CoreData</string>
 	<string>UIKit</string>
 	<string>Foundation</string>

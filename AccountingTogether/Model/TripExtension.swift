@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 extension Trip {
     
@@ -22,12 +23,13 @@ extension Trip {
         }
     }
     
-    static func create(withName: String) throws -> Trip {
+    static func create(withName: String/*, withImage: UIImageView*/) throws -> Trip {
         
         let trip = Trip(context: CoreDataManager.context)
         
         /// nom du contactPerso
         trip.nameTrip = withName
+        //trip.imageTrip = withImage.image
         do{
             try CoreDataManager.save()
         }catch let error as NSError{

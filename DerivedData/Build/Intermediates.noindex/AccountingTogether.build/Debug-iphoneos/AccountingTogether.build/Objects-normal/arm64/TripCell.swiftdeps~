@@ -6,10 +6,12 @@ provides-nominal:
 provides-member:
 - ["18AccountingTogether8TripCellC", ""]
 provides-dynamic-lookup:
+- "imageTrip"
 - "nameTrip"
 depends-top-level:
 - "TripCell"
 - "UICollectionViewCell"
+- "UIImageView"
 - "UILabel"
 depends-member:
 - ["So15CALayerDelegateP", ""]
@@ -33,14 +35,18 @@ depends-member:
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
+- ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "imageTrip"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "nameTrip"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
+- ["18AccountingTogether8TripCellC", "UIImageView"]
 - ["18AccountingTogether8TripCellC", "UILabel"]
+- ["18AccountingTogether8TripCellC", "imageTrip"]
 - ["18AccountingTogether8TripCellC", "init"]
 - ["18AccountingTogether8TripCellC", "nameTrip"]
 - ["So29UIAccessibilityIdentificationP", ""]
@@ -52,12 +58,16 @@ depends-member:
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- ["So24UICollectionReusableViewC", "UIImageView"]
 - ["So24UICollectionReusableViewC", "UILabel"]
+- ["So24UICollectionReusableViewC", "imageTrip"]
 - ["So24UICollectionReusableViewC", "init"]
 - !private ["So24UICollectionReusableViewC", "init"]
 - ["So24UICollectionReusableViewC", "nameTrip"]
+- ["So20UICollectionViewCellC", "UIImageView"]
 - ["So20UICollectionViewCellC", "UILabel"]
 - ["So20UICollectionViewCellC", ""]
+- ["So20UICollectionViewCellC", "imageTrip"]
 - ["So20UICollectionViewCellC", "init"]
 - !private ["So20UICollectionViewCellC", "init"]
 - ["So20UICollectionViewCellC", "nameTrip"]
@@ -79,7 +89,9 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "imageTrip"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "nameTrip"]
@@ -92,7 +104,9 @@ depends-member:
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "imageTrip"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "init"]
 - ["So6UIViewC", "nameTrip"]
@@ -160,4 +174,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8334b1308f6b608e204f062ae2997c63"
+interface-hash: "e2482a0127ea6d9107470b958986b40d"

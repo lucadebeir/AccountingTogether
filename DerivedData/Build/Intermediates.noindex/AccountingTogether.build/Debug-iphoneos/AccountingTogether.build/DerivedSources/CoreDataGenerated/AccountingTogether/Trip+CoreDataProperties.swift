@@ -2,7 +2,7 @@
 //  Trip+CoreDataProperties.swift
 //  
 //
-//  Created by Luca Debeir on 26/03/2019.
+//  Created by Luca Debeir on 27/03/2019.
 //
 //  This file was automatically generated and should not be edited.
 //
@@ -17,6 +17,7 @@ extension Trip {
         return NSFetchRequest<Trip>(entityName: "Trip")
     }
 
+    @NSManaged public var imageTrip: NSObject?
     @NSManaged public var nameTrip: String?
     @NSManaged public var travellers: NSSet?
 

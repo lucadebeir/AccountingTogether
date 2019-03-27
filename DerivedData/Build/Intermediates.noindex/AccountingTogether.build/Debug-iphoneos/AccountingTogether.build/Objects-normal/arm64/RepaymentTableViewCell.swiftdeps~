@@ -6,11 +6,16 @@ provides-nominal:
 provides-member:
 - ["18AccountingTogether22RepaymentTableViewCellC", ""]
 provides-dynamic-lookup:
+- "amountRepayment"
 - "awakeFromNib"
+- "nameRepayment"
 - "setSelected"
+- "travellerPaying"
+- "travellerRefunding"
 depends-top-level:
 - "Bool"
 - "RepaymentTableViewCell"
+- "UILabel"
 - "UITableViewCell"
 depends-member:
 - ["So15CALayerDelegateP", ""]
@@ -49,19 +54,29 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "setSelected"]
 - ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "amountRepayment"]
 - ["So8NSObjectC", "awakeFromNib"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "nameRepayment"]
 - ["So8NSObjectC", "setSelected"]
+- ["So8NSObjectC", "travellerPaying"]
+- ["So8NSObjectC", "travellerRefunding"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "awakeFromNib"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "setSelected"]
 - ["18AccountingTogether22RepaymentTableViewCellC", "Bool"]
+- ["18AccountingTogether22RepaymentTableViewCellC", "UILabel"]
+- ["18AccountingTogether22RepaymentTableViewCellC", "amountRepayment"]
 - ["18AccountingTogether22RepaymentTableViewCellC", "awakeFromNib"]
 - ["18AccountingTogether22RepaymentTableViewCellC", "init"]
+- ["18AccountingTogether22RepaymentTableViewCellC", "nameRepayment"]
 - ["18AccountingTogether22RepaymentTableViewCellC", "setSelected"]
+- ["18AccountingTogether22RepaymentTableViewCellC", "travellerPaying"]
+- ["18AccountingTogether22RepaymentTableViewCellC", "travellerRefunding"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
@@ -113,21 +128,31 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
 - ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "amountRepayment"]
 - ["So11UIResponderC", "awakeFromNib"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "nameRepayment"]
 - ["So11UIResponderC", "setSelected"]
+- ["So11UIResponderC", "travellerPaying"]
+- ["So11UIResponderC", "travellerRefunding"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
 - ["So15UITableViewCellC", "Bool"]
+- ["So15UITableViewCellC", "UILabel"]
 - ["So15UITableViewCellC", ""]
+- ["So15UITableViewCellC", "amountRepayment"]
 - ["So15UITableViewCellC", "awakeFromNib"]
 - ["So15UITableViewCellC", "init"]
 - !private ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "nameRepayment"]
 - ["So15UITableViewCellC", "setSelected"]
+- ["So15UITableViewCellC", "travellerPaying"]
+- ["So15UITableViewCellC", "travellerRefunding"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
 - !private ["So18UITraitEnvironmentP", "init"]
@@ -139,10 +164,15 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "setSelected"]
 - ["So6UIViewC", "Bool"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "amountRepayment"]
 - ["So6UIViewC", "awakeFromNib"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "init"]
+- ["So6UIViewC", "nameRepayment"]
 - ["So6UIViewC", "setSelected"]
+- ["So6UIViewC", "travellerPaying"]
+- ["So6UIViewC", "travellerRefunding"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
@@ -211,4 +241,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b186390334ee1ef72c9c4e79af07c11f"
+interface-hash: "d634a6be0ac97b3ac67731226e52fd31"

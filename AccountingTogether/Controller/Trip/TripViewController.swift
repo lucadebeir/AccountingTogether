@@ -32,7 +32,7 @@ class TripViewController: UIViewController, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellT", for: indexPath) as! TripCell
         cell.nameTrip.text = "\(String(describing: listTrip[indexPath.row].nameTrip!))"
-        
+        /*cell.imageTrip = (listTrip[indexPath.row].imageTrip! as! UIImageView)*/
         return cell
     }
     
