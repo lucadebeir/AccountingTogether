@@ -164,6 +164,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import CoreData;
+@import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -449,6 +450,8 @@ SWIFT_CLASS_NAMED("Traveller")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+
 @class NSSet;
 
 @interface Traveller (SWIFT_EXTENSION(AccountingTogether))
@@ -482,8 +485,6 @@ SWIFT_CLASS_NAMED("Traveller")
 - (void)removeRefund:(NSSet * _Nonnull)values;
 @end
 
-
-
 @class Trip;
 
 @interface Traveller (SWIFT_EXTENSION(AccountingTogether))
@@ -515,8 +516,6 @@ SWIFT_CLASS_NAMED("Trip")
 @end
 
 
-
-
 @interface Trip (SWIFT_EXTENSION(AccountingTogether))
 - (void)addTravellersObject:(Traveller * _Nonnull)value;
 - (void)removeTravellersObject:(Traveller * _Nonnull)value;
@@ -525,9 +524,21 @@ SWIFT_CLASS_NAMED("Trip")
 @end
 
 
+
+
 @interface Trip (SWIFT_EXTENSION(AccountingTogether))
 @property (nonatomic, copy) NSString * _Nullable nameTrip;
 @property (nonatomic, strong) NSSet * _Nullable travellers;
+@end
+
+@class UIImageView;
+
+SWIFT_CLASS("_TtC18AccountingTogether8TripCell")
+@interface TripCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameTrip;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageTrip;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -537,6 +548,21 @@ SWIFT_CLASS("_TtC18AccountingTogether17TripTableViewCell")
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UICollectionView;
+
+SWIFT_CLASS("_TtC18AccountingTogether18TripViewController")
+@interface TripViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified trip;
+- (void)viewDidLoad;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)didReceiveMemoryWarning;
+- (IBAction)uwindToListTripWithSegue:(UIStoryboardSegue * _Nonnull)segue;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

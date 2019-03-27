@@ -11,7 +11,7 @@ import CoreData
 
 class ShowTripViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var listTrip: [Trip]? = nil
+    var listTrip: [Trip] = []
     var tripSelected: Trip? = nil
     
     @IBOutlet weak var trip: UITableView!
@@ -37,12 +37,12 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func delete(index: Int) {
-        let t = listTrip![index]
+        let t = listTrip[index]
         // supprime de la BD
         do {
             try t.delete()
             // supprime du model
-            listTrip?.remove(at: index)
+            listTrip.remove(at: index)
         } catch let e as NSError {
             print("Erreur a la suppression de VC :  \(e)")
             return
@@ -50,13 +50,13 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listTrip!.count
+        return listTrip.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellTrip", for: indexPath) as! TripTableViewCell
         
-        cell.nameTrip.text = "\(String(describing: listTrip![indexPath.row].nameTrip!))"
+        cell.nameTrip.text = "\(String(describing: listTrip[indexPath.row].nameTrip!))"
         
         return cell
     }
@@ -69,7 +69,7 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
         if (commit == UITableViewCell.EditingStyle.delete) {
             tableView.beginUpdates()
             do {
-                try self.listTrip?[indexPath.row].delete()
+                try self.listTrip[indexPath.row].delete()
                 //self.listTrip?.remove(at: indexPath.row)
             } catch let e as NSError {
                 print("Erreur a la suppression de VC :  \(e)")
@@ -82,7 +82,7 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBAction func uwindToListTrip(segue: UIStoryboardSegue) {
         if let controller = segue.source as? AddTripViewController {
             if let newTrip = controller.newTrip {
-                self.listTrip?.append(newTrip)
+                self.listTrip.append(newTrip)
                 self.trip.reloadData()
             }
         }
@@ -101,7 +101,7 @@ class ShowTripViewController: UIViewController, UITableViewDataSource, UITableVi
                     else{
                     return
                 }
-                self.tripSelected = listTrip?[indexPath.row]
+                self.tripSelected = listTrip[indexPath.row]
             }
             guard let tabBarController = segue.destination as? UITabBarController, let destinationVC = tabBarController.viewControllers?[0] as? ShowTripDetailViewController, let destinationVC1 = tabBarController.viewControllers?[1] as? ShowExpensesViewController, let destinationVC2 = tabBarController.viewControllers?[2] as? ShowRepaymentViewController, let destinationVC3 = tabBarController.viewControllers?[3] as? ShowTravellersViewController else {
                 return

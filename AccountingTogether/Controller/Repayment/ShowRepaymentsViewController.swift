@@ -20,6 +20,7 @@ class ShowRepaymentViewController: UIViewController, UITableViewDataSource, UITa
     
     @IBOutlet weak var repayments: UITableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.nameTripLabel.text = tableTrip?.nameTrip

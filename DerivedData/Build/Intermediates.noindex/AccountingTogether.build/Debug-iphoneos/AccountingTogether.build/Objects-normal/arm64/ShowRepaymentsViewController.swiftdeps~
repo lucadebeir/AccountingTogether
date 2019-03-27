@@ -30,7 +30,6 @@ depends-top-level:
 - "Repayment"
 - !private "RepaymentTableViewCell"
 - "ShowRepaymentViewController"
-- !private "ShowSharingStatusViewController"
 - !private "String"
 - !private "StringLiteralType"
 - "Trip"
@@ -521,7 +520,6 @@ depends-member:
 - !private ["So8NSObjectC", "NSError"]
 - ["So8NSObjectC", "Repayment"]
 - !private ["So8NSObjectC", "RepaymentTableViewCell"]
-- !private ["So8NSObjectC", "ShowSharingStatusViewController"]
 - !private ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "Trip"]
 - ["So8NSObjectC", "UILabel"]
@@ -662,7 +660,6 @@ depends-member:
 - !private ["18AccountingTogether27ShowRepaymentViewControllerC", "NSError"]
 - ["18AccountingTogether27ShowRepaymentViewControllerC", "Repayment"]
 - !private ["18AccountingTogether27ShowRepaymentViewControllerC", "RepaymentTableViewCell"]
-- !private ["18AccountingTogether27ShowRepaymentViewControllerC", "ShowSharingStatusViewController"]
 - !private ["18AccountingTogether27ShowRepaymentViewControllerC", "String"]
 - ["18AccountingTogether27ShowRepaymentViewControllerC", "Trip"]
 - ["18AccountingTogether27ShowRepaymentViewControllerC", "UILabel"]
@@ -959,7 +956,6 @@ depends-member:
 - !private ["So11UIResponderC", "NSError"]
 - ["So11UIResponderC", "Repayment"]
 - !private ["So11UIResponderC", "RepaymentTableViewCell"]
-- !private ["So11UIResponderC", "ShowSharingStatusViewController"]
 - !private ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "Trip"]
 - ["So11UIResponderC", "UILabel"]
@@ -1318,7 +1314,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "NSError"]
 - ["So16UIViewControllerC", "Repayment"]
 - !private ["So16UIViewControllerC", "RepaymentTableViewCell"]
-- !private ["So16UIViewControllerC", "ShowSharingStatusViewController"]
 - !private ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "Trip"]
 - ["So16UIViewControllerC", "UILabel"]
