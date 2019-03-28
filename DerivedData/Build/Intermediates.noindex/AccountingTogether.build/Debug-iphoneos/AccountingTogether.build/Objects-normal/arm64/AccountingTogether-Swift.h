@@ -312,6 +312,19 @@ SWIFT_CLASS("_TtC18AccountingTogether20ExpenseTableViewCell")
 @end
 
 
+SWIFT_CLASS_NAMED("FullRes")
+@interface FullRes : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class Thumbnail;
+
+@interface FullRes (SWIFT_EXTENSION(AccountingTogether))
+@property (nonatomic, copy) NSData * _Nullable imageData;
+@property (nonatomic, strong) Thumbnail * _Nullable thumbnail;
+@end
+
+
 SWIFT_CLASS_NAMED("Repayment")
 @interface Repayment : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -453,12 +466,23 @@ SWIFT_CLASS("_TtC18AccountingTogether22ShowTripViewController")
 @end
 
 
-SWIFT_CLASS_NAMED("Traveller")
-@interface Traveller : NSManagedObject
+SWIFT_CLASS_NAMED("Thumbnail")
+@interface Thumbnail : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+@interface Thumbnail (SWIFT_EXTENSION(AccountingTogether))
+@property (nonatomic) double id;
+@property (nonatomic, copy) NSData * _Nullable imageData;
+@property (nonatomic, strong) FullRes * _Nullable fullRes;
+@end
+
+
+SWIFT_CLASS_NAMED("Traveller")
+@interface Traveller : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class NSSet;
 
@@ -470,12 +494,6 @@ SWIFT_CLASS_NAMED("Traveller")
 @end
 
 
-@interface Traveller (SWIFT_EXTENSION(AccountingTogether))
-- (void)addGetARefundObject:(Repayment * _Nonnull)value;
-- (void)removeGetARefundObject:(Repayment * _Nonnull)value;
-- (void)addGetARefund:(NSSet * _Nonnull)values;
-- (void)removeGetARefund:(NSSet * _Nonnull)values;
-@end
 
 
 @interface Traveller (SWIFT_EXTENSION(AccountingTogether))
@@ -491,6 +509,14 @@ SWIFT_CLASS_NAMED("Traveller")
 - (void)removeRefundObject:(Repayment * _Nonnull)value;
 - (void)addRefund:(NSSet * _Nonnull)values;
 - (void)removeRefund:(NSSet * _Nonnull)values;
+@end
+
+
+@interface Traveller (SWIFT_EXTENSION(AccountingTogether))
+- (void)addGetARefundObject:(Repayment * _Nonnull)value;
+- (void)removeGetARefundObject:(Repayment * _Nonnull)value;
+- (void)addGetARefund:(NSSet * _Nonnull)values;
+- (void)removeGetARefund:(NSSet * _Nonnull)values;
 @end
 
 @class Trip;
@@ -524,6 +550,8 @@ SWIFT_CLASS_NAMED("Trip")
 @end
 
 
+
+
 @interface Trip (SWIFT_EXTENSION(AccountingTogether))
 - (void)addTravellersObject:(Traveller * _Nonnull)value;
 - (void)removeTravellersObject:(Traveller * _Nonnull)value;
@@ -532,10 +560,8 @@ SWIFT_CLASS_NAMED("Trip")
 @end
 
 
-
-
 @interface Trip (SWIFT_EXTENSION(AccountingTogether))
-@property (nonatomic, strong) NSObject * _Nullable imageTrip;
+@property (nonatomic, copy) NSData * _Nullable imageData;
 @property (nonatomic, copy) NSString * _Nullable nameTrip;
 @property (nonatomic, strong) NSSet * _Nullable travellers;
 @end

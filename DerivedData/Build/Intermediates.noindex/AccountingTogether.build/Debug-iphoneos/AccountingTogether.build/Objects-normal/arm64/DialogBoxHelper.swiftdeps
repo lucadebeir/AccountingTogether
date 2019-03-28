@@ -52,7 +52,6 @@ depends-member:
 - ["18AccountingTogether15DialogBoxHelperC", "Void"]
 - ["18AccountingTogether15DialogBoxHelperC", "alert"]
 - ["18AccountingTogether15DialogBoxHelperC", "alertAsk"]
-- ["18AccountingTogether15DialogBoxHelperC", "deinit"]
 - ["18AccountingTogether15DialogBoxHelperC", "init"]
 - !private ["SE", "init"]
 - !private ["SE", "init"]

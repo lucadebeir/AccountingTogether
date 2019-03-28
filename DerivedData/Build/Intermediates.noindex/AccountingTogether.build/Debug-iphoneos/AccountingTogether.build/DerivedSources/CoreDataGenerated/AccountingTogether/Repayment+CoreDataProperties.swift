@@ -2,7 +2,7 @@
 //  Repayment+CoreDataProperties.swift
 //  
 //
-//  Created by Luca Debeir on 27/03/2019.
+//  Created by Luca Debeir on 28/03/2019.
 //
 //  This file was automatically generated and should not be edited.
 //

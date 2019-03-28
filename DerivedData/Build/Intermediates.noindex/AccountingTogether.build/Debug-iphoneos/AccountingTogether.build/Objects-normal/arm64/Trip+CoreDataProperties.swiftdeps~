@@ -4,6 +4,7 @@ provides-nominal:
 provides-member:
 - ["18AccountingTogether4TripC", ""]
 - ["18AccountingTogether4TripC", "fetchRequest"]
+- ["18AccountingTogether4TripC", "imageData"]
 - ["18AccountingTogether4TripC", "nameTrip"]
 - ["18AccountingTogether4TripC", "travellers"]
 - ["18AccountingTogether4TripC", "addToTravellers"]
@@ -12,10 +13,12 @@ provides-member:
 - ["18AccountingTogether4TripC", "removeFromTravellers"]
 provides-dynamic-lookup:
 - "addToTravellers"
+- "imageData"
 - "nameTrip"
 - "removeFromTravellers"
 - "travellers"
 depends-top-level:
+- "Data"
 - "NSFetchRequest"
 - "NSSet"
 - "String"
@@ -66,6 +69,7 @@ depends-member:
 - !private ["So9NSCopyingP", "init"]
 - !private ["So14NSFetchRequestC", "init"]
 - !private ["So20NSFetchRequestResultP", "NSFetchRequest"]
+- ["So15NSManagedObjectC", "Data"]
 - ["So15NSManagedObjectC", "NSFetchRequest"]
 - ["So15NSManagedObjectC", "NSSet"]
 - ["So15NSManagedObjectC", "String"]
@@ -73,9 +77,11 @@ depends-member:
 - ["So15NSManagedObjectC", "Trip"]
 - ["So15NSManagedObjectC", "addToTravellers"]
 - ["So15NSManagedObjectC", "fetchRequest"]
+- ["So15NSManagedObjectC", "imageData"]
 - ["So15NSManagedObjectC", "nameTrip"]
 - ["So15NSManagedObjectC", "removeFromTravellers"]
 - ["So15NSManagedObjectC", "travellers"]
+- ["So8NSObjectC", "Data"]
 - ["So8NSObjectC", "NSFetchRequest"]
 - ["So8NSObjectC", "NSSet"]
 - ["So8NSObjectC", "String"]
@@ -83,6 +89,7 @@ depends-member:
 - ["So8NSObjectC", "Trip"]
 - ["So8NSObjectC", "addToTravellers"]
 - ["So8NSObjectC", "fetchRequest"]
+- ["So8NSObjectC", "imageData"]
 - !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "nameTrip"]
 - ["So8NSObjectC", "removeFromTravellers"]
@@ -102,6 +109,7 @@ depends-member:
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- ["18AccountingTogether4TripC", "Data"]
 - ["18AccountingTogether4TripC", "NSFetchRequest"]
 - ["18AccountingTogether4TripC", "NSSet"]
 - ["18AccountingTogether4TripC", "String"]
@@ -110,6 +118,7 @@ depends-member:
 - ["18AccountingTogether4TripC", "addToTravellers"]
 - ["18AccountingTogether4TripC", "deinit"]
 - ["18AccountingTogether4TripC", "fetchRequest"]
+- ["18AccountingTogether4TripC", "imageData"]
 - ["18AccountingTogether4TripC", "nameTrip"]
 - ["18AccountingTogether4TripC", "removeFromTravellers"]
 - ["18AccountingTogether4TripC", "travellers"]
@@ -211,4 +220,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ccab6184d7a70f59daae09c8ae3c0089"
+interface-hash: "0295cbd4a859a7349c3cdb18f1e51911"

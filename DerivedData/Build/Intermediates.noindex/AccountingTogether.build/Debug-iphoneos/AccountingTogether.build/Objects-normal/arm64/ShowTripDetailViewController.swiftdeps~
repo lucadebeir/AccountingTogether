@@ -105,7 +105,6 @@ depends-member:
 - !private ["Sq", "text"]
 - ["18AccountingTogether28ShowTripDetailViewControllerC", "Trip"]
 - ["18AccountingTogether28ShowTripDetailViewControllerC", "UILabel"]
-- ["18AccountingTogether28ShowTripDetailViewControllerC", "deinit"]
 - ["18AccountingTogether28ShowTripDetailViewControllerC", "didReceiveMemoryWarning"]
 - ["18AccountingTogether28ShowTripDetailViewControllerC", "init"]
 - ["18AccountingTogether28ShowTripDetailViewControllerC", "nameTripLabel"]

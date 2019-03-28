@@ -29,7 +29,7 @@ class AddTripViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         imagePicker.delegate = self
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
-        
+                
     }
     
     override func didReceiveMemoryWarning() {
@@ -118,3 +118,4 @@ class AddTripViewController: UIViewController, UITextFieldDelegate, UIImagePicke
     }
     
 }
+
