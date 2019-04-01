@@ -10,15 +10,15 @@ import UIKit
 
 class TripViewController: UIViewController {
     
-    var tripTableVC: TripTableViewController!
+    var tripCollectionVC: TripCollectionViewController!
     
     var tripSelected: Trip?
     
-    @IBOutlet weak var trip: UITableView!
+    @IBOutlet weak var trip: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tripTableVC = TripTableViewController(tableView: self.trip, viewController: self)
+        self.tripCollectionVC = TripCollectionViewController(collectionView: self.trip, viewController: self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,7 +31,7 @@ class TripViewController: UIViewController {
         if (segue.identifier == "addTrip") {
             let embedTripController = segue.source as! EmbedTripViewController
             if let trip = embedTripController.newTrip {
-                self.tripTableVC.tripSetViewModel.add(trip: trip)
+                self.tripCollectionVC.tripSetViewModel.add(trip: trip)
                 CoreDataManager.save()
             }
         }
@@ -62,13 +62,13 @@ class TripViewController: UIViewController {
         if(segue.identifier == "showTrip"){
             
             if let destination = segue.destination as? ShowTripDetailViewController {
-                if let cell = sender as? UITableViewCell{
+                if let cell = sender as? UICollectionViewCell{
                     
-                    guard let indexPath = self.tripTableVC.tableView.indexPath(for: cell) else{
+                    guard let indexPath = self.tripCollectionVC.collectionView.indexPath(for: cell) else{
                         return
                     }
                     
-                    guard let trip = self.tripTableVC.tripSetViewModel.get(tripAt: indexPath.row) else{
+                    guard let trip = self.tripCollectionVC.tripSetViewModel.get(tripAt: indexPath.row) else{
                         fatalError("no travel found at this index")
                     }
                     destination.tripSelected = trip
@@ -87,13 +87,13 @@ class TripViewController: UIViewController {
         }
         else if (segue.identifier == "edit"){
             if let destination = segue.destination as? EditTripViewController {
-                if let cell = sender as? UITableViewCell {
+                if let cell = sender as? UICollectionViewCell {
                     
-                    guard let indexPath = self.tripTableVC.tableView.indexPath(for: cell) else{
+                    guard let indexPath = self.tripCollectionVC.collectionView.indexPath(for: cell) else{
                         return
                     }
                     
-                    guard let trip = self.tripTableVC.tripSetViewModel.get(tripAt: indexPath.row) else{
+                    guard let trip = self.tripCollectionVC.tripSetViewModel.get(tripAt: indexPath.row) else{
                         fatalError("no travel found at this index")
                     }
                     destination.tripToEdit = trip

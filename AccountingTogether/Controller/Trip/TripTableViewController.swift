@@ -9,23 +9,24 @@
 import UIKit
 import CoreData
 
-class TripTableViewController: NSObject, UITableViewDataSource, UITableViewDelegate, TripSetViewModelDelegate {
+class TripCollectionViewController: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, TripSetViewModelDelegate {
     
-    var tableView: UITableView!
+    
+    var collectionView: UICollectionView!
     var controllerVC: TripViewController!
     var tripSetViewModel: TripSetViewModel
     
-    init(tableView: UITableView, viewController: TripViewController) {
+    init(collectionView: UICollectionView, viewController: TripViewController) {
         
         self.tripSetViewModel = TripSetViewModel()
-        self.tableView = tableView
+        self.collectionView = collectionView
         self.controllerVC = viewController
         
         super.init()
         
         self.tripSetViewModel.delegate = self
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
     }
     
     func dataSetChanged() {
@@ -33,9 +34,9 @@ class TripTableViewController: NSObject, UITableViewDataSource, UITableViewDeleg
     }
     
     func tripDeleted(at indexPath: IndexPath) {
-        self.tableView.beginUpdates()
-        self.tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.middle)
-        self.tableView.endUpdates()
+        self.collectionView.beginInteractiveMovementForItem(at: indexPath)
+        self.collectionView.deleteItems(at: [indexPath])
+        self.collectionView.endInteractiveMovement()
     }
     
     func tripUpdated(at indexPath: IndexPath) {
@@ -43,23 +44,21 @@ class TripTableViewController: NSObject, UITableViewDataSource, UITableViewDeleg
     }
     
     func tripAdded(at indexPath: IndexPath) {
-        self.tableView.beginUpdates()
-        self.tableView.insertRows(at: [indexPath], with: UITableView.RowAnimation.middle)
-        self.tableView.endUpdates()
-        print("yoyo")
-        
+        self.collectionView.beginInteractiveMovementForItem(at: indexPath)
+        self.collectionView.insertItems(at: [indexPath])
+        self.collectionView.endInteractiveMovement()
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UICollectionView) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.tripSetViewModel.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellT", for: indexPath) as! TripCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellT", for: indexPath) as! TripCell
         guard let trip = self.tripSetViewModel.get(tripAt: indexPath.row) else{
             fatalError("no travel found at this index")
         }
@@ -68,16 +67,16 @@ class TripTableViewController: NSObject, UITableViewDataSource, UITableViewDeleg
         return cell
     }
     
-    func deleteHandlerAction(action: UITableViewRowAction,indexPath: IndexPath) -> Void {
+    func deleteHandlerAction(action: UICollectionViewDropItem,indexPath: IndexPath) -> Void {
         self.tripSetViewModel.delete(tripAt: indexPath.row)
     }
     
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    func collectionView(_ collectionView: UICollectionView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
-    private func tableView(_ tableView: UITableView, commit: UITableViewCell, forRowAt indexPath: IndexPath) {
-        tableView.delete(commit)
+    private func collectionView(_ collectionView: UICollectionView, commit: UICollectionViewCell, forRowAt indexPath: IndexPath) {
+        collectionView.delete(commit)
         tripDeleted(at: indexPath)
     }
     
