@@ -740,6 +740,7 @@ depends-member:
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["18AccountingTogether4TripC", "deinit"]
 - !private ["18AccountingTogether4TripC", "delete"]
 - !private ["18AccountingTogether4TripC", "getAll"]
 - !private ["18AccountingTogether4TripC", "nameTrip"]

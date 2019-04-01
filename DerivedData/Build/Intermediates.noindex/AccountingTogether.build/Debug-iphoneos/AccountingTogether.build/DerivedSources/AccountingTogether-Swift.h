@@ -186,6 +186,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UITextField;
+@class UIPickerView;
 @class NSBundle;
 @class NSCoder;
 
@@ -193,6 +194,8 @@ SWIFT_CLASS("_TtC18AccountingTogether24AddExpenseViewController")
 @interface AddExpenseViewController : UIViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTF;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified priceTF;
+@property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified pickerViewPaidBy;
+@property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified pickerViewPaidFor;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)addExpense:(id _Nonnull)sender;
@@ -239,7 +242,6 @@ SWIFT_CLASS("_TtC18AccountingTogether21AddTripViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imgView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (IBAction)addTrip:(id _Nonnull)sender;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)btnSetProfileImageClickedCamera:(UIButton * _Nonnull)sender;
 - (IBAction)btnSetProfileImageClickedFromGallery:(UIButton * _Nonnull)sender;
@@ -265,18 +267,11 @@ SWIFT_CLASS("_TtC18AccountingTogether11AppDelegate")
 @end
 
 
-SWIFT_CLASS("_TtC18AccountingTogether15CoreDataManager")
-@interface CoreDataManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC18AccountingTogether22EditTripViewController")
 @interface EditTripViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTrip;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (IBAction)editTrip:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -305,6 +300,7 @@ SWIFT_CLASS_NAMED("Expense")
 SWIFT_CLASS("_TtC18AccountingTogether20ExpenseTableViewCell")
 @interface ExpenseTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameExpense;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified amountExpense;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -449,23 +445,6 @@ SWIFT_CLASS("_TtC18AccountingTogether28ShowTripDetailViewController")
 @end
 
 
-SWIFT_CLASS("_TtC18AccountingTogether22ShowTripViewController")
-@interface ShowTripViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified trip;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)commit forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (IBAction)uwindToListTripWithSegue:(UIStoryboardSegue * _Nonnull)segue;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS_NAMED("Thumbnail")
 @interface Thumbnail : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -487,20 +466,18 @@ SWIFT_CLASS_NAMED("Traveller")
 @class NSSet;
 
 @interface Traveller (SWIFT_EXTENSION(AccountingTogether))
-- (void)addBePaidObject:(Expense * _Nonnull)value;
-- (void)removeBePaidObject:(Expense * _Nonnull)value;
-- (void)addBePaid:(NSSet * _Nonnull)values;
-- (void)removeBePaid:(NSSet * _Nonnull)values;
-@end
-
-
-
-
-@interface Traveller (SWIFT_EXTENSION(AccountingTogether))
 - (void)addPayeObject:(Expense * _Nonnull)value;
 - (void)removePayeObject:(Expense * _Nonnull)value;
 - (void)addPaye:(NSSet * _Nonnull)values;
 - (void)removePaye:(NSSet * _Nonnull)values;
+@end
+
+
+@interface Traveller (SWIFT_EXTENSION(AccountingTogether))
+- (void)addBePaidObject:(Expense * _Nonnull)value;
+- (void)removeBePaidObject:(Expense * _Nonnull)value;
+- (void)addBePaid:(NSSet * _Nonnull)values;
+- (void)removeBePaid:(NSSet * _Nonnull)values;
 @end
 
 
@@ -519,6 +496,8 @@ SWIFT_CLASS_NAMED("Traveller")
 - (void)removeGetARefund:(NSSet * _Nonnull)values;
 @end
 
+
+
 @class Trip;
 
 @interface Traveller (SWIFT_EXTENSION(AccountingTogether))
@@ -527,9 +506,9 @@ SWIFT_CLASS_NAMED("Traveller")
 @property (nonatomic, copy) NSString * _Nullable lastNameTraveller;
 @property (nonatomic, strong) NSSet * _Nullable bePaid;
 @property (nonatomic, strong) NSSet * _Nullable getARefund;
+@property (nonatomic, strong) Trip * _Nullable participates;
 @property (nonatomic, strong) NSSet * _Nullable paye;
 @property (nonatomic, strong) NSSet * _Nullable refund;
-@property (nonatomic, strong) Trip * _Nullable trip;
 @end
 
 
@@ -550,20 +529,22 @@ SWIFT_CLASS_NAMED("Trip")
 @end
 
 
-
-
 @interface Trip (SWIFT_EXTENSION(AccountingTogether))
-- (void)addTravellersObject:(Traveller * _Nonnull)value;
-- (void)removeTravellersObject:(Traveller * _Nonnull)value;
-- (void)addTravellers:(NSSet * _Nonnull)values;
-- (void)removeTravellers:(NSSet * _Nonnull)values;
+- (void)addIsComposedByObject:(Traveller * _Nonnull)value;
+- (void)removeIsComposedByObject:(Traveller * _Nonnull)value;
+- (void)addIsComposedBy:(NSSet * _Nonnull)values;
+- (void)removeIsComposedBy:(NSSet * _Nonnull)values;
 @end
 
 
+
+
 @interface Trip (SWIFT_EXTENSION(AccountingTogether))
-@property (nonatomic, copy) NSData * _Nullable imageData;
+@property (nonatomic, copy) NSDate * _Nullable dateBeginTrip;
+@property (nonatomic, copy) NSDate * _Nullable dateEndTrip;
+@property (nonatomic, copy) NSData * _Nullable imageTrip;
 @property (nonatomic, copy) NSString * _Nullable nameTrip;
-@property (nonatomic, strong) NSSet * _Nullable travellers;
+@property (nonatomic, strong) NSSet * _Nullable isComposedBy;
 @end
 
 
@@ -575,6 +556,17 @@ SWIFT_CLASS("_TtC18AccountingTogether8TripCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UICollectionView;
+
+SWIFT_CLASS("_TtC18AccountingTogether28TripCollectionViewController")
+@interface TripCollectionViewController : NSObject <UICollectionViewDataSource, UICollectionViewDelegate>
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC18AccountingTogether17TripTableViewCell")
 @interface TripTableViewCell : UITableViewCell
@@ -584,14 +576,11 @@ SWIFT_CLASS("_TtC18AccountingTogether17TripTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UICollectionView;
 
 SWIFT_CLASS("_TtC18AccountingTogether18TripViewController")
-@interface TripViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface TripViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified trip;
 - (void)viewDidLoad;
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)didReceiveMemoryWarning;
 - (IBAction)uwindToListTripWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;

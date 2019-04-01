@@ -8,36 +8,15 @@
 
 import UIKit
 
-class EditTripViewController: UIViewController {
+class EditTripViewController: TripViewController {
     
-    var trip: Trip? = nil
+    var tripToEdit: Trip?
     
-    
-    @IBOutlet weak var nameTrip: UITextField!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.nameTrip.text = trip?.nameTrip
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func editTrip(_ sender: Any) {
-        let inputs: [String:UITextField] = ["name": nameTrip]
-        if FormValidatorHelper.validateForm(inputs){
-            do{
-                try trip?.edit(withName: nameTrip.text!)
-                DialogBoxHelper.alert(view: self, WithTitle: "Edition du contact", andMessage: "La mise à jours du contact est effectuée", closure: {(action) in
-                    self.performSegue(withIdentifier: "editPerson", sender: self)
-                })
-            }catch{
-                DialogBoxHelper.alert(view: self, errorMessage: "Erreur lors de l'ajout du contact professionnel")
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "embedEditTrip"{
+            if let embedController = segue.destination as? EmbedTripViewController{
+                embedController.newTrip = self.tripToEdit
             }
-        }else{
-            DialogBoxHelper.alert(view: self, errorMessage: "Formulaire invalide")
         }
     }
     

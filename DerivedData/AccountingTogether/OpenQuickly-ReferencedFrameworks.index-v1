@@ -3,9 +3,9 @@
 <plist version="1.0">
 <array>
 	<string>XCTest</string>
-	<string>UserNotifications</string>
 	<string>AccountingTogether</string>
 	<string>Photos</string>
+	<string>UserNotifications</string>
 	<string>CoreData</string>
 	<string>UIKit</string>
 	<string>Foundation</string>

@@ -58,7 +58,6 @@ depends-member:
 - ["18AccountingTogether19FormValidatorHelperC", "Bool"]
 - ["18AccountingTogether19FormValidatorHelperC", "String"]
 - ["18AccountingTogether19FormValidatorHelperC", "UITextField"]
-- ["18AccountingTogether19FormValidatorHelperC", "deinit"]
 - ["18AccountingTogether19FormValidatorHelperC", "init"]
 - ["18AccountingTogether19FormValidatorHelperC", "validateForm"]
 - !private ["SH", "count"]

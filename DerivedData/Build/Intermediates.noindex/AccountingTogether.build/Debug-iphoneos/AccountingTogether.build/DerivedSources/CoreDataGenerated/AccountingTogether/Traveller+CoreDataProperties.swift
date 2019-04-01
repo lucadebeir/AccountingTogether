@@ -2,7 +2,7 @@
 //  Traveller+CoreDataProperties.swift
 //  
 //
-//  Created by Luca Debeir on 28/03/2019.
+//  Created by Luca Debeir on 31/03/2019.
 //
 //  This file was automatically generated and should not be edited.
 //
@@ -22,9 +22,9 @@ extension Traveller {
     @NSManaged public var lastNameTraveller: String?
     @NSManaged public var bePaid: NSSet?
     @NSManaged public var getARefund: NSSet?
+    @NSManaged public var participates: Trip?
     @NSManaged public var paye: NSSet?
     @NSManaged public var refund: NSSet?
-    @NSManaged public var trip: Trip?
 
 }
 

@@ -51,6 +51,8 @@ class ShowExpensesViewController: UIViewController, UITableViewDataSource, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellExpense", for: indexPath) as! ExpenseTableViewCell
         
         cell.nameExpense.text = "\(String(describing: listExpense![indexPath.row].nameExpense!))"
+        cell.amountExpense.text = listExpense![indexPath.row].amountExpense.description
+        
         return cell
     }
     

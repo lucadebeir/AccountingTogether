@@ -12,6 +12,8 @@ import UIKit
 class ExpenseTableViewCell: UITableViewCell {
     
     @IBOutlet weak var nameExpense: UILabel!
+    @IBOutlet weak var amountExpense: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

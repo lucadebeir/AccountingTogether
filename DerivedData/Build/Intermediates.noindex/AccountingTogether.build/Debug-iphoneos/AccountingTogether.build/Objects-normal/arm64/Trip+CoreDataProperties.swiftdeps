@@ -4,21 +4,26 @@ provides-nominal:
 provides-member:
 - ["18AccountingTogether4TripC", ""]
 - ["18AccountingTogether4TripC", "fetchRequest"]
-- ["18AccountingTogether4TripC", "imageData"]
+- ["18AccountingTogether4TripC", "dateBeginTrip"]
+- ["18AccountingTogether4TripC", "dateEndTrip"]
+- ["18AccountingTogether4TripC", "imageTrip"]
 - ["18AccountingTogether4TripC", "nameTrip"]
-- ["18AccountingTogether4TripC", "travellers"]
-- ["18AccountingTogether4TripC", "addToTravellers"]
-- ["18AccountingTogether4TripC", "removeFromTravellers"]
-- ["18AccountingTogether4TripC", "addToTravellers"]
-- ["18AccountingTogether4TripC", "removeFromTravellers"]
+- ["18AccountingTogether4TripC", "isComposedBy"]
+- ["18AccountingTogether4TripC", "addToIsComposedBy"]
+- ["18AccountingTogether4TripC", "removeFromIsComposedBy"]
+- ["18AccountingTogether4TripC", "addToIsComposedBy"]
+- ["18AccountingTogether4TripC", "removeFromIsComposedBy"]
 provides-dynamic-lookup:
-- "addToTravellers"
-- "imageData"
+- "addToIsComposedBy"
+- "dateBeginTrip"
+- "dateEndTrip"
+- "imageTrip"
+- "isComposedBy"
 - "nameTrip"
-- "removeFromTravellers"
-- "travellers"
+- "removeFromIsComposedBy"
 depends-top-level:
 - "Data"
+- "Date"
 - "NSFetchRequest"
 - "NSSet"
 - "String"
@@ -70,30 +75,36 @@ depends-member:
 - !private ["So14NSFetchRequestC", "init"]
 - !private ["So20NSFetchRequestResultP", "NSFetchRequest"]
 - ["So15NSManagedObjectC", "Data"]
+- ["So15NSManagedObjectC", "Date"]
 - ["So15NSManagedObjectC", "NSFetchRequest"]
 - ["So15NSManagedObjectC", "NSSet"]
 - ["So15NSManagedObjectC", "String"]
 - ["So15NSManagedObjectC", "Traveller"]
 - ["So15NSManagedObjectC", "Trip"]
-- ["So15NSManagedObjectC", "addToTravellers"]
+- ["So15NSManagedObjectC", "addToIsComposedBy"]
+- ["So15NSManagedObjectC", "dateBeginTrip"]
+- ["So15NSManagedObjectC", "dateEndTrip"]
 - ["So15NSManagedObjectC", "fetchRequest"]
-- ["So15NSManagedObjectC", "imageData"]
+- ["So15NSManagedObjectC", "imageTrip"]
+- ["So15NSManagedObjectC", "isComposedBy"]
 - ["So15NSManagedObjectC", "nameTrip"]
-- ["So15NSManagedObjectC", "removeFromTravellers"]
-- ["So15NSManagedObjectC", "travellers"]
+- ["So15NSManagedObjectC", "removeFromIsComposedBy"]
 - ["So8NSObjectC", "Data"]
+- ["So8NSObjectC", "Date"]
 - ["So8NSObjectC", "NSFetchRequest"]
 - ["So8NSObjectC", "NSSet"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "Traveller"]
 - ["So8NSObjectC", "Trip"]
-- ["So8NSObjectC", "addToTravellers"]
+- ["So8NSObjectC", "addToIsComposedBy"]
+- ["So8NSObjectC", "dateBeginTrip"]
+- ["So8NSObjectC", "dateEndTrip"]
 - ["So8NSObjectC", "fetchRequest"]
-- ["So8NSObjectC", "imageData"]
+- ["So8NSObjectC", "imageTrip"]
 - !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "isComposedBy"]
 - ["So8NSObjectC", "nameTrip"]
-- ["So8NSObjectC", "removeFromTravellers"]
-- ["So8NSObjectC", "travellers"]
+- ["So8NSObjectC", "removeFromIsComposedBy"]
 - !private ["So8NSObjectP", "NSFetchRequest"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So24NSPersistentStoreRequestC", "init"]
@@ -110,18 +121,21 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - ["18AccountingTogether4TripC", "Data"]
+- ["18AccountingTogether4TripC", "Date"]
 - ["18AccountingTogether4TripC", "NSFetchRequest"]
 - ["18AccountingTogether4TripC", "NSSet"]
 - ["18AccountingTogether4TripC", "String"]
 - ["18AccountingTogether4TripC", "Traveller"]
 - ["18AccountingTogether4TripC", "Trip"]
-- ["18AccountingTogether4TripC", "addToTravellers"]
+- ["18AccountingTogether4TripC", "addToIsComposedBy"]
+- ["18AccountingTogether4TripC", "dateBeginTrip"]
+- ["18AccountingTogether4TripC", "dateEndTrip"]
 - ["18AccountingTogether4TripC", "deinit"]
 - ["18AccountingTogether4TripC", "fetchRequest"]
-- ["18AccountingTogether4TripC", "imageData"]
+- ["18AccountingTogether4TripC", "imageTrip"]
+- ["18AccountingTogether4TripC", "isComposedBy"]
 - ["18AccountingTogether4TripC", "nameTrip"]
-- ["18AccountingTogether4TripC", "removeFromTravellers"]
-- ["18AccountingTogether4TripC", "travellers"]
+- ["18AccountingTogether4TripC", "removeFromIsComposedBy"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -220,4 +234,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "0295cbd4a859a7349c3cdb18f1e51911"
+interface-hash: "b2a9a3538d8e72a929e74889b2f80071"

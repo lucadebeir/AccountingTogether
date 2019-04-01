@@ -9,21 +9,41 @@
 import CoreData
 import UIKit
 
-class CoreDataManager : NSObject{
-    /// Contexte de l'application
-    static var context : NSManagedObjectContext {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            fatalError("Application failed")
+class CoreDataManager{
+    /// context manager
+    static let context : NSManagedObjectContext = {
+        guard let appDelegate  = UIApplication.shared.delegate as? AppDelegate else {
+            print("no context")
+            exit(EXIT_FAILURE)
         }
         return appDelegate.persistentContainer.viewContext
+    }()
+    
+    
+    /// return entity description from context
+    ///
+    /// - Parameter name: name of the entity
+    /// - Returns: corresponding NSEntityDescription
+    class func entity(forName name: String) -> NSEntityDescription{
+        guard let entity=NSEntityDescription.entity(forEntityName: name, in: self.context) else{
+            fatalError("get entity \(name) description failed")
+        }
+        return entity
     }
     
-    /// Sauvegarder le contexte de l'application
-    class func save() throws {
-        do {
+    @discardableResult
+    /// save all data
+    ///
+    /// - Returns: NSError or nil if save successes
+    class func save() -> NSError?{
+        // try to save it
+        do{
             try CoreDataManager.context.save()
-        } catch let error as NSError {
-            throw error
+            return nil
+        }
+        catch let error as NSError{
+            return error
         }
     }
+    
 }

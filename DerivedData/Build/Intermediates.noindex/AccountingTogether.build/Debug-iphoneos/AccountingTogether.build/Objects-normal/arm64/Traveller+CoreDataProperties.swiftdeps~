@@ -9,9 +9,9 @@ provides-member:
 - ["18AccountingTogether9TravellerC", "lastNameTraveller"]
 - ["18AccountingTogether9TravellerC", "bePaid"]
 - ["18AccountingTogether9TravellerC", "getARefund"]
+- ["18AccountingTogether9TravellerC", "participates"]
 - ["18AccountingTogether9TravellerC", "paye"]
 - ["18AccountingTogether9TravellerC", "refund"]
-- ["18AccountingTogether9TravellerC", "trip"]
 - ["18AccountingTogether9TravellerC", "addToBePaid"]
 - ["18AccountingTogether9TravellerC", "removeFromBePaid"]
 - ["18AccountingTogether9TravellerC", "addToBePaid"]
@@ -38,13 +38,13 @@ provides-dynamic-lookup:
 - "firstNameTraveller"
 - "getARefund"
 - "lastNameTraveller"
+- "participates"
 - "paye"
 - "refund"
 - "removeFromBePaid"
 - "removeFromGetARefund"
 - "removeFromPaye"
 - "removeFromRefund"
-- "trip"
 depends-top-level:
 - "Date"
 - "Expense"
@@ -117,13 +117,13 @@ depends-member:
 - ["So15NSManagedObjectC", "firstNameTraveller"]
 - ["So15NSManagedObjectC", "getARefund"]
 - ["So15NSManagedObjectC", "lastNameTraveller"]
+- ["So15NSManagedObjectC", "participates"]
 - ["So15NSManagedObjectC", "paye"]
 - ["So15NSManagedObjectC", "refund"]
 - ["So15NSManagedObjectC", "removeFromBePaid"]
 - ["So15NSManagedObjectC", "removeFromGetARefund"]
 - ["So15NSManagedObjectC", "removeFromPaye"]
 - ["So15NSManagedObjectC", "removeFromRefund"]
-- ["So15NSManagedObjectC", "trip"]
 - ["So8NSObjectC", "Date"]
 - ["So8NSObjectC", "Expense"]
 - ["So8NSObjectC", "NSFetchRequest"]
@@ -143,13 +143,13 @@ depends-member:
 - ["So8NSObjectC", "getARefund"]
 - !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "lastNameTraveller"]
+- ["So8NSObjectC", "participates"]
 - ["So8NSObjectC", "paye"]
 - ["So8NSObjectC", "refund"]
 - ["So8NSObjectC", "removeFromBePaid"]
 - ["So8NSObjectC", "removeFromGetARefund"]
 - ["So8NSObjectC", "removeFromPaye"]
 - ["So8NSObjectC", "removeFromRefund"]
-- ["So8NSObjectC", "trip"]
 - !private ["So8NSObjectP", "NSFetchRequest"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So24NSPersistentStoreRequestC", "init"]
@@ -184,13 +184,13 @@ depends-member:
 - ["18AccountingTogether9TravellerC", "firstNameTraveller"]
 - ["18AccountingTogether9TravellerC", "getARefund"]
 - ["18AccountingTogether9TravellerC", "lastNameTraveller"]
+- ["18AccountingTogether9TravellerC", "participates"]
 - ["18AccountingTogether9TravellerC", "paye"]
 - ["18AccountingTogether9TravellerC", "refund"]
 - ["18AccountingTogether9TravellerC", "removeFromBePaid"]
 - ["18AccountingTogether9TravellerC", "removeFromGetARefund"]
 - ["18AccountingTogether9TravellerC", "removeFromPaye"]
 - ["18AccountingTogether9TravellerC", "removeFromRefund"]
-- ["18AccountingTogether9TravellerC", "trip"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -289,4 +289,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "bbd6c03c596dc8f5d62606f13a189f19"
+interface-hash: "94e45481a33be31579613f3674941fb2"

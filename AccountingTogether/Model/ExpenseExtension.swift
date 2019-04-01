@@ -22,12 +22,13 @@ extension Expense {
         }
     }
     
-    static func create(withName: String) throws -> Expense {
+    static func create(withName: String, withAmount: Double) throws -> Expense {
         
         let expense = Expense(context: CoreDataManager.context)
         
         /// nom du contactPerso
         expense.nameExpense = withName
+        expense.amountExpense = withAmount
         do{
             try CoreDataManager.save()
         }catch let error as NSError{

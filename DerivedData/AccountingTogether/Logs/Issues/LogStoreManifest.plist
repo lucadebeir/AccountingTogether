@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>C8CA50C5-8437-4401-8E5C-2AFE5CA91730</key>
+		<key>71252697-CDC0-4B6A-8506-8B2CF0865FE7</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,19 +15,19 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>C8CA50C5-8437-4401-8E5C-2AFE5CA91730.xcactivitylog</string>
+			<string>71252697-CDC0-4B6A-8506-8B2CF0865FE7.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>signature</key>
 			<string>AccountingTogether-fxcecomdltfvqrdqpwkbsnapceie</string>
 			<key>timeStartedRecording</key>
-			<real>575470691.70176899</real>
+			<real>575723498.88964605</real>
 			<key>timeStoppedRecording</key>
-			<real>575470714.99249995</real>
+			<real>575723512.45177901</real>
 			<key>title</key>
 			<string>Build target AccountingTogether</string>
 			<key>uniqueIdentifier</key>
-			<string>C8CA50C5-8437-4401-8E5C-2AFE5CA91730</string>
+			<string>71252697-CDC0-4B6A-8506-8B2CF0865FE7</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

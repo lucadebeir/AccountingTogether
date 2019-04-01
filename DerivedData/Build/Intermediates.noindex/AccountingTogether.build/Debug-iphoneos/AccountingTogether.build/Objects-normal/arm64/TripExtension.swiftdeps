@@ -19,6 +19,7 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "Trip"
+- "UIImage"
 depends-member:
 - !private ["SK", "init"]
 - !private ["SK", "init"]
@@ -29,9 +30,11 @@ depends-member:
 - !private ["s7CVarArgP", "delete"]
 - !private ["s7CVarArgP", "fetch"]
 - !private ["s7CVarArgP", "fetchRequest"]
+- !private ["s7CVarArgP", "imageTrip"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "nameTrip"]
+- !private ["s7CVarArgP", "pngData"]
 - !private ["s7CVarArgP", "save"]
 - !private ["s7CVarArgP", "sortDescriptors"]
 - !private ["Sl", "init"]
@@ -47,9 +50,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "delete"]
 - !private ["s28CustomDebugStringConvertibleP", "fetch"]
 - !private ["s28CustomDebugStringConvertibleP", "fetchRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "imageTrip"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "nameTrip"]
+- !private ["s28CustomDebugStringConvertibleP", "pngData"]
 - !private ["s28CustomDebugStringConvertibleP", "save"]
 - !private ["s28CustomDebugStringConvertibleP", "sortDescriptors"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -63,9 +68,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "delete"]
 - !private ["s23CustomStringConvertibleP", "fetch"]
 - !private ["s23CustomStringConvertibleP", "fetchRequest"]
+- !private ["s23CustomStringConvertibleP", "imageTrip"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "nameTrip"]
+- !private ["s23CustomStringConvertibleP", "pngData"]
 - !private ["s23CustomStringConvertibleP", "save"]
 - !private ["s23CustomStringConvertibleP", "sortDescriptors"]
 - !private ["Se", "init"]
@@ -79,9 +86,11 @@ depends-member:
 - !private ["SQ", "delete"]
 - !private ["SQ", "fetch"]
 - !private ["SQ", "fetchRequest"]
+- !private ["SQ", "imageTrip"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "nameTrip"]
+- !private ["SQ", "pngData"]
 - !private ["SQ", "save"]
 - !private ["SQ", "sortDescriptors"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -97,9 +106,11 @@ depends-member:
 - !private ["SH", "delete"]
 - !private ["SH", "fetch"]
 - !private ["SH", "fetchRequest"]
+- !private ["SH", "imageTrip"]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "nameTrip"]
+- !private ["SH", "pngData"]
 - !private ["SH", "save"]
 - !private ["SH", "sortDescriptors"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -109,6 +120,7 @@ depends-member:
 - !private ["So8NSCodingP", "delete"]
 - !private ["So8NSCodingP", "fetch"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "pngData"]
 - !private ["So8NSCodingP", "sortDescriptors"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "sortDescriptors"]
@@ -117,8 +129,11 @@ depends-member:
 - !private ["So20NSFetchRequestResultP", "NSSortDescriptor"]
 - !private ["So20NSFetchRequestResultP", "Trip"]
 - !private ["So20NSFetchRequestResultP", "fetchRequest"]
+- !private ["So20NSFetchRequestResultP", "imageTrip"]
 - !private ["So20NSFetchRequestResultP", "init"]
 - !private ["So20NSFetchRequestResultP", "nameTrip"]
+- !private ["So21NSItemProviderReadingP", "pngData"]
+- !private ["So21NSItemProviderWritingP", "pngData"]
 - !private ["So9NSLockingP", "delete"]
 - !private ["So9NSLockingP", "fetch"]
 - !private ["So15NSManagedObjectC", "CoreDataManager"]
@@ -127,11 +142,13 @@ depends-member:
 - !private ["So15NSManagedObjectC", "NSSortDescriptor"]
 - ["So15NSManagedObjectC", "String"]
 - ["So15NSManagedObjectC", "Trip"]
+- ["So15NSManagedObjectC", "UIImage"]
 - ["So15NSManagedObjectC", "create"]
 - ["So15NSManagedObjectC", "delete"]
 - ["So15NSManagedObjectC", "edit"]
 - !private ["So15NSManagedObjectC", "fetchRequest"]
 - ["So15NSManagedObjectC", "getAll"]
+- !private ["So15NSManagedObjectC", "imageTrip"]
 - !private ["So15NSManagedObjectC", "init"]
 - !private ["So15NSManagedObjectC", "nameTrip"]
 - !private ["So22NSManagedObjectContextC", "delete"]
@@ -142,6 +159,7 @@ depends-member:
 - !private ["So8NSObjectC", "NSSortDescriptor"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "Trip"]
+- ["So8NSObjectC", "UIImage"]
 - !private ["So8NSObjectC", "context"]
 - ["So8NSObjectC", "create"]
 - ["So8NSObjectC", "delete"]
@@ -149,8 +167,10 @@ depends-member:
 - !private ["So8NSObjectC", "fetch"]
 - !private ["So8NSObjectC", "fetchRequest"]
 - ["So8NSObjectC", "getAll"]
+- !private ["So8NSObjectC", "imageTrip"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "nameTrip"]
+- !private ["So8NSObjectC", "pngData"]
 - !private ["So8NSObjectC", "save"]
 - !private ["So8NSObjectC", "sortDescriptors"]
 - !private ["So8NSObjectP", "CoreDataManager"]
@@ -160,12 +180,15 @@ depends-member:
 - !private ["So8NSObjectP", "delete"]
 - !private ["So8NSObjectP", "fetch"]
 - !private ["So8NSObjectP", "fetchRequest"]
+- !private ["So8NSObjectP", "imageTrip"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "nameTrip"]
+- !private ["So8NSObjectP", "pngData"]
 - !private ["So8NSObjectP", "save"]
 - !private ["So8NSObjectP", "sortDescriptors"]
 - !private ["So24NSPersistentStoreRequestC", "sortDescriptors"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "pngData"]
 - !private ["So16NSSortDescriptorC", "init"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
@@ -185,14 +208,19 @@ depends-member:
 - !private ["18AccountingTogether4TripC", "NSSortDescriptor"]
 - ["18AccountingTogether4TripC", "String"]
 - ["18AccountingTogether4TripC", "Trip"]
+- ["18AccountingTogether4TripC", "UIImage"]
 - ["18AccountingTogether4TripC", "create"]
 - ["18AccountingTogether4TripC", "deinit"]
 - ["18AccountingTogether4TripC", "delete"]
 - ["18AccountingTogether4TripC", "edit"]
 - !private ["18AccountingTogether4TripC", "fetchRequest"]
 - ["18AccountingTogether4TripC", "getAll"]
+- !private ["18AccountingTogether4TripC", "imageTrip"]
 - !private ["18AccountingTogether4TripC", "init"]
 - !private ["18AccountingTogether4TripC", "nameTrip"]
+- !private ["So29UIAccessibilityIdentificationP", "pngData"]
+- !private ["So7UIImageC", "pngData"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "pngData"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -201,6 +229,7 @@ depends-member:
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "pngData"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CoreDataManager"]
@@ -210,8 +239,10 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delete"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fetch"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fetchRequest"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageTrip"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "nameTrip"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pngData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sortDescriptors"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -241,6 +272,8 @@ depends-nominal:
 - !private "So9NSCopyingP"
 - !private "So14NSFetchRequestC"
 - !private "So20NSFetchRequestResultP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
 - !private "So9NSLockingP"
 - "So15NSManagedObjectC"
 - !private "So22NSManagedObjectContextC"
@@ -256,10 +289,14 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - "18AccountingTogether4TripC"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
@@ -305,4 +342,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ddc65f659db2ae57cf8f3609d6aa4068"
+interface-hash: "47c8de799732b7871d8de75e8a6700a3"

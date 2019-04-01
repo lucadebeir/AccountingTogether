@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>02305C1E-B51F-4F4B-BA75-6393F8AF3393</key>
+		<key>42718700-FA10-4A90-B07A-BED4C75C39AC</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>02305C1E-B51F-4F4B-BA75-6393F8AF3393.xcactivitylog</string>
+			<string>42718700-FA10-4A90-B07A-BED4C75C39AC.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,15 +27,15 @@
 			<key>signature</key>
 			<string>Debug AccountingTogether</string>
 			<key>timeStartedRecording</key>
-			<real>575418738.816257</real>
+			<real>575723512.53569996</real>
 			<key>timeStoppedRecording</key>
-			<real>575424637.95845699</real>
+			<real>575723529.63288498</real>
 			<key>title</key>
 			<string>Debug AccountingTogether</string>
 			<key>uniqueIdentifier</key>
-			<string>02305C1E-B51F-4F4B-BA75-6393F8AF3393</string>
+			<string>42718700-FA10-4A90-B07A-BED4C75C39AC</string>
 		</dict>
-		<key>AF1D8F61-9D14-44E6-8242-A21F56029C28</key>
+		<key>86200CA8-1F9C-45CC-AB35-86120231997F</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -44,7 +44,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>AF1D8F61-9D14-44E6-8242-A21F56029C28.xcactivitylog</string>
+			<string>86200CA8-1F9C-45CC-AB35-86120231997F.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -56,13 +56,42 @@
 			<key>signature</key>
 			<string>Debug AccountingTogether</string>
 			<key>timeStartedRecording</key>
-			<real>575470715.13687098</real>
+			<real>575723530.40450597</real>
 			<key>timeStoppedRecording</key>
-			<real>575470834.67007303</real>
+			<real>575723559.05796099</real>
 			<key>title</key>
 			<string>Debug AccountingTogether</string>
 			<key>uniqueIdentifier</key>
-			<string>AF1D8F61-9D14-44E6-8242-A21F56029C28</string>
+			<string>86200CA8-1F9C-45CC-AB35-86120231997F</string>
+		</dict>
+		<key>E37D8878-4A27-48F9-B514-7452E1A7FAD3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E37D8878-4A27-48F9-B514-7452E1A7FAD3.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AccountingTogether project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AccountingTogether</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug AccountingTogether</string>
+			<key>timeStartedRecording</key>
+			<real>575482903.45304298</real>
+			<key>timeStoppedRecording</key>
+			<real>575482985.90033102</real>
+			<key>title</key>
+			<string>Debug AccountingTogether</string>
+			<key>uniqueIdentifier</key>
+			<string>E37D8878-4A27-48F9-B514-7452E1A7FAD3</string>
 		</dict>
 	</dict>
 </dict>

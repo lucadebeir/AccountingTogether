@@ -9,28 +9,40 @@ provides-dynamic-lookup:
 - "addExpense"
 - "didReceiveMemoryWarning"
 - "nameTF"
+- "pickerViewPaidBy"
+- "pickerViewPaidFor"
 - "priceTF"
 - "textFieldShouldReturn"
 - "viewDidLoad"
 depends-top-level:
+- !private "??"
 - "AddExpenseViewController"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - !private "DialogBoxHelper"
+- !private "Double"
 - "Expense"
+- !private "FloatLiteralType"
 - !private "FormValidatorHelper"
-- !private "String"
+- "Int"
+- "String"
 - !private "StringLiteralType"
+- "Traveller"
+- "UIPickerView"
 - "UITextField"
 - "UITextFieldDelegate"
 - "UIViewController"
 depends-member:
 - ["18AccountingTogether24AddExpenseViewControllerC", "Bool"]
 - !private ["18AccountingTogether24AddExpenseViewControllerC", "DialogBoxHelper"]
+- !private ["18AccountingTogether24AddExpenseViewControllerC", "Double"]
 - ["18AccountingTogether24AddExpenseViewControllerC", "Expense"]
 - !private ["18AccountingTogether24AddExpenseViewControllerC", "FormValidatorHelper"]
-- !private ["18AccountingTogether24AddExpenseViewControllerC", "String"]
+- ["18AccountingTogether24AddExpenseViewControllerC", "Int"]
+- ["18AccountingTogether24AddExpenseViewControllerC", "String"]
+- ["18AccountingTogether24AddExpenseViewControllerC", "Traveller"]
+- ["18AccountingTogether24AddExpenseViewControllerC", "UIPickerView"]
 - ["18AccountingTogether24AddExpenseViewControllerC", "UITextField"]
 - ["18AccountingTogether24AddExpenseViewControllerC", "addExpense"]
 - ["18AccountingTogether24AddExpenseViewControllerC", "deinit"]
@@ -39,6 +51,11 @@ depends-member:
 - ["18AccountingTogether24AddExpenseViewControllerC", "init"]
 - ["18AccountingTogether24AddExpenseViewControllerC", "nameTF"]
 - ["18AccountingTogether24AddExpenseViewControllerC", "newExpense"]
+- ["18AccountingTogether24AddExpenseViewControllerC", "pickerDataPaidBy"]
+- ["18AccountingTogether24AddExpenseViewControllerC", "pickerDataPaidFor"]
+- ["18AccountingTogether24AddExpenseViewControllerC", "pickerView"]
+- ["18AccountingTogether24AddExpenseViewControllerC", "pickerViewPaidBy"]
+- ["18AccountingTogether24AddExpenseViewControllerC", "pickerViewPaidFor"]
 - ["18AccountingTogether24AddExpenseViewControllerC", "priceTF"]
 - ["18AccountingTogether24AddExpenseViewControllerC", "textField"]
 - ["18AccountingTogether24AddExpenseViewControllerC", "textFieldDidBeginEditing"]
@@ -48,25 +65,45 @@ depends-member:
 - ["18AccountingTogether24AddExpenseViewControllerC", "textFieldShouldEndEditing"]
 - ["18AccountingTogether24AddExpenseViewControllerC", "textFieldShouldReturn"]
 - ["18AccountingTogether24AddExpenseViewControllerC", "viewDidLoad"]
+- !private ["Sa", "count"]
+- ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "firstNameTraveller"]
+- ["s13ArrayProtocolP", "init"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["s10ArraySliceV", "firstNameTraveller"]
+- !private ["SK", "count"]
+- !private ["SK", "firstNameTraveller"]
+- ["SK", "init"]
 - !private ["SK", "init"]
-- !private ["SK", "init"]
+- !private ["SK", "subscript"]
+- !private ["SB", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "resignFirstResponder"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["s7CVarArgP", "DialogBoxHelper"]
+- !private ["s7CVarArgP", "Double"]
 - !private ["s7CVarArgP", "Expense"]
 - !private ["s7CVarArgP", "FormValidatorHelper"]
+- ["s7CVarArgP", "String"]
+- ["s7CVarArgP", "Traveller"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "create"]
 - !private ["s7CVarArgP", "didReceiveMemoryWarning"]
 - !private ["s7CVarArgP", "dismiss"]
-- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "firstNameTraveller"]
+- !private ["s7CVarArgP", "getAll"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "nameTF"]
 - !private ["s7CVarArgP", "newExpense"]
+- !private ["s7CVarArgP", "pickerDataPaidBy"]
 - !private ["s7CVarArgP", "priceTF"]
 - !private ["s7CVarArgP", "resignFirstResponder"]
+- !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "text"]
 - ["s7CVarArgP", "textField"]
 - ["s7CVarArgP", "textFieldDidBeginEditing"]
@@ -76,23 +113,34 @@ depends-member:
 - ["s7CVarArgP", "textFieldShouldEndEditing"]
 - ["s7CVarArgP", "textFieldShouldReturn"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["Sl", "count"]
+- !private ["Sl", "firstNameTraveller"]
+- ["Sl", "init"]
 - !private ["Sl", "init"]
-- !private ["Sl", "init"]
+- !private ["Sl", "subscript"]
 - !private ["SL", "init"]
 - !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "DialogBoxHelper"]
+- !private ["s28CustomDebugStringConvertibleP", "Double"]
 - !private ["s28CustomDebugStringConvertibleP", "Expense"]
 - !private ["s28CustomDebugStringConvertibleP", "FormValidatorHelper"]
+- ["s28CustomDebugStringConvertibleP", "String"]
+- ["s28CustomDebugStringConvertibleP", "Traveller"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "create"]
 - !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "firstNameTraveller"]
+- !private ["s28CustomDebugStringConvertibleP", "getAll"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "nameTF"]
 - !private ["s28CustomDebugStringConvertibleP", "newExpense"]
+- !private ["s28CustomDebugStringConvertibleP", "pickerDataPaidBy"]
 - !private ["s28CustomDebugStringConvertibleP", "priceTF"]
 - !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - ["s28CustomDebugStringConvertibleP", "textField"]
 - ["s28CustomDebugStringConvertibleP", "textFieldDidBeginEditing"]
@@ -106,23 +154,34 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "firstNameTraveller"]
+- ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "DialogBoxHelper"]
+- !private ["s23CustomStringConvertibleP", "Double"]
 - !private ["s23CustomStringConvertibleP", "Expense"]
 - !private ["s23CustomStringConvertibleP", "FormValidatorHelper"]
+- ["s23CustomStringConvertibleP", "String"]
+- ["s23CustomStringConvertibleP", "Traveller"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "create"]
 - !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s23CustomStringConvertibleP", "dismiss"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "firstNameTraveller"]
+- !private ["s23CustomStringConvertibleP", "getAll"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "nameTF"]
 - !private ["s23CustomStringConvertibleP", "newExpense"]
+- !private ["s23CustomStringConvertibleP", "pickerDataPaidBy"]
 - !private ["s23CustomStringConvertibleP", "priceTF"]
 - !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - ["s23CustomStringConvertibleP", "textField"]
 - ["s23CustomStringConvertibleP", "textFieldDidBeginEditing"]
@@ -133,28 +192,41 @@ depends-member:
 - ["s23CustomStringConvertibleP", "textFieldShouldReturn"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "count"]
+- ["Se", "init"]
 - !private ["Se", "init"]
-- !private ["Se", "init"]
+- !private ["Se", "subscript"]
 - !private ["Se", "text"]
 - !private ["18AccountingTogether15DialogBoxHelperC", "alert"]
+- !private ["Sd", "init"]
 - !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "count"]
+- ["SE", "init"]
 - !private ["SE", "init"]
-- !private ["SE", "init"]
+- !private ["SE", "subscript"]
 - !private ["SE", "text"]
 - !private ["SQ", "DialogBoxHelper"]
+- !private ["SQ", "Double"]
 - !private ["SQ", "Expense"]
 - !private ["SQ", "FormValidatorHelper"]
+- ["SQ", "String"]
+- ["SQ", "Traveller"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "count"]
 - !private ["SQ", "create"]
 - !private ["SQ", "didReceiveMemoryWarning"]
 - !private ["SQ", "dismiss"]
-- !private ["SQ", "init"]
+- !private ["SQ", "firstNameTraveller"]
+- !private ["SQ", "getAll"]
+- ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "nameTF"]
 - !private ["SQ", "newExpense"]
+- !private ["SQ", "pickerDataPaidBy"]
 - !private ["SQ", "priceTF"]
 - !private ["SQ", "resignFirstResponder"]
+- !private ["SQ", "subscript"]
 - !private ["SQ", "text"]
 - ["SQ", "textField"]
 - ["SQ", "textFieldDidBeginEditing"]
@@ -165,29 +237,44 @@ depends-member:
 - ["SQ", "textFieldShouldReturn"]
 - !private ["SQ", "viewDidLoad"]
 - !private ["18AccountingTogether7ExpenseC", "create"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "firstNameTraveller"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SF", "init"]
 - !private ["18AccountingTogether19FormValidatorHelperC", "validateForm"]
 - !private ["SH", "DialogBoxHelper"]
+- !private ["SH", "Double"]
 - !private ["SH", "Expense"]
 - !private ["SH", "FormValidatorHelper"]
+- ["SH", "String"]
+- ["SH", "Traveller"]
 - ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "count"]
 - !private ["SH", "create"]
 - !private ["SH", "didReceiveMemoryWarning"]
 - !private ["SH", "dismiss"]
-- !private ["SH", "init"]
+- !private ["SH", "firstNameTraveller"]
+- !private ["SH", "getAll"]
+- ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "nameTF"]
 - !private ["SH", "newExpense"]
+- !private ["SH", "pickerDataPaidBy"]
 - !private ["SH", "priceTF"]
 - !private ["SH", "resignFirstResponder"]
+- !private ["SH", "subscript"]
 - !private ["SH", "text"]
 - ["SH", "textField"]
 - ["SH", "textFieldDidBeginEditing"]
@@ -202,9 +289,16 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["SM", "count"]
+- !private ["SM", "firstNameTraveller"]
+- ["SM", "init"]
+- !private ["SM", "subscript"]
 - !private ["So8NSCodingP", "DialogBoxHelper"]
+- !private ["So8NSCodingP", "Double"]
 - !private ["So8NSCodingP", "Expense"]
 - !private ["So8NSCodingP", "FormValidatorHelper"]
+- ["So8NSCodingP", "String"]
+- ["So8NSCodingP", "Traveller"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "dismiss"]
@@ -212,6 +306,7 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "nameTF"]
 - !private ["So8NSCodingP", "newExpense"]
+- !private ["So8NSCodingP", "pickerDataPaidBy"]
 - !private ["So8NSCodingP", "priceTF"]
 - !private ["So8NSCodingP", "resignFirstResponder"]
 - !private ["So8NSCodingP", "text"]
@@ -224,8 +319,11 @@ depends-member:
 - ["So8NSCodingP", "textFieldShouldReturn"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "DialogBoxHelper"]
+- !private ["So26NSExtensionRequestHandlingP", "Double"]
 - !private ["So26NSExtensionRequestHandlingP", "Expense"]
 - !private ["So26NSExtensionRequestHandlingP", "FormValidatorHelper"]
+- ["So26NSExtensionRequestHandlingP", "String"]
+- ["So26NSExtensionRequestHandlingP", "Traveller"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
@@ -233,6 +331,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "nameTF"]
 - !private ["So26NSExtensionRequestHandlingP", "newExpense"]
+- !private ["So26NSExtensionRequestHandlingP", "pickerDataPaidBy"]
 - !private ["So26NSExtensionRequestHandlingP", "priceTF"]
 - ["So26NSExtensionRequestHandlingP", "textField"]
 - ["So26NSExtensionRequestHandlingP", "textFieldDidBeginEditing"]
@@ -243,21 +342,36 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "textFieldShouldReturn"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So20NSFetchRequestResultP", "create"]
+- !private ["So20NSFetchRequestResultP", "firstNameTraveller"]
+- !private ["So20NSFetchRequestResultP", "getAll"]
 - !private ["So15NSManagedObjectC", "create"]
+- !private ["So15NSManagedObjectC", "firstNameTraveller"]
+- !private ["So15NSManagedObjectC", "getAll"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "DialogBoxHelper"]
+- !private ["So8NSObjectC", "Double"]
 - ["So8NSObjectC", "Expense"]
 - !private ["So8NSObjectC", "FormValidatorHelper"]
-- !private ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "Traveller"]
+- ["So8NSObjectC", "UIPickerView"]
 - ["So8NSObjectC", "UITextField"]
 - ["So8NSObjectC", "addExpense"]
 - !private ["So8NSObjectC", "create"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
 - !private ["So8NSObjectC", "dismiss"]
+- !private ["So8NSObjectC", "firstNameTraveller"]
+- !private ["So8NSObjectC", "getAll"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "nameTF"]
 - ["So8NSObjectC", "newExpense"]
+- ["So8NSObjectC", "pickerDataPaidBy"]
+- ["So8NSObjectC", "pickerDataPaidFor"]
+- ["So8NSObjectC", "pickerView"]
+- ["So8NSObjectC", "pickerViewPaidBy"]
+- ["So8NSObjectC", "pickerViewPaidFor"]
 - ["So8NSObjectC", "priceTF"]
 - !private ["So8NSObjectC", "resignFirstResponder"]
 - !private ["So8NSObjectC", "text"]
@@ -270,16 +384,22 @@ depends-member:
 - ["So8NSObjectC", "textFieldShouldReturn"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectP", "DialogBoxHelper"]
+- !private ["So8NSObjectP", "Double"]
 - !private ["So8NSObjectP", "Expense"]
 - !private ["So8NSObjectP", "FormValidatorHelper"]
+- ["So8NSObjectP", "String"]
+- ["So8NSObjectP", "Traveller"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "create"]
 - !private ["So8NSObjectP", "didReceiveMemoryWarning"]
 - !private ["So8NSObjectP", "dismiss"]
+- !private ["So8NSObjectP", "firstNameTraveller"]
+- !private ["So8NSObjectP", "getAll"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "nameTF"]
 - !private ["So8NSObjectP", "newExpense"]
+- !private ["So8NSObjectP", "pickerDataPaidBy"]
 - !private ["So8NSObjectP", "priceTF"]
 - !private ["So8NSObjectP", "resignFirstResponder"]
 - !private ["So8NSObjectP", "text"]
@@ -291,11 +411,24 @@ depends-member:
 - ["So8NSObjectP", "textFieldShouldEndEditing"]
 - ["So8NSObjectP", "textFieldShouldReturn"]
 - !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["Sj", "init"]
 - !private ["Sq", "text"]
+- !private ["Sk", "count"]
+- !private ["Sk", "firstNameTraveller"]
+- ["Sk", "init"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "count"]
+- !private ["Sm", "firstNameTraveller"]
+- ["Sm", "init"]
 - !private ["Sm", "init"]
-- !private ["Sm", "init"]
+- !private ["Sm", "subscript"]
+- !private ["ST", "count"]
+- !private ["ST", "firstNameTraveller"]
+- ["ST", "init"]
 - !private ["ST", "init"]
-- !private ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
 - !private ["SS", "init"]
 - !private ["SS", "init"]
 - !private ["Sy", "init"]
@@ -304,13 +437,18 @@ depends-member:
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["18AccountingTogether9TravellerC", "firstNameTraveller"]
+- !private ["18AccountingTogether9TravellerC", "getAll"]
 - !private ["So29UIAccessibilityIdentificationP", "resignFirstResponder"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So12UIAppearanceP", "resignFirstResponder"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "DialogBoxHelper"]
+- !private ["So21UIAppearanceContainerP", "Double"]
 - !private ["So21UIAppearanceContainerP", "Expense"]
 - !private ["So21UIAppearanceContainerP", "FormValidatorHelper"]
+- ["So21UIAppearanceContainerP", "String"]
+- ["So21UIAppearanceContainerP", "Traveller"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
@@ -318,6 +456,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "nameTF"]
 - !private ["So21UIAppearanceContainerP", "newExpense"]
+- !private ["So21UIAppearanceContainerP", "pickerDataPaidBy"]
 - !private ["So21UIAppearanceContainerP", "priceTF"]
 - !private ["So21UIAppearanceContainerP", "resignFirstResponder"]
 - !private ["So21UIAppearanceContainerP", "text"]
@@ -330,8 +469,11 @@ depends-member:
 - ["So21UIAppearanceContainerP", "textFieldShouldReturn"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So18UIContentContainerP", "DialogBoxHelper"]
+- !private ["So18UIContentContainerP", "Double"]
 - !private ["So18UIContentContainerP", "Expense"]
 - !private ["So18UIContentContainerP", "FormValidatorHelper"]
+- ["So18UIContentContainerP", "String"]
+- ["So18UIContentContainerP", "Traveller"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "dismiss"]
@@ -339,6 +481,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "nameTF"]
 - !private ["So18UIContentContainerP", "newExpense"]
+- !private ["So18UIContentContainerP", "pickerDataPaidBy"]
 - !private ["So18UIContentContainerP", "priceTF"]
 - ["So18UIContentContainerP", "textField"]
 - ["So18UIContentContainerP", "textFieldDidBeginEditing"]
@@ -357,8 +500,11 @@ depends-member:
 - !private ["So13UIDynamicItemP", "resignFirstResponder"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "DialogBoxHelper"]
+- !private ["So18UIFocusEnvironmentP", "Double"]
 - !private ["So18UIFocusEnvironmentP", "Expense"]
 - !private ["So18UIFocusEnvironmentP", "FormValidatorHelper"]
+- ["So18UIFocusEnvironmentP", "String"]
+- ["So18UIFocusEnvironmentP", "Traveller"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
@@ -366,6 +512,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "nameTF"]
 - !private ["So18UIFocusEnvironmentP", "newExpense"]
+- !private ["So18UIFocusEnvironmentP", "pickerDataPaidBy"]
 - !private ["So18UIFocusEnvironmentP", "priceTF"]
 - !private ["So18UIFocusEnvironmentP", "resignFirstResponder"]
 - !private ["So18UIFocusEnvironmentP", "text"]
@@ -384,8 +531,11 @@ depends-member:
 - !private ["So10UIKeyInputP", "resignFirstResponder"]
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "DialogBoxHelper"]
+- !private ["So30UIPasteConfigurationSupportingP", "Double"]
 - !private ["So30UIPasteConfigurationSupportingP", "Expense"]
 - !private ["So30UIPasteConfigurationSupportingP", "FormValidatorHelper"]
+- ["So30UIPasteConfigurationSupportingP", "String"]
+- ["So30UIPasteConfigurationSupportingP", "Traveller"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
@@ -393,6 +543,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "nameTF"]
 - !private ["So30UIPasteConfigurationSupportingP", "newExpense"]
+- !private ["So30UIPasteConfigurationSupportingP", "pickerDataPaidBy"]
 - !private ["So30UIPasteConfigurationSupportingP", "priceTF"]
 - !private ["So30UIPasteConfigurationSupportingP", "resignFirstResponder"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
@@ -406,9 +557,13 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "DialogBoxHelper"]
+- !private ["So11UIResponderC", "Double"]
 - ["So11UIResponderC", "Expense"]
 - !private ["So11UIResponderC", "FormValidatorHelper"]
-- !private ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "Traveller"]
+- ["So11UIResponderC", "UIPickerView"]
 - ["So11UIResponderC", "UITextField"]
 - ["So11UIResponderC", "addExpense"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
@@ -417,6 +572,11 @@ depends-member:
 - !private ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "nameTF"]
 - ["So11UIResponderC", "newExpense"]
+- ["So11UIResponderC", "pickerDataPaidBy"]
+- ["So11UIResponderC", "pickerDataPaidFor"]
+- ["So11UIResponderC", "pickerView"]
+- ["So11UIResponderC", "pickerViewPaidBy"]
+- ["So11UIResponderC", "pickerViewPaidFor"]
 - ["So11UIResponderC", "priceTF"]
 - !private ["So11UIResponderC", "resignFirstResponder"]
 - !private ["So11UIResponderC", "text"]
@@ -429,8 +589,11 @@ depends-member:
 - ["So11UIResponderC", "textFieldShouldReturn"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "DialogBoxHelper"]
+- !private ["So30UIResponderStandardEditActionsP", "Double"]
 - !private ["So30UIResponderStandardEditActionsP", "Expense"]
 - !private ["So30UIResponderStandardEditActionsP", "FormValidatorHelper"]
+- ["So30UIResponderStandardEditActionsP", "String"]
+- ["So30UIResponderStandardEditActionsP", "Traveller"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
@@ -438,6 +601,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "nameTF"]
 - !private ["So30UIResponderStandardEditActionsP", "newExpense"]
+- !private ["So30UIResponderStandardEditActionsP", "pickerDataPaidBy"]
 - !private ["So30UIResponderStandardEditActionsP", "priceTF"]
 - !private ["So30UIResponderStandardEditActionsP", "resignFirstResponder"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
@@ -450,8 +614,11 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "textFieldShouldReturn"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "DialogBoxHelper"]
+- !private ["So16UIStateRestoringP", "Double"]
 - !private ["So16UIStateRestoringP", "Expense"]
 - !private ["So16UIStateRestoringP", "FormValidatorHelper"]
+- ["So16UIStateRestoringP", "String"]
+- ["So16UIStateRestoringP", "Traveller"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "dismiss"]
@@ -459,6 +626,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "nameTF"]
 - !private ["So16UIStateRestoringP", "newExpense"]
+- !private ["So16UIStateRestoringP", "pickerDataPaidBy"]
 - !private ["So16UIStateRestoringP", "priceTF"]
 - ["So16UIStateRestoringP", "textField"]
 - ["So16UIStateRestoringP", "textFieldDidBeginEditing"]
@@ -475,12 +643,16 @@ depends-member:
 - !private ["So11UITextFieldC", "resignFirstResponder"]
 - !private ["So11UITextFieldC", "text"]
 - !private ["So19UITextFieldDelegateP", "DialogBoxHelper"]
+- !private ["So19UITextFieldDelegateP", "Double"]
 - !private ["So19UITextFieldDelegateP", "Expense"]
 - !private ["So19UITextFieldDelegateP", "FormValidatorHelper"]
+- ["So19UITextFieldDelegateP", "String"]
+- ["So19UITextFieldDelegateP", "Traveller"]
 - ["So19UITextFieldDelegateP", ""]
 - !private ["So19UITextFieldDelegateP", "dismiss"]
 - !private ["So19UITextFieldDelegateP", "nameTF"]
 - !private ["So19UITextFieldDelegateP", "newExpense"]
+- !private ["So19UITextFieldDelegateP", "pickerDataPaidBy"]
 - !private ["So19UITextFieldDelegateP", "priceTF"]
 - ["So19UITextFieldDelegateP", "textField"]
 - ["So19UITextFieldDelegateP", "textFieldDidBeginEditing"]
@@ -496,8 +668,11 @@ depends-member:
 - !private ["So34UITextPasteConfigurationSupportingP", "resignFirstResponder"]
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - !private ["So18UITraitEnvironmentP", "DialogBoxHelper"]
+- !private ["So18UITraitEnvironmentP", "Double"]
 - !private ["So18UITraitEnvironmentP", "Expense"]
 - !private ["So18UITraitEnvironmentP", "FormValidatorHelper"]
+- ["So18UITraitEnvironmentP", "String"]
+- ["So18UITraitEnvironmentP", "Traveller"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UITraitEnvironmentP", "dismiss"]
@@ -505,6 +680,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "nameTF"]
 - !private ["So18UITraitEnvironmentP", "newExpense"]
+- !private ["So18UITraitEnvironmentP", "pickerDataPaidBy"]
 - !private ["So18UITraitEnvironmentP", "priceTF"]
 - !private ["So18UITraitEnvironmentP", "resignFirstResponder"]
 - !private ["So18UITraitEnvironmentP", "text"]
@@ -517,8 +693,11 @@ depends-member:
 - ["So18UITraitEnvironmentP", "textFieldShouldReturn"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So23UIUserActivityRestoringP", "DialogBoxHelper"]
+- !private ["So23UIUserActivityRestoringP", "Double"]
 - !private ["So23UIUserActivityRestoringP", "Expense"]
 - !private ["So23UIUserActivityRestoringP", "FormValidatorHelper"]
+- ["So23UIUserActivityRestoringP", "String"]
+- ["So23UIUserActivityRestoringP", "Traveller"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "didReceiveMemoryWarning"]
 - !private ["So23UIUserActivityRestoringP", "dismiss"]
@@ -526,6 +705,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "nameTF"]
 - !private ["So23UIUserActivityRestoringP", "newExpense"]
+- !private ["So23UIUserActivityRestoringP", "pickerDataPaidBy"]
 - !private ["So23UIUserActivityRestoringP", "priceTF"]
 - !private ["So23UIUserActivityRestoringP", "resignFirstResponder"]
 - !private ["So23UIUserActivityRestoringP", "text"]
@@ -541,9 +721,13 @@ depends-member:
 - !private ["So6UIViewC", "text"]
 - ["So16UIViewControllerC", "Bool"]
 - !private ["So16UIViewControllerC", "DialogBoxHelper"]
+- !private ["So16UIViewControllerC", "Double"]
 - ["So16UIViewControllerC", "Expense"]
 - !private ["So16UIViewControllerC", "FormValidatorHelper"]
-- !private ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "Int"]
+- ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "Traveller"]
+- ["So16UIViewControllerC", "UIPickerView"]
 - ["So16UIViewControllerC", "UITextField"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "addExpense"]
@@ -553,6 +737,11 @@ depends-member:
 - !private ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "nameTF"]
 - ["So16UIViewControllerC", "newExpense"]
+- ["So16UIViewControllerC", "pickerDataPaidBy"]
+- ["So16UIViewControllerC", "pickerDataPaidFor"]
+- ["So16UIViewControllerC", "pickerView"]
+- ["So16UIViewControllerC", "pickerViewPaidBy"]
+- ["So16UIViewControllerC", "pickerViewPaidFor"]
 - ["So16UIViewControllerC", "priceTF"]
 - ["So16UIViewControllerC", "textField"]
 - ["So16UIViewControllerC", "textFieldDidBeginEditing"]
@@ -562,11 +751,19 @@ depends-member:
 - ["So16UIViewControllerC", "textFieldShouldEndEditing"]
 - ["So16UIViewControllerC", "textFieldShouldReturn"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "resignFirstResponder"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "firstNameTraveller"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -575,17 +772,26 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DialogBoxHelper"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Double"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Expense"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FormValidatorHelper"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Traveller"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "create"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "firstNameTraveller"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getAll"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "nameTF"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "newExpense"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pickerDataPaidBy"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "priceTF"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
@@ -598,50 +804,67 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldReturn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "18AccountingTogether24AddExpenseViewControllerC"
-- !private "SK"
+- "Sa"
+- "s13ArrayProtocolP"
+- !private "s10ArraySliceV"
+- "SK"
+- !private "SB"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
-- !private "Sl"
+- "Sl"
 - !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "Se"
+- "Se"
 - !private "18AccountingTogether15DialogBoxHelperC"
-- !private "SE"
+- !private "Sd"
+- "SE"
 - "SQ"
 - !private "18AccountingTogether7ExpenseC"
+- "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SF"
 - !private "18AccountingTogether19FormValidatorHelperC"
 - "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
+- "SM"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - !private "So20NSFetchRequestResultP"
 - !private "So15NSManagedObjectC"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "Sj"
 - !private "Sq"
-- !private "Sm"
-- !private "ST"
+- "Sk"
+- "Sm"
+- "ST"
+- !private "s13SignedNumericP"
+- !private "Sx"
 - !private "SS"
 - !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "18AccountingTogether9TravellerC"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -669,15 +892,21 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s21_ObjectiveCBridgeableP"
+- "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -720,4 +949,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e3fc472e2e6f70b01f530d7a24bd8a04"
+interface-hash: "198fe19906f1b0438436bea3351f3c9f"

@@ -2,7 +2,7 @@
 //  Trip+CoreDataProperties.swift
 //  
 //
-//  Created by Luca Debeir on 28/03/2019.
+//  Created by Luca Debeir on 31/03/2019.
 //
 //  This file was automatically generated and should not be edited.
 //
@@ -17,25 +17,27 @@ extension Trip {
         return NSFetchRequest<Trip>(entityName: "Trip")
     }
 
-    @NSManaged public var imageData: Data?
+    @NSManaged public var dateBeginTrip: Date?
+    @NSManaged public var dateEndTrip: Date?
+    @NSManaged public var imageTrip: Data?
     @NSManaged public var nameTrip: String?
-    @NSManaged public var travellers: NSSet?
+    @NSManaged public var isComposedBy: NSSet?
 
 }
 
-// MARK: Generated accessors for travellers
+// MARK: Generated accessors for isComposedBy
 extension Trip {
 
-    @objc(addTravellersObject:)
-    @NSManaged public func addToTravellers(_ value: Traveller)
+    @objc(addIsComposedByObject:)
+    @NSManaged public func addToIsComposedBy(_ value: Traveller)
 
-    @objc(removeTravellersObject:)
-    @NSManaged public func removeFromTravellers(_ value: Traveller)
+    @objc(removeIsComposedByObject:)
+    @NSManaged public func removeFromIsComposedBy(_ value: Traveller)
 
-    @objc(addTravellers:)
-    @NSManaged public func addToTravellers(_ values: NSSet)
+    @objc(addIsComposedBy:)
+    @NSManaged public func addToIsComposedBy(_ values: NSSet)
 
-    @objc(removeTravellers:)
-    @NSManaged public func removeFromTravellers(_ values: NSSet)
+    @objc(removeIsComposedBy:)
+    @NSManaged public func removeFromIsComposedBy(_ values: NSSet)
 
 }

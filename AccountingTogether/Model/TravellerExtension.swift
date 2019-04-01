@@ -57,4 +57,8 @@ extension Traveller {
         }
     }
     
+    func fullName(withFirstName: String, withLastName: String) -> String {
+        return withFirstName + " " + withLastName
+    }
+    
 }

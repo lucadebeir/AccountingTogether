@@ -9,9 +9,10 @@
 import Foundation
 import UIKit
 
-class TripCell: UICollectionViewCell  {
+class TripCell: UITableViewCell  {
     
     @IBOutlet weak var nameTrip: UILabel!
     @IBOutlet weak var imageTrip: UIImageView!
+    
     
 }

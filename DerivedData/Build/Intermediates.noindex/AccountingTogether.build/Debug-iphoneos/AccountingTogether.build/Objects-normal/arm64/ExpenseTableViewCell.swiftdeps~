@@ -6,6 +6,7 @@ provides-nominal:
 provides-member:
 - ["18AccountingTogether20ExpenseTableViewCellC", ""]
 provides-dynamic-lookup:
+- "amountExpense"
 - "awakeFromNib"
 - "nameExpense"
 - "setSelected"
@@ -42,6 +43,7 @@ depends-member:
 - !private ["SQ", "setSelected"]
 - ["18AccountingTogether20ExpenseTableViewCellC", "Bool"]
 - ["18AccountingTogether20ExpenseTableViewCellC", "UILabel"]
+- ["18AccountingTogether20ExpenseTableViewCellC", "amountExpense"]
 - ["18AccountingTogether20ExpenseTableViewCellC", "awakeFromNib"]
 - ["18AccountingTogether20ExpenseTableViewCellC", "init"]
 - ["18AccountingTogether20ExpenseTableViewCellC", "nameExpense"]
@@ -58,6 +60,7 @@ depends-member:
 - !private ["So8NSCodingP", "setSelected"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "amountExpense"]
 - ["So8NSObjectC", "awakeFromNib"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
@@ -120,6 +123,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "amountExpense"]
 - ["So11UIResponderC", "awakeFromNib"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
@@ -133,6 +137,7 @@ depends-member:
 - ["So15UITableViewCellC", "Bool"]
 - ["So15UITableViewCellC", "UILabel"]
 - ["So15UITableViewCellC", ""]
+- ["So15UITableViewCellC", "amountExpense"]
 - ["So15UITableViewCellC", "awakeFromNib"]
 - ["So15UITableViewCellC", "init"]
 - !private ["So15UITableViewCellC", "init"]
@@ -150,6 +155,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "setSelected"]
 - ["So6UIViewC", "Bool"]
 - ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "amountExpense"]
 - ["So6UIViewC", "awakeFromNib"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "init"]
@@ -235,4 +241,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "584fc22a4aa16e9baaf0bcd9214b5dd5"
+interface-hash: "4e86ceb70feb150c41fb52394dbb5f37"

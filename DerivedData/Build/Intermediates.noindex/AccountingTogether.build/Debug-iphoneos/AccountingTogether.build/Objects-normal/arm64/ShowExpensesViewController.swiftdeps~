@@ -47,13 +47,16 @@ depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "amountExpense"]
 - !private ["s13ArrayProtocolP", "append"]
 - !private ["s13ArrayProtocolP", "count"]
 - !private ["s13ArrayProtocolP", "delete"]
 - !private ["s13ArrayProtocolP", "nameExpense"]
 - !private ["s13ArrayProtocolP", "subscript"]
+- !private ["s10ArraySliceV", "amountExpense"]
 - !private ["s10ArraySliceV", "delete"]
 - !private ["s10ArraySliceV", "nameExpense"]
+- !private ["SK", "amountExpense"]
 - !private ["SK", "append"]
 - !private ["SK", "count"]
 - !private ["SK", "delete"]
@@ -62,8 +65,10 @@ depends-member:
 - !private ["SK", "nameExpense"]
 - !private ["SK", "row"]
 - !private ["SK", "subscript"]
+- !private ["SB", "description"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["So15CALayerDelegateP", "EditingStyle"]
+- !private ["So15CALayerDelegateP", "amountExpense"]
 - !private ["So15CALayerDelegateP", "beginUpdates"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "endUpdates"]
@@ -78,11 +83,13 @@ depends-member:
 - !private ["s7CVarArgP", "UITableViewCell"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "amountExpense"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "beginUpdates"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "delete"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
+- !private ["s7CVarArgP", "description"]
 - !private ["s7CVarArgP", "didReceiveMemoryWarning"]
 - !private ["s7CVarArgP", "endUpdates"]
 - !private ["s7CVarArgP", "expenseSelected"]
@@ -125,6 +132,7 @@ depends-member:
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
+- !private ["Sl", "amountExpense"]
 - !private ["Sl", "append"]
 - !private ["Sl", "count"]
 - !private ["Sl", "delete"]
@@ -133,6 +141,7 @@ depends-member:
 - !private ["Sl", "nameExpense"]
 - !private ["Sl", "row"]
 - !private ["Sl", "subscript"]
+- !private ["SL", "description"]
 - !private ["SL", "init"]
 - !private ["SL", "init"]
 - !private ["SL", "row"]
@@ -142,11 +151,13 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableViewCell"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "amountExpense"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "beginUpdates"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "delete"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
+- !private ["s28CustomDebugStringConvertibleP", "description"]
 - !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s28CustomDebugStringConvertibleP", "endUpdates"]
 - !private ["s28CustomDebugStringConvertibleP", "expenseSelected"]
@@ -191,12 +202,15 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "description"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "amountExpense"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "delete"]
+- !private ["s17CustomReflectableP", "description"]
 - !private ["s17CustomReflectableP", "indexPath"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
@@ -212,11 +226,13 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UITableViewCell"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "amountExpense"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "beginUpdates"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "delete"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
+- !private ["s23CustomStringConvertibleP", "description"]
 - !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s23CustomStringConvertibleP", "endUpdates"]
 - !private ["s23CustomStringConvertibleP", "expenseSelected"]
@@ -263,6 +279,7 @@ depends-member:
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "append"]
 - !private ["Se", "count"]
+- !private ["Se", "description"]
 - !private ["Se", "indexPath"]
 - !private ["Se", "init"]
 - !private ["Se", "init"]
@@ -271,10 +288,12 @@ depends-member:
 - !private ["Se", "subscript"]
 - !private ["Se", "text"]
 - !private ["18AccountingTogether15DialogBoxHelperC", "alert"]
+- !private ["Sd", "description"]
 - !private ["So27UITableViewCellEditingStyleV", "delete"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "append"]
 - !private ["SE", "count"]
+- !private ["SE", "description"]
 - !private ["SE", "indexPath"]
 - !private ["SE", "init"]
 - !private ["SE", "init"]
@@ -289,11 +308,13 @@ depends-member:
 - !private ["SQ", "UITableViewCell"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "amountExpense"]
 - !private ["SQ", "append"]
 - !private ["SQ", "beginUpdates"]
 - !private ["SQ", "count"]
 - !private ["SQ", "delete"]
 - !private ["SQ", "dequeueReusableCell"]
+- !private ["SQ", "description"]
 - !private ["SQ", "didReceiveMemoryWarning"]
 - !private ["SQ", "endUpdates"]
 - !private ["SQ", "expenseSelected"]
@@ -337,10 +358,13 @@ depends-member:
 - !private ["SQ", "viewDidLoad"]
 - ["SQ", "viewForZooming"]
 - ["SQ", "viewForZoomingInScrollView"]
+- !private ["18AccountingTogether7ExpenseC", "amountExpense"]
 - !private ["18AccountingTogether7ExpenseC", "delete"]
 - !private ["18AccountingTogether7ExpenseC", "getAll"]
 - !private ["18AccountingTogether7ExpenseC", "nameExpense"]
+- !private ["18AccountingTogether20ExpenseTableViewCellC", "amountExpense"]
 - !private ["18AccountingTogether20ExpenseTableViewCellC", "nameExpense"]
+- !private ["s25ExpressibleByArrayLiteralP", "amountExpense"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "delete"]
@@ -350,6 +374,8 @@ depends-member:
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "description"]
+- !private ["s27ExpressibleByIntegerLiteralP", "description"]
 - !private ["s23ExpressibleByNilLiteralP", "indexPath"]
 - !private ["s23ExpressibleByNilLiteralP", "reloadData"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
@@ -357,6 +383,7 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SF", "description"]
 - !private ["SH", "DialogBoxHelper"]
 - ["SH", "EditingStyle"]
 - !private ["SH", "Expense"]
@@ -364,11 +391,13 @@ depends-member:
 - !private ["SH", "UITableViewCell"]
 - ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "amountExpense"]
 - !private ["SH", "append"]
 - !private ["SH", "beginUpdates"]
 - !private ["SH", "count"]
 - !private ["SH", "delete"]
 - !private ["SH", "dequeueReusableCell"]
+- !private ["SH", "description"]
 - !private ["SH", "didReceiveMemoryWarning"]
 - !private ["SH", "endUpdates"]
 - !private ["SH", "expenseSelected"]
@@ -414,10 +443,12 @@ depends-member:
 - ["SH", "viewForZoomingInScrollView"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "description"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["SM", "amountExpense"]
 - !private ["SM", "append"]
 - !private ["SM", "count"]
 - !private ["SM", "delete"]
@@ -430,6 +461,7 @@ depends-member:
 - !private ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "UITableViewCell"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "amountExpense"]
 - !private ["So8NSCodingP", "beginUpdates"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
@@ -508,10 +540,12 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
+- !private ["So20NSFetchRequestResultP", "amountExpense"]
 - !private ["So20NSFetchRequestResultP", "delete"]
 - !private ["So20NSFetchRequestResultP", "getAll"]
 - !private ["So20NSFetchRequestResultP", "nameExpense"]
 - !private ["So20NSFetchRequestResultP", "nameTrip"]
+- !private ["So15NSManagedObjectC", "amountExpense"]
 - !private ["So15NSManagedObjectC", "delete"]
 - !private ["So15NSManagedObjectC", "getAll"]
 - !private ["So15NSManagedObjectC", "nameExpense"]
@@ -532,6 +566,7 @@ depends-member:
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
+- !private ["So8NSObjectC", "amountExpense"]
 - !private ["So8NSObjectC", "beginUpdates"]
 - !private ["So8NSObjectC", "delete"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
@@ -584,6 +619,7 @@ depends-member:
 - !private ["So8NSObjectP", "String"]
 - !private ["So8NSObjectP", "UITableViewCell"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "amountExpense"]
 - !private ["So8NSObjectP", "beginUpdates"]
 - !private ["So8NSObjectP", "delete"]
 - !private ["So8NSObjectP", "dequeueReusableCell"]
@@ -628,15 +664,18 @@ depends-member:
 - !private ["So8NSObjectP", "viewDidLoad"]
 - ["So8NSObjectP", "viewForZooming"]
 - ["So8NSObjectP", "viewForZoomingInScrollView"]
+- !private ["Sj", "description"]
 - !private ["Sq", "indexPath"]
 - !private ["Sq", "reloadData"]
 - !private ["Sq", "text"]
+- !private ["Sk", "amountExpense"]
 - !private ["Sk", "append"]
 - !private ["Sk", "count"]
 - !private ["Sk", "delete"]
 - !private ["Sk", "nameExpense"]
 - !private ["Sk", "row"]
 - !private ["Sk", "subscript"]
+- !private ["Sm", "amountExpense"]
 - !private ["Sm", "append"]
 - !private ["Sm", "count"]
 - !private ["Sm", "delete"]
@@ -646,6 +685,7 @@ depends-member:
 - !private ["Sm", "subscript"]
 - !private ["SY", "delete"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
+- !private ["ST", "amountExpense"]
 - !private ["ST", "append"]
 - !private ["ST", "count"]
 - !private ["ST", "delete"]
@@ -703,6 +743,8 @@ depends-member:
 - ["18AccountingTogether26ShowExpensesViewControllerC", "viewDidLoad"]
 - ["18AccountingTogether26ShowExpensesViewControllerC", "viewForZooming"]
 - ["18AccountingTogether26ShowExpensesViewControllerC", "viewForZoomingInScrollView"]
+- !private ["s13SignedNumericP", "description"]
+- !private ["Sx", "description"]
 - !private ["SS", "init"]
 - !private ["SS", "init"]
 - !private ["Sy", "init"]
@@ -713,6 +755,7 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["18AccountingTogether4TripC", "nameTrip"]
 - ["So29UIAccessibilityIdentificationP", "EditingStyle"]
+- !private ["So29UIAccessibilityIdentificationP", "amountExpense"]
 - !private ["So29UIAccessibilityIdentificationP", "beginUpdates"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "endUpdates"]
@@ -721,6 +764,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - ["So12UIAppearanceP", "EditingStyle"]
+- !private ["So12UIAppearanceP", "amountExpense"]
 - !private ["So12UIAppearanceP", "beginUpdates"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "endUpdates"]
@@ -734,6 +778,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "UITableViewCell"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "amountExpense"]
 - !private ["So21UIAppearanceContainerP", "beginUpdates"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
@@ -814,6 +859,7 @@ depends-member:
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - ["So17UICoordinateSpaceP", "EditingStyle"]
+- !private ["So17UICoordinateSpaceP", "amountExpense"]
 - !private ["So17UICoordinateSpaceP", "beginUpdates"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
 - !private ["So17UICoordinateSpaceP", "endUpdates"]
@@ -827,6 +873,7 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "indexPath"]
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
 - ["So13UIDynamicItemP", "EditingStyle"]
+- !private ["So13UIDynamicItemP", "amountExpense"]
 - !private ["So13UIDynamicItemP", "beginUpdates"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "endUpdates"]
@@ -840,6 +887,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "UITableViewCell"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "amountExpense"]
 - !private ["So18UIFocusEnvironmentP", "beginUpdates"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
@@ -881,6 +929,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
 - ["So11UIFocusItemP", "EditingStyle"]
+- !private ["So11UIFocusItemP", "amountExpense"]
 - !private ["So11UIFocusItemP", "beginUpdates"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "endUpdates"]
@@ -889,6 +938,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "reloadData"]
 - !private ["So11UIFocusItemP", "text"]
 - ["So20UIFocusItemContainerP", "EditingStyle"]
+- !private ["So20UIFocusItemContainerP", "amountExpense"]
 - !private ["So20UIFocusItemContainerP", "beginUpdates"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
 - !private ["So20UIFocusItemContainerP", "endUpdates"]
@@ -902,6 +952,7 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "indexPath"]
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
 - ["So27UIGestureRecognizerDelegateP", "EditingStyle"]
+- !private ["So27UIGestureRecognizerDelegateP", "amountExpense"]
 - !private ["So27UIGestureRecognizerDelegateP", "nameExpense"]
 - !private ["So7UILabelC", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "DialogBoxHelper"]
@@ -910,6 +961,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITableViewCell"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "amountExpense"]
 - !private ["So30UIPasteConfigurationSupportingP", "beginUpdates"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
@@ -966,6 +1018,7 @@ depends-member:
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
+- !private ["So11UIResponderC", "amountExpense"]
 - !private ["So11UIResponderC", "beginUpdates"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
@@ -1014,6 +1067,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UITableViewCell"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "amountExpense"]
 - !private ["So30UIResponderStandardEditActionsP", "beginUpdates"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
@@ -1142,6 +1196,7 @@ depends-member:
 - !private ["So11UITableViewC", "indexPath"]
 - !private ["So11UITableViewC", "reloadData"]
 - ["So15UITableViewCellC", "EditingStyle"]
+- !private ["So15UITableViewCellC", "amountExpense"]
 - !private ["So15UITableViewCellC", "nameExpense"]
 - !private ["So21UITableViewDataSourceP", "DialogBoxHelper"]
 - !private ["So21UITableViewDataSourceP", "Expense"]
@@ -1216,6 +1271,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "UITableViewCell"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "amountExpense"]
 - !private ["So18UITraitEnvironmentP", "beginUpdates"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
@@ -1262,6 +1318,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "String"]
 - !private ["So23UIUserActivityRestoringP", "UITableViewCell"]
 - ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "amountExpense"]
 - !private ["So23UIUserActivityRestoringP", "beginUpdates"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
 - !private ["So23UIUserActivityRestoringP", "didReceiveMemoryWarning"]
@@ -1303,6 +1360,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "viewForZooming"]
 - ["So23UIUserActivityRestoringP", "viewForZoomingInScrollView"]
 - ["So6UIViewC", "EditingStyle"]
+- !private ["So6UIViewC", "amountExpense"]
 - !private ["So6UIViewC", "beginUpdates"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "endUpdates"]
@@ -1361,7 +1419,10 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
+- !private ["s15_CVarArgAlignedP", "description"]
+- !private ["s22_CVarArgPassedAsDoubleP", "description"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "EditingStyle"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "amountExpense"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "beginUpdates"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "endUpdates"]
@@ -1369,6 +1430,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "nameExpense"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s24_DestructorSafeContainerP", "amountExpense"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "delete"]
@@ -1377,6 +1439,8 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "description"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "description"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -1387,6 +1451,7 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "description"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DialogBoxHelper"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "EditingStyle"]
@@ -1394,6 +1459,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewCell"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "amountExpense"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "beginUpdates"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delete"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
@@ -1441,6 +1507,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "description"]
 - !private ["s21_ObjectiveCBridgeableP", "indexPath"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -1456,6 +1523,7 @@ depends-nominal:
 - !private "s13ArrayProtocolP"
 - !private "s10ArraySliceV"
 - !private "SK"
+- !private "SB"
 - !private "Sb"
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
@@ -1467,6 +1535,7 @@ depends-nominal:
 - "s23CustomStringConvertibleP"
 - !private "Se"
 - !private "18AccountingTogether15DialogBoxHelperC"
+- !private "Sd"
 - !private "So27UITableViewCellEditingStyleV"
 - !private "SE"
 - "SQ"
@@ -1475,9 +1544,12 @@ depends-nominal:
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SF"
 - "SH"
 - !private "10Foundation9IndexPathV"
 - !private "s25LosslessStringConvertibleP"
@@ -1489,6 +1561,7 @@ depends-nominal:
 - !private "So15NSManagedObjectC"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "Sj"
 - !private "Sq"
 - !private "Sk"
 - !private "Sm"
@@ -1496,6 +1569,8 @@ depends-nominal:
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "ST"
 - "18AccountingTogether26ShowExpensesViewControllerC"
+- !private "s13SignedNumericP"
+- !private "Sx"
 - !private "SS"
 - !private "Sy"
 - !private "s16TextOutputStreamP"
@@ -1532,10 +1607,14 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"

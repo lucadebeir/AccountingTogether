@@ -7,8 +7,10 @@ provides-member:
 - ["18AccountingTogether9TravellerC", "create"]
 - ["18AccountingTogether9TravellerC", "edit"]
 - ["18AccountingTogether9TravellerC", "delete"]
+- ["18AccountingTogether9TravellerC", "fullName"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+"
 - !private "Array"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
@@ -20,6 +22,7 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "Traveller"
+- !private "UnicodeScalarType"
 depends-member:
 - !private ["SK", "init"]
 - !private ["SK", "init"]
@@ -27,7 +30,6 @@ depends-member:
 - !private ["s7CVarArgP", "NSSortDescriptor"]
 - !private ["s7CVarArgP", "Traveller"]
 - !private ["s7CVarArgP", "arrivalDate"]
-- !private ["s7CVarArgP", "context"]
 - !private ["s7CVarArgP", "delete"]
 - !private ["s7CVarArgP", "fetch"]
 - !private ["s7CVarArgP", "fetchRequest"]
@@ -35,7 +37,6 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "lastNameTraveller"]
-- !private ["s7CVarArgP", "save"]
 - !private ["s7CVarArgP", "sortDescriptors"]
 - !private ["Sl", "init"]
 - !private ["Sl", "init"]
@@ -47,7 +48,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "NSSortDescriptor"]
 - !private ["s28CustomDebugStringConvertibleP", "Traveller"]
 - !private ["s28CustomDebugStringConvertibleP", "arrivalDate"]
-- !private ["s28CustomDebugStringConvertibleP", "context"]
 - !private ["s28CustomDebugStringConvertibleP", "delete"]
 - !private ["s28CustomDebugStringConvertibleP", "fetch"]
 - !private ["s28CustomDebugStringConvertibleP", "fetchRequest"]
@@ -55,7 +55,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "lastNameTraveller"]
-- !private ["s28CustomDebugStringConvertibleP", "save"]
 - !private ["s28CustomDebugStringConvertibleP", "sortDescriptors"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -65,7 +64,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "NSSortDescriptor"]
 - !private ["s23CustomStringConvertibleP", "Traveller"]
 - !private ["s23CustomStringConvertibleP", "arrivalDate"]
-- !private ["s23CustomStringConvertibleP", "context"]
 - !private ["s23CustomStringConvertibleP", "delete"]
 - !private ["s23CustomStringConvertibleP", "fetch"]
 - !private ["s23CustomStringConvertibleP", "fetchRequest"]
@@ -73,7 +71,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "lastNameTraveller"]
-- !private ["s23CustomStringConvertibleP", "save"]
 - !private ["s23CustomStringConvertibleP", "sortDescriptors"]
 - !private ["Se", "init"]
 - !private ["Se", "init"]
@@ -83,7 +80,6 @@ depends-member:
 - !private ["SQ", "NSSortDescriptor"]
 - !private ["SQ", "Traveller"]
 - !private ["SQ", "arrivalDate"]
-- !private ["SQ", "context"]
 - !private ["SQ", "delete"]
 - !private ["SQ", "fetch"]
 - !private ["SQ", "fetchRequest"]
@@ -91,7 +87,6 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "lastNameTraveller"]
-- !private ["SQ", "save"]
 - !private ["SQ", "sortDescriptors"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -103,7 +98,6 @@ depends-member:
 - !private ["SH", "NSSortDescriptor"]
 - !private ["SH", "Traveller"]
 - !private ["SH", "arrivalDate"]
-- !private ["SH", "context"]
 - !private ["SH", "delete"]
 - !private ["SH", "fetch"]
 - !private ["SH", "fetchRequest"]
@@ -111,7 +105,6 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "lastNameTraveller"]
-- !private ["SH", "save"]
 - !private ["SH", "sortDescriptors"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -147,6 +140,7 @@ depends-member:
 - ["So15NSManagedObjectC", "edit"]
 - !private ["So15NSManagedObjectC", "fetchRequest"]
 - !private ["So15NSManagedObjectC", "firstNameTraveller"]
+- ["So15NSManagedObjectC", "fullName"]
 - ["So15NSManagedObjectC", "getAll"]
 - !private ["So15NSManagedObjectC", "init"]
 - !private ["So15NSManagedObjectC", "lastNameTraveller"]
@@ -160,30 +154,27 @@ depends-member:
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "Traveller"]
 - !private ["So8NSObjectC", "arrivalDate"]
-- !private ["So8NSObjectC", "context"]
 - ["So8NSObjectC", "create"]
 - ["So8NSObjectC", "delete"]
 - ["So8NSObjectC", "edit"]
 - !private ["So8NSObjectC", "fetch"]
 - !private ["So8NSObjectC", "fetchRequest"]
 - !private ["So8NSObjectC", "firstNameTraveller"]
+- ["So8NSObjectC", "fullName"]
 - ["So8NSObjectC", "getAll"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "lastNameTraveller"]
-- !private ["So8NSObjectC", "save"]
 - !private ["So8NSObjectC", "sortDescriptors"]
 - !private ["So8NSObjectP", "CoreDataManager"]
 - !private ["So8NSObjectP", "NSSortDescriptor"]
 - !private ["So8NSObjectP", "Traveller"]
 - !private ["So8NSObjectP", "arrivalDate"]
-- !private ["So8NSObjectP", "context"]
 - !private ["So8NSObjectP", "delete"]
 - !private ["So8NSObjectP", "fetch"]
 - !private ["So8NSObjectP", "fetchRequest"]
 - !private ["So8NSObjectP", "firstNameTraveller"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "lastNameTraveller"]
-- !private ["So8NSObjectP", "save"]
 - !private ["So8NSObjectP", "sortDescriptors"]
 - !private ["So24NSPersistentStoreRequestC", "sortDescriptors"]
 - !private ["So14NSSecureCodingP", "init"]
@@ -214,6 +205,7 @@ depends-member:
 - ["18AccountingTogether9TravellerC", "edit"]
 - !private ["18AccountingTogether9TravellerC", "fetchRequest"]
 - !private ["18AccountingTogether9TravellerC", "firstNameTraveller"]
+- ["18AccountingTogether9TravellerC", "fullName"]
 - ["18AccountingTogether9TravellerC", "getAll"]
 - !private ["18AccountingTogether9TravellerC", "init"]
 - !private ["18AccountingTogether9TravellerC", "lastNameTraveller"]
@@ -231,14 +223,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSSortDescriptor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Traveller"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "arrivalDate"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "context"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delete"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fetch"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fetchRequest"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "firstNameTraveller"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lastNameTraveller"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sortDescriptors"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -331,4 +321,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c6b24a4c36e2a2558dbb8ff8dd874f7c"
+interface-hash: "3e9f5cf98ae8aecec6ea0da7a2afafa1"
