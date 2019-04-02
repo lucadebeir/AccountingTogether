@@ -11,10 +11,12 @@ import UIKit
 
 class AddTravellerViewController: UIViewController, UITextFieldDelegate {
     
-    var newTraveller: Traveller?
+    var tripSelected: Trip?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if let destination = segue.destination as? EmbedTravellerViewController {
+            destination.tripSelected = self.tripSelected
+        }
     }
     
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableTravellerEmbedViewController: NSObject, UITableViewDataSource, TravellerSetViewModelDelegate {
+class TableTravellerEmbedViewController: NSObject, UITableViewDataSource, UITableViewDelegate, TravellerSetViewModelDelegate {
     
     
     @IBOutlet weak var tableView: UITableView!

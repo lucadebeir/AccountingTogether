@@ -15,6 +15,7 @@ class EmbedTravellerViewController: UIViewController, UITextFieldDelegate, UINav
     @IBOutlet weak var dateArrival: UIDatePicker!
     
     var newTraveller : Traveller?
+    var tripSelected: Trip?
     
     override func viewDidLoad() {
         if let travellerToUpdate = self.newTraveller {
@@ -29,6 +30,7 @@ class EmbedTravellerViewController: UIViewController, UITextFieldDelegate, UINav
             let lastName: String = self.lastNameTF.text!
             let firstName: String = self.firstNameTF.text!
             self.newTraveller = Traveller(lastName: lastName, firstName: firstName)
+            self.newTraveller?.participates = self.tripSelected
             
         }
         else if segue.identifier == "cancel"{

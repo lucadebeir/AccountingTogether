@@ -18,7 +18,6 @@ class TravellerDAO {
     }
     
     static func getAll() -> [Traveller]? {
-        //self.request.sortDescriptors = [NSSortDescriptor(key: "nameTrip", ascending: true)]
         self.request.predicate = nil
         do {
             return try CoreDataManager.context.fetch(self.request)

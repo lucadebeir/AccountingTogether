@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Expense" representedClassName="Expense" syncable="YES" codeGenerationType="class">
         <attribute name="amountExpense" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nameExpense" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="paidBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="paye" inverseEntity="Traveller" syncable="YES"/>
         <relationship name="paidFor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="bePaid" inverseEntity="Traveller" syncable="YES"/>
     </entity>
-    <entity name="FullRes" representedClassName="FullRes" syncable="YES" codeGenerationType="class">
-        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
-        <relationship name="thumbnail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Thumbnail" inverseName="fullRes" inverseEntity="Thumbnail" syncable="YES"/>
-    </entity>
     <entity name="Repayment" representedClassName="Repayment" syncable="YES" codeGenerationType="class">
         <attribute name="amountRepayment" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nameRepayment" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="refundBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="refund" inverseEntity="Traveller" syncable="YES"/>
         <relationship name="refundFor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="getARefund" inverseEntity="Traveller" syncable="YES"/>
-    </entity>
-    <entity name="Thumbnail" representedClassName="Thumbnail" syncable="YES" codeGenerationType="class">
-        <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
-        <relationship name="fullRes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FullRes" inverseName="thumbnail" inverseEntity="FullRes" syncable="YES"/>
     </entity>
     <entity name="Traveller" representedClassName="Traveller" syncable="YES" codeGenerationType="class">
         <attribute name="arrivalDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -40,10 +31,8 @@
     </entity>
     <elements>
         <element name="Expense" positionX="79.23828125" positionY="-1513.984375" width="128" height="105"/>
-        <element name="FullRes" positionX="-63" positionY="-1350" width="128" height="75"/>
         <element name="Repayment" positionX="41.0546875" positionY="-1284.55859375" width="128" height="105"/>
-        <element name="Thumbnail" positionX="-72" positionY="-1368" width="128" height="90"/>
         <element name="Traveller" positionX="-210.6875" positionY="-1516.09375" width="128" height="165"/>
-        <element name="Trip" positionX="-223.359375" positionY="-1257.125" width="128" height="120"/>
+        <element name="Trip" positionX="-223.359375" positionY="-1257.125" width="128" height="118"/>
     </elements>
 </model>

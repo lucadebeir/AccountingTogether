@@ -79,7 +79,7 @@ class TripSetViewModel {
         return self.dataset.count
     }
     
-    public func get(tripAt index: Int) -> Trip?{
+    public func get(tripAt index: Int) -> Trip? {
         guard (index >= 0 ) && (index < self.count) else { return nil }
         return self.dataset[index]
     }

@@ -60,22 +60,20 @@ class TripViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if(segue.identifier == "showTrip"){
-            
-            if let destination = segue.destination as? ShowTripDetailViewController {
+            if segue.destination is UITabBarController {
                 if let cell = sender as? UITableViewCell{
                     
                     guard let indexPath = self.tripTableVC.tableView.indexPath(for: cell) else{
                         return
                     }
                     
-                    guard let trip = self.tripTableVC.tripSetViewModel.get(tripAt: indexPath.row) else{
+                    guard self.tripTableVC.tripSetViewModel.get(tripAt: indexPath.row) != nil else{
                         fatalError("no travel found at this index")
                     }
-                    destination.tripSelected = trip
-                    self.tripSelected = trip
+                    
+                    self.tripSelected = self.tripTableVC.tripSetViewModel.get(tripAt: indexPath.row)
                 }
             }
-            
             guard let tabBarController = segue.destination as? UITabBarController, let destinationVC = tabBarController.viewControllers?[0] as? ShowTripDetailViewController, let destinationVC1 = tabBarController.viewControllers?[1] as? ShowExpensesViewController, let destinationVC2 = tabBarController.viewControllers?[2] as? ShowRepaymentViewController, let destinationVC3 = tabBarController.viewControllers?[3] as? TravellerViewController else {
                 return
             }
@@ -83,7 +81,6 @@ class TripViewController: UIViewController {
             destinationVC1.tableTrip = self.tripSelected
             destinationVC2.tableTrip = self.tripSelected
             destinationVC3.tripSelected = self.tripSelected
-            
         }
         else if (segue.identifier == "editTrip"){
             if let destination = segue.destination as? EditTripViewController {

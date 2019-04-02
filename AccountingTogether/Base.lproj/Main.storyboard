@@ -322,20 +322,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0aQ-qL-eu3">
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0aQ-qL-eu3">
                                         <rect key="frame" x="0.0" y="22.5" width="319" height="216"/>
                                         <connections>
                                             <outlet property="dataSource" destination="0dG-b0-5kf" id="Bi0-fR-ogq"/>
                                             <outlet property="delegate" destination="0dG-b0-5kf" id="eiY-Zi-kKN"/>
                                         </connections>
                                     </pickerView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paid for :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRa-05-Sdn">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Paid for :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRa-05-Sdn">
                                         <rect key="frame" x="0.0" y="239.5" width="319" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHA-5q-m5n">
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CHA-5q-m5n">
                                         <rect key="frame" x="0.0" y="262" width="319" height="216"/>
                                     </pickerView>
                                 </subviews>
@@ -1249,7 +1249,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8Q-nn-Olj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="O1q-0H-7fI" customClass="TableTravellerEmbedViewController" customModule="AccountingTogether" customModuleProvider="target">
                     <connections>
-                        <outlet property="tableView" destination="qTm-up-sOO" id="Hoq-WI-3Jo"/>
+                        <outlet property="tableView" destination="qTm-up-sOO" id="efS-rx-xP0"/>
                     </connections>
                 </customObject>
                 <exit id="jfm-ft-gdt" userLabel="Exit" sceneMemberID="exit"/>
@@ -1465,7 +1465,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="fe0-GE-WyS" kind="presentation" id="i3g-nB-w87"/>
+                                            <segue destination="fe0-GE-WyS" kind="presentation" identifier="showTrip" id="wZj-J0-4qG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1533,16 +1533,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUa-Aa-W64">
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fUa-Aa-W64">
                                         <rect key="frame" x="0.0" y="22.5" width="319" height="216"/>
                                     </pickerView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paid for :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkH-xU-cyE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Paid for :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkH-xU-cyE">
                                         <rect key="frame" x="0.0" y="239.5" width="319" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bx7-Jq-cY5">
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bx7-Jq-cY5">
                                         <rect key="frame" x="0.0" y="262" width="319" height="216"/>
                                     </pickerView>
                                 </subviews>

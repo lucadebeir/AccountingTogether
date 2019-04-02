@@ -22,7 +22,6 @@ class ShowTripDetailViewController: UIViewController {
         super.viewDidLoad()
         if let trip = self.tripSelected {
             self.nameTripLabel.text = trip.nameTrip
-            self.imageTrip.image = UIImage(named: "blabla")
         } else {
             self.nameTripLabel.text = ""
         }

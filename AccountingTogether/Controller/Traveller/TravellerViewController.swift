@@ -12,12 +12,21 @@ import CoreData
 class TravellerViewController: UIViewController {
     
     var tripSelected : Trip?
+    
     @IBOutlet var tableTravellerEmbedViewController: TableTravellerEmbedViewController!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? AddTravellerViewController {
+            destination.tripSelected = self.tripSelected
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let trip = self.tripSelected {
-            self.tableTravellerEmbedViewController.travellerSetViewModel = TravellerSetViewModel(trip: trip)
+            self.tableTravellerEmbedViewController.travellerSetViewModel = TravellerSetViewModel(delegate: self.tableTravellerEmbedViewController, trip: trip)
+            
             
         } else {
             
