@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D2E978A2253D1EA003333A2 /* ExpenseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E97892253D1EA003333A2 /* ExpenseTableViewController.swift */; };
 		F3349E9D224A695200B3038B /* RepaymentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3349E9C224A695200B3038B /* RepaymentExtension.swift */; };
 		F3349E9F224A782A00B3038B /* RepaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3349E9E224A782A00B3038B /* RepaymentTableViewCell.swift */; };
 		F3349EA1224B7D0E00B3038B /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3349EA0224B7D0E00B3038B /* TripViewController.swift */; };
@@ -78,6 +79,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D2E97892253D1EA003333A2 /* ExpenseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpenseTableViewController.swift; path = ../../../ExpenseTableViewController.swift; sourceTree = "<group>"; };
 		F3349E9C224A695200B3038B /* RepaymentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentExtension.swift; sourceTree = "<group>"; };
 		F3349E9E224A782A00B3038B /* RepaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentTableViewCell.swift; sourceTree = "<group>"; };
 		F3349EA0224B7D0E00B3038B /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
@@ -238,6 +240,8 @@
 		F35EA1732249CEA9009C021B /* Expense */ = {
 			isa = PBXGroup;
 			children = (
+				6D2E97892253D1EA003333A2 /* ExpenseTableViewController.swift */,
+				F35EA1832249E73F009C021B /* ShowExpensesViewController.swift */,
 				F35EA1852249E75F009C021B /* AddExpenseViewController.swift */,
 				F396421B2253D76100EAFBC9 /* ShowExpensesViewController.swift */,
 				F39642112253D40600EAFBC9 /* ExpenseTableViewController.swift */,
@@ -506,6 +510,7 @@
 				F36D5EA42252D0A40001FF9A /* Traveller.swift in Sources */,
 				F3BAA8C22250C31500FA9F69 /* TripDAO.swift in Sources */,
 				F3349E9F224A782A00B3038B /* RepaymentTableViewCell.swift in Sources */,
+				6D2E978A2253D1EA003333A2 /* ExpenseTableViewController.swift in Sources */,
 				F35EA1882249E783009C021B /* ShowRepaymentsViewController.swift in Sources */,
 				F39642162253D47600EAFBC9 /* ExpenseSet.swift in Sources */,
 				F3D0A3482239613900D1DEF6 /* AppDelegate.swift in Sources */,
