@@ -127,72 +127,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h9O-RN-gDd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="629" height="41"/>
-                                                    <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="116" translatesAutoresizingMaskIntoConstraints="NO" id="QeP-4G-TYE">
-                                                            <rect key="frame" x="0.0" y="0.0" width="629" height="20.5"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="nameRepayment            " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SA4-jR-JxV">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="474.5" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80y-oj-J6H">
-                                                                    <rect key="frame" x="590.5" y="0.0" width="38.5" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2E-8h-CaK">
-                                                            <rect key="frame" x="0.0" y="20.5" width="629" height="20.5"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2L2-Yp-Ia7">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="469.5" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payed by " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xs-nM-kSj">
-                                                                    <rect key="frame" x="469.5" y="0.0" width="74" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nT1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdb-Ra-Q9y">
-                                                                    <rect key="frame" x="543.5" y="0.0" width="26.5" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" for " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wi5-Sc-yF0">
-                                                                    <rect key="frame" x="570" y="0.0" width="30" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nT2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc7-Ud-mzA">
-                                                                    <rect key="frame" x="600" y="0.0" width="29" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
-                                                    </subviews>
-                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80y-oj-J6H">
+                                                    <rect key="frame" x="285" y="1" width="58" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="nameRepayment            " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SA4-jR-JxV">
+                                                    <rect key="frame" x="1" y="1" width="281" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="h9O-RN-gDd" firstAttribute="top" secondItem="Le5-9O-6ZS" secondAttribute="top" id="F74-AO-tGj"/>
-                                                <constraint firstItem="h9O-RN-gDd" firstAttribute="leading" secondItem="Le5-9O-6ZS" secondAttribute="leading" id="cCn-dx-9I2"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="h9O-RN-gDd" secondAttribute="bottom" constant="-8" id="oVI-gZ-rFN"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="h9O-RN-gDd" secondAttribute="trailing" constant="-9" id="zQw-wR-9d8"/>
+                                                <constraint firstItem="80y-oj-J6H" firstAttribute="centerY" secondItem="SA4-jR-JxV" secondAttribute="centerY" id="B9x-0i-e7o"/>
+                                                <constraint firstItem="SA4-jR-JxV" firstAttribute="leading" secondItem="Le5-9O-6ZS" secondAttribute="leading" constant="1" id="Bwo-GM-edx"/>
+                                                <constraint firstItem="80y-oj-J6H" firstAttribute="leading" secondItem="SA4-jR-JxV" secondAttribute="trailing" constant="3" id="KvX-OG-vWg"/>
+                                                <constraint firstItem="SA4-jR-JxV" firstAttribute="top" secondItem="Le5-9O-6ZS" secondAttribute="top" constant="1" id="Rvd-vD-z0O"/>
+                                                <constraint firstAttribute="trailing" secondItem="80y-oj-J6H" secondAttribute="trailing" id="tV3-a4-c0e"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="amountRepayment" destination="80y-oj-J6H" id="5p7-nN-z0F"/>
                                             <outlet property="nameRepayment" destination="SA4-jR-JxV" id="pwo-Vc-FxZ"/>
                                         </connections>
                                     </tableViewCell>
@@ -1666,6 +1623,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="COi-f6-VUG"/>
         <segue reference="YU3-Hk-7oE"/>
-        <segue reference="nRG-y6-YSd"/>
+        <segue reference="Ndn-IN-RPJ"/>
     </inferredMetricsTieBreakers>
 </document>

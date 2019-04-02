@@ -11,44 +11,68 @@ import CoreData
 import Foundation
 
 
-class AddRepaymentViewController: UIViewController, UITextFieldDelegate {
+class AddRepaymentViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var amountTF: UITextField!
     
+    @IBOutlet weak var pickerViewPaidBy: UIPickerView!
+    @IBOutlet weak var pickerViewPaidFor: UIPickerView!
+    
     var newRepayment: Repayment? = nil
     
+    var pickerDataPaidBy: [Traveller] = [Traveller]()
+    var pickerDataPaidFor: [String] = [String]()
+    
+    var travellerSelected : Traveller?
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+        if let repaymentToUpdate = self.newRepayment {
+            self.nameTF.text = repaymentToUpdate.nameR
+        }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func addRepayment(_ sender: Any) {
-        let inputs: [String: UITextField] = ["name": nameTF, "amount": amountTF]
-        if FormValidatorHelper.validateForm(inputs){
-            do{
-                newRepayment = try Repayment.create(withName: nameTF.text!)
-                self.dismiss(animated: true, completion: nil)
-            }catch{
-                DialogBoxHelper.alert(view: self, errorMessage: "Ajout du remboursement échouée")
+    // preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "addRepayment" { //UNWIND LINK
+            let nameRepayment: String = self.nameTF.text!
+            guard let amountRepayment = self.amountTF.text else { return }
+            let amountE = Double(amountRepayment)
+            self.newRepayment = Repayment(nameRepayment: nameRepayment, amountRepayment: amountE!)
+            /*self.newRepayment?.paidBy = self.travellerSelected*/
+            
+        }
+        else if segue.identifier == "cancel"{
+            if let repaymentToCancel = self.newRepayment {
+                RepaymentDAO.delete(repayment: repaymentToCancel)
+                
             }
             
-        }else{
-            DialogBoxHelper.alert(view: self, WithTitle: "Erreur", andMessage: "Données du formulaire invalides", closure: nil)
+        }
+        else{
+            self.newRepayment = nil
         }
         
     }
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
+    /*// The number of rows of data
+     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+     return pickerDataPaidBy.count
+     }
+     
+     // The data to return fopr the row and component (column) that's being passed in
+     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+     return pickerDataPaidBy[row].firstNameTraveller!
+     }*/
+    
 }
+
