@@ -1,25 +1,25 @@
 //
-//  TripSet.swift
+//  TravellerSet.swift
 //  AccountingTogether
 //
-//  Created by Luca Debeir on 31/03/2019.
+//  Created by Luca Debeir on 02/04/2019.
 //  Copyright © 2019 Luca Debeir. All rights reserved.
 //
 
-class TripSet: Sequence {
+class TravellerSet: Sequence {
     
-    var set : [Trip]
+    var set : [Traveller]
     
     init(){
         self.set = []
     }
     
-    init(trips : [Trip]){
-        self.set = trips
+    init(travellers : [Traveller]){
+        self.set = travellers
     }
     
-    func makeIterator() -> ItTripSet{
-        return ItTripSet(pers: self)
+    func makeIterator() -> ItTravellerSet{
+        return ItTravellerSet(pers: self)
     }
     
     public func isEmpty() -> Bool {
@@ -30,7 +30,7 @@ class TripSet: Sequence {
         return self.set.count
     }
     
-    public func contains(_title : String) -> Bool {
+    public func contains(_lastName : String) -> Bool {
         
         var i = -1
         var found = false
@@ -38,12 +38,12 @@ class TripSet: Sequence {
         while(!found && i < self.set.count - 1){
             //found==true ou i >= self.set.count
             i = i + 1
-            found = ( self.set[i].title == _title )
+            found = ( self.set[i].lastName == _lastName )
         }
         return found
     }
     
-    public func indexOf(t : Trip) -> Int {
+    public func indexOf(t : Traveller) -> Int {
         
         var i = -1
         var found = false
@@ -62,31 +62,30 @@ class TripSet: Sequence {
     }
     
     
-    public func remove(trip : Trip){
-        self.set.remove(at: self.indexOf(t: trip))
+    public func remove(traveller : Traveller){
+        self.set.remove(at: self.indexOf(t: traveller))
         
     }
     
-    public func add(trip : Trip) {
-        if(!contains(_title : trip.title)){
-            self.set.append(trip)
+    public func add(traveller : Traveller) {
+        if(!contains(_lastName : traveller.lastName)){
+            self.set.append(traveller)
         }
-        print(trip.nameTrip)
     }
     
 }
 
-class ItTripSet: IteratorProtocol{
+class ItTravellerSet: IteratorProtocol{
     
     var current_indice : Int
-    var elementSet : TripSet
+    var elementSet : TravellerSet
     
-    init(pers : TripSet){
+    init(pers : TravellerSet){
         self.current_indice=0
         self.elementSet = pers
     }
     
-    func next() -> Trip?{
+    func next() -> Traveller?{
         
         if(self.current_indice==self.elementSet.set.count){ return nil }
         else{

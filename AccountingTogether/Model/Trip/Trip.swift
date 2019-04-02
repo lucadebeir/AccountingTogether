@@ -29,9 +29,10 @@ extension Trip {
         self.imageTrip = i.pngData()
     }
     
-    convenience init(t: String, isParticing : [Traveller]){
+    convenience init(t: String, i : UIImage, isParticing : [Traveller]){
         self.init(context: CoreDataManager.context)
         self.nameTrip = t
+        self.imageTrip = i.pngData()
         self.isComposedBy = NSSet(array: isParticing)
     }
     

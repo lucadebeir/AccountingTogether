@@ -25,13 +25,13 @@ class AddExpenseViewController: UIViewController, UITextFieldDelegate {
     var newExpense: Expense? = nil
     
     
-    override func viewDidLoad() {
+    /*override func viewDidLoad() {
         super.viewDidLoad()
         do {
             try pickerDataPaidBy = Traveller.getAll()
         } catch {
         }
-    }
+    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

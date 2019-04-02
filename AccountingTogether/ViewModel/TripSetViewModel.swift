@@ -66,7 +66,6 @@ class TripSetViewModel {
             self.delegate?.tripAdded(at: IndexPath(row:self.modelset.count() - 1,section:0))
             
         }
-        print(trip.nameTrip)
     }
     
     public func delete(tripAt index: Int){
