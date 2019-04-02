@@ -25,7 +25,6 @@
 		F35EA17C2249D126009C021B /* TravellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA17B2249D126009C021B /* TravellerViewController.swift */; };
 		F35EA17E2249D13C009C021B /* ShowTravellerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA17D2249D13C009C021B /* ShowTravellerDetailViewController.swift */; };
 		F35EA1802249D159009C021B /* AddTravellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA17F2249D159009C021B /* AddTravellerViewController.swift */; };
-		F35EA1842249E73F009C021B /* ShowExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA1832249E73F009C021B /* ShowExpensesViewController.swift */; };
 		F35EA1862249E75F009C021B /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA1852249E75F009C021B /* AddExpenseViewController.swift */; };
 		F35EA1882249E783009C021B /* ShowRepaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA1872249E783009C021B /* ShowRepaymentsViewController.swift */; };
 		F35EA18A2249E799009C021B /* AddRepaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA1892249E799009C021B /* AddRepaymentViewController.swift */; };
@@ -38,6 +37,13 @@
 		F36D5EA62252D0B80001FF9A /* TravellerSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D5EA52252D0B80001FF9A /* TravellerSet.swift */; };
 		F36D5EA82252DA840001FF9A /* EmbedTravellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D5EA72252DA840001FF9A /* EmbedTravellerViewController.swift */; };
 		F36D5EAA2252DD970001FF9A /* EditTravellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D5EA92252DD970001FF9A /* EditTravellerViewController.swift */; };
+		F39642102253D3A100EAFBC9 /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396420F2253D3A100EAFBC9 /* ExpenseViewController.swift */; };
+		F39642122253D40600EAFBC9 /* ExpenseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39642112253D40600EAFBC9 /* ExpenseTableViewController.swift */; };
+		F39642142253D44000EAFBC9 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39642132253D44000EAFBC9 /* Expense.swift */; };
+		F39642162253D47600EAFBC9 /* ExpenseSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39642152253D47600EAFBC9 /* ExpenseSet.swift */; };
+		F39642182253D49A00EAFBC9 /* ExpenseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39642172253D49A00EAFBC9 /* ExpenseDAO.swift */; };
+		F396421A2253D4DD00EAFBC9 /* ExpenseSetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39642192253D4DD00EAFBC9 /* ExpenseSetViewModel.swift */; };
+		F396421C2253D76100EAFBC9 /* ShowExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396421B2253D76100EAFBC9 /* ShowExpensesViewController.swift */; };
 		F3B82932224D13010021AFE2 /* logoCorbeille.png in Resources */ = {isa = PBXBuildFile; fileRef = F3B82931224D13000021AFE2 /* logoCorbeille.png */; };
 		F3BAA8BD2250C25F00FA9F69 /* TravellerDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BAA8BC2250C25F00FA9F69 /* TravellerDAO.swift */; };
 		F3BAA8C02250C2B600FA9F69 /* TravellerSetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BAA8BF2250C2B600FA9F69 /* TravellerSetViewModel.swift */; };
@@ -90,7 +96,6 @@
 		F35EA17B2249D126009C021B /* TravellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravellerViewController.swift; sourceTree = "<group>"; };
 		F35EA17D2249D13C009C021B /* ShowTravellerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTravellerDetailViewController.swift; sourceTree = "<group>"; };
 		F35EA17F2249D159009C021B /* AddTravellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTravellerViewController.swift; sourceTree = "<group>"; };
-		F35EA1832249E73F009C021B /* ShowExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowExpensesViewController.swift; sourceTree = "<group>"; };
 		F35EA1852249E75F009C021B /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		F35EA1872249E783009C021B /* ShowRepaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepaymentsViewController.swift; sourceTree = "<group>"; };
 		F35EA1892249E799009C021B /* AddRepaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRepaymentViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +108,13 @@
 		F36D5EA52252D0B80001FF9A /* TravellerSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravellerSet.swift; sourceTree = "<group>"; };
 		F36D5EA72252DA840001FF9A /* EmbedTravellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbedTravellerViewController.swift; sourceTree = "<group>"; };
 		F36D5EA92252DD970001FF9A /* EditTravellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTravellerViewController.swift; sourceTree = "<group>"; };
+		F396420F2253D3A100EAFBC9 /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpenseViewController.swift; path = ../../../ExpenseViewController.swift; sourceTree = "<group>"; };
+		F39642112253D40600EAFBC9 /* ExpenseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpenseTableViewController.swift; path = ../../../ExpenseTableViewController.swift; sourceTree = "<group>"; };
+		F39642132253D44000EAFBC9 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Expense.swift; path = ../../../Expense.swift; sourceTree = "<group>"; };
+		F39642152253D47600EAFBC9 /* ExpenseSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpenseSet.swift; path = ../../../ExpenseSet.swift; sourceTree = "<group>"; };
+		F39642172253D49A00EAFBC9 /* ExpenseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpenseDAO.swift; path = ../../ExpenseDAO.swift; sourceTree = "<group>"; };
+		F39642192253D4DD00EAFBC9 /* ExpenseSetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpenseSetViewModel.swift; path = ../../ExpenseSetViewModel.swift; sourceTree = "<group>"; };
+		F396421B2253D76100EAFBC9 /* ShowExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowExpensesViewController.swift; sourceTree = "<group>"; };
 		F3B82931224D13000021AFE2 /* logoCorbeille.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoCorbeille.png; path = AccountingTogether/logoCorbeille.png; sourceTree = "<group>"; };
 		F3BAA8BC2250C25F00FA9F69 /* TravellerDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravellerDAO.swift; sourceTree = "<group>"; };
 		F3BAA8BF2250C2B600FA9F69 /* TravellerSetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravellerSetViewModel.swift; sourceTree = "<group>"; };
@@ -226,8 +238,10 @@
 		F35EA1732249CEA9009C021B /* Expense */ = {
 			isa = PBXGroup;
 			children = (
-				F35EA1832249E73F009C021B /* ShowExpensesViewController.swift */,
 				F35EA1852249E75F009C021B /* AddExpenseViewController.swift */,
+				F396421B2253D76100EAFBC9 /* ShowExpensesViewController.swift */,
+				F39642112253D40600EAFBC9 /* ExpenseTableViewController.swift */,
+				F396420F2253D3A100EAFBC9 /* ExpenseViewController.swift */,
 			);
 			path = Expense;
 			sourceTree = "<group>";
@@ -261,6 +275,8 @@
 		F36D5EA22252D0860001FF9A /* Traveller */ = {
 			isa = PBXGroup;
 			children = (
+				F39642132253D44000EAFBC9 /* Expense.swift */,
+				F39642152253D47600EAFBC9 /* ExpenseSet.swift */,
 				F36D5EA32252D0A40001FF9A /* Traveller.swift */,
 				F36D5EA52252D0B80001FF9A /* TravellerSet.swift */,
 			);
@@ -270,6 +286,7 @@
 		F3BAA8BB2250021C00FA9F69 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F39642192253D4DD00EAFBC9 /* ExpenseSetViewModel.swift */,
 				F3BAA8BF2250C2B600FA9F69 /* TravellerSetViewModel.swift */,
 				F3BAA8C52250C65700FA9F69 /* TripSetViewModel.swift */,
 			);
@@ -281,6 +298,7 @@
 			children = (
 				F3BAA8BC2250C25F00FA9F69 /* TravellerDAO.swift */,
 				F3BAA8C12250C31500FA9F69 /* TripDAO.swift */,
+				F39642172253D49A00EAFBC9 /* ExpenseDAO.swift */,
 			);
 			name = DAO;
 			path = "New Group";
@@ -477,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F396421A2253D4DD00EAFBC9 /* ExpenseSetViewModel.swift in Sources */,
 				F33D1FCC22466AAF00CEF876 /* TripTableViewCell.swift in Sources */,
 				F36D5EA02252CE6B0001FF9A /* TableTravellerEmbedViewController.swift in Sources */,
 				F33D1FBE2246668E00CEF876 /* AddTripViewController.swift in Sources */,
@@ -488,6 +507,7 @@
 				F3BAA8C22250C31500FA9F69 /* TripDAO.swift in Sources */,
 				F3349E9F224A782A00B3038B /* RepaymentTableViewCell.swift in Sources */,
 				F35EA1882249E783009C021B /* ShowRepaymentsViewController.swift in Sources */,
+				F39642162253D47600EAFBC9 /* ExpenseSet.swift in Sources */,
 				F3D0A3482239613900D1DEF6 /* AppDelegate.swift in Sources */,
 				F35EA18A2249E799009C021B /* AddRepaymentViewController.swift in Sources */,
 				F35EA17E2249D13C009C021B /* ShowTravellerDetailViewController.swift in Sources */,
@@ -495,22 +515,26 @@
 				F33D1FC62246687E00CEF876 /* FormValidatorHelper.swift in Sources */,
 				F33D1FC22246676600CEF876 /* TripTableViewController.swift in Sources */,
 				F33D1FC0224666A100CEF876 /* EditTripViewController.swift in Sources */,
+				F396421C2253D76100EAFBC9 /* ShowExpensesViewController.swift in Sources */,
 				F33D1FBC224665A900CEF876 /* Trip.swift in Sources */,
 				F3BAA8C02250C2B600FA9F69 /* TravellerSetViewModel.swift in Sources */,
+				F39642122253D40600EAFBC9 /* ExpenseTableViewController.swift in Sources */,
 				F33D1FC42246685E00CEF876 /* CoreDataManager.swift in Sources */,
 				F35EA1802249D159009C021B /* AddTravellerViewController.swift in Sources */,
 				F3BAA8C42250C3F700FA9F69 /* TripSet.swift in Sources */,
 				F35EA17C2249D126009C021B /* TravellerViewController.swift in Sources */,
+				F39642182253D49A00EAFBC9 /* ExpenseDAO.swift in Sources */,
 				F3349E9D224A695200B3038B /* RepaymentExtension.swift in Sources */,
 				F35EA194224A234D009C021B /* ExpenseTableViewCell.swift in Sources */,
 				F3349EA3224B7D9C00B3038B /* TripCell.swift in Sources */,
 				F3BAA8BD2250C25F00FA9F69 /* TravellerDAO.swift in Sources */,
 				F36D5EAA2252DD970001FF9A /* EditTravellerViewController.swift in Sources */,
-				F35EA1842249E73F009C021B /* ShowExpensesViewController.swift in Sources */,
+				F39642102253D3A100EAFBC9 /* ExpenseViewController.swift in Sources */,
 				F3D0A3502239613900D1DEF6 /* AccountingTogether.xcdatamodeld in Sources */,
 				F36D5E9E22522F0F0001FF9A /* EmbedTripViewController.swift in Sources */,
 				F36D5EA82252DA840001FF9A /* EmbedTravellerViewController.swift in Sources */,
 				F35EA196224A2370009C021B /* TravellerTableViewCell.swift in Sources */,
+				F39642142253D44000EAFBC9 /* Expense.swift in Sources */,
 				F3BAA8C62250C65700FA9F69 /* TripSetViewModel.swift in Sources */,
 				F35EA1862249E75F009C021B /* AddExpenseViewController.swift in Sources */,
 				F33D1FCA224668C000CEF876 /* NotificationHelper.swift in Sources */,
