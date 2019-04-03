@@ -12,12 +12,13 @@ import Foundation
 
 class ShowTravellerDetailViewController: UIViewController {
     
-    var tableTraveller: Traveller? = nil
+    var tripSelected: Trip?
+    var travellerSelected: Traveller?
     
     @IBOutlet weak var nameTravellerLabel: UILabel!
     
     override func viewDidLoad() {
-        self.nameTravellerLabel.text = tableTraveller?.lastNameTraveller
+        self.nameTravellerLabel.text = travellerSelected?.lastNameTraveller
         super.viewDidLoad()
     }
     

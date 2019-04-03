@@ -14,12 +14,15 @@ class ExpenseViewController: UIViewController {
     var travellerSelected : Traveller?
     var tripSelected: Trip?
     
+    @IBOutlet weak var nameTripLabel: UILabel!
+    
     @IBOutlet var tableExpenseViewController: ExpenseTableViewController!
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.nameTripLabel.text = self.tripSelected?.nameTrip
         if let destination = segue.destination as? AddExpenseViewController {
-            destination.travellerSelected = self.travellerSelected
+            destination.tripSelected = self.tripSelected
         }
     }
     

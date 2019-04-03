@@ -27,24 +27,9 @@ class TripDAO {
         }
     }
     
-    /*static func create(withName: String, withImage: UIImage) throws -> Trip {
-        
-        let trip = Trip(context: CoreDataManager.context)
-        
-        trip.nameTrip = withName
-        trip.imageTrip = withImage.pngData()
-        CoreDataManager.save()
-        return trip
-    }*/
-    
-    /*func edit(withName: String) throws {
-        self.nameTrip = withName
-        do{
-            try CoreDataManager.save()
-        }catch let error as NSError{
-            throw error
-        }
-    }*/
+    static func getTravellersOfATrip(trip : Trip) -> NSSet?{
+        return trip.isComposedBy
+    }
     
     static func delete(trip: Trip) {
         CoreDataManager.context.delete(trip)

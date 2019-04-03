@@ -22,13 +22,7 @@ class ShowRepaymentViewController: UIViewController, UITableViewDataSource, UITa
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.nameTripLabel.text = tableTrip?.nameTrip
-        do{
-            listRepayment = try Repayment.getAll()
-        }catch let error as NSError{
-            DialogBoxHelper.alert(view: self, error: error)
-        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,17 +54,6 @@ class ShowRepaymentViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(_ tableView: UITableView, commit: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if (commit == UITableViewCell.EditingStyle.delete) {
-            tableView.beginUpdates()
-            do {
-                try self.listRepayment?[indexPath.row].delete()
-                //self.listTrip?.remove(at: indexPath.row)
-            } catch let e as NSError {
-                print("Erreur a la suppression de VC :  \(e)")
-                return
-            }
-            tableView.endUpdates()
-        }
     }
     
     //MARK: - Navigation
