@@ -46,19 +46,15 @@ class ExpenseSetViewModel {
         self.modelset = ExpenseSet()
     }
     
-    init(traveller: Traveller) {
-        if let data = traveller.paye {
-            for e in data.allObjects as! [Expense] {
-                self.dataset.append(e)
-            }
-            self.modelset = ExpenseSet(expenses: self.dataset)
-        }
-        else{
-            self.modelset = ExpenseSet()
+    init(trip: Trip) {
+        let data = ExpenseDAO.fetchAllExpenseOfTrip(trip: trip)
+        self.modelset = ExpenseSet(expenses: data)
+        for p in self.modelset {
+            self.dataset.append(p)
         }
     }
-    convenience init(delegate : ExpenseSetViewModelDelegate, traveller: Traveller) {
-        self.init(traveller: traveller)
+    convenience init(delegate : ExpenseSetViewModelDelegate, trip: Trip) {
+        self.init(trip: trip)
         self.delegate = delegate
         
     }

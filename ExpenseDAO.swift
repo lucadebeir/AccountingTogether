@@ -27,6 +27,26 @@ class ExpenseDAO {
         }
     }
     
+    static func fetchAllExpenseOfTrip(trip : Trip) -> [Expense]{
+        var tripExpense: [Expense] = []
+        
+        if let _travellersOfTravel = TripDAO.getTravellersOfATrip(trip: trip) {
+            
+            for t in _travellersOfTravel.allObjects as! [Traveller]{
+                
+                if let _expensesOfTraveller = t.paye {
+                    
+                    for t in _expensesOfTraveller.allObjects as! [Expense]{
+                        
+                        tripExpense.append(t)
+                    }
+                }
+            }
+        }
+        return tripExpense
+        
+    }
+    
     static func delete(expense: Expense) {
         CoreDataManager.context.delete(expense)
         self.save()

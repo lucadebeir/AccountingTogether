@@ -37,26 +37,6 @@ class TripViewController: UIViewController {
         }
     }
     
-  
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showTrip"{
-            if let cell = sender as? UICollectionViewCell {
-                guard let indexPath = self.trip.indexPath(for: cell)
-                    else{
-                        return
-                }
-                self.tripSelected = listTrip[indexPath.row]
-            }
-            guard let tabBarController = segue.destination as? UITabBarController, let destinationVC = tabBarController.viewControllers?[0] as? ShowTripDetailViewController, let destinationVC1 = tabBarController.viewControllers?[1] as? ShowExpensesViewController, let destinationVC2 = tabBarController.viewControllers?[2] as? ShowRepaymentViewController, let destinationVC3 = tabBarController.viewControllers?[3] as? ShowTravellersViewController else {
-                return
-            }
-            destinationVC.tableTrip = self.tripSelected
-            destinationVC1.tableTrip = self.tripSelected
-            destinationVC2.tableTrip = self.tripSelected
-            destinationVC3.tableTrip = self.tripSelected
-        }
-    }*/
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if(segue.identifier == "showTrip"){
@@ -74,7 +54,7 @@ class TripViewController: UIViewController {
                     self.tripSelected = self.tripTableVC.tripSetViewModel.get(tripAt: indexPath.row)
                 }
             }
-            guard let tabBarController = segue.destination as? UITabBarController, let destinationVC = tabBarController.viewControllers?[0] as? ShowSharingStatusViewController, let destinationVC1 = tabBarController.viewControllers?[1] as? ExpenseViewController, let destinationVC2 = tabBarController.viewControllers?[2] as? ShowRepaymentViewController, let destinationVC3 = tabBarController.viewControllers?[3] as? TravellerViewController else {
+            guard let tabBarController = segue.destination as? UITabBarController, let destinationVC = tabBarController.viewControllers?[0] as? SharingStatusViewController, let destinationVC1 = tabBarController.viewControllers?[1] as? ExpenseViewController, let destinationVC2 = tabBarController.viewControllers?[2] as? ShowRepaymentViewController, let destinationVC3 = tabBarController.viewControllers?[3] as? TravellerViewController else {
                 return
             }
             destinationVC.tripSelected = self.tripSelected

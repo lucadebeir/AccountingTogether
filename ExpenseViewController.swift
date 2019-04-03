@@ -18,9 +18,10 @@ class ExpenseViewController: UIViewController {
     
     @IBOutlet var tableExpenseViewController: ExpenseTableViewController!
     
+    var tableSharingStatusViewController: SharingStatusTableViewController!
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        self.nameTripLabel.text = self.tripSelected?.nameTrip
         if let destination = segue.destination as? AddExpenseViewController {
             destination.tripSelected = self.tripSelected
         }
@@ -29,8 +30,9 @@ class ExpenseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let traveller = self.travellerSelected {
-            self.tableExpenseViewController.expenseSetViewModel = ExpenseSetViewModel(delegate: self.tableExpenseViewController, traveller: traveller)
+        self.nameTripLabel.text = self.tripSelected?.nameTrip
+        if let trip = self.tripSelected {
+            self.tableExpenseViewController.expenseSetViewModel = ExpenseSetViewModel(delegate: self.tableExpenseViewController, trip: trip)
             
             
         } else {
@@ -51,6 +53,10 @@ class ExpenseViewController: UIViewController {
             let travellerController = segue.source as! AddExpenseViewController
             if let expense = travellerController.newExpense {
                 self.tableExpenseViewController.expenseSetViewModel.add(expense: expense)
+                CoreDataManager.save()
+            }
+            if let payFor = travellerController.newPayFor {
+                self.tableSharingStatusViewController.sharingStatusSetViewModel.add(payFor: payFor)
                 CoreDataManager.save()
             }
         }

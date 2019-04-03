@@ -16,7 +16,6 @@ extension Expense {
     public var nameE : String { return self.nameExpense ?? "" }
     public var amountE : Double { return self.amountExpense }
     
-    
     convenience init(nameExpense: String, amountExpense: Double){
         self.init(context: CoreDataManager.context)
         self.nameExpense = nameExpense

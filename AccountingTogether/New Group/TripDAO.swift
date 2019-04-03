@@ -31,6 +31,10 @@ class TripDAO {
         return trip.isComposedBy
     }
     
+    static func getPayForsOfATrip(trip : Trip) -> NSSet?{
+        return trip.contain
+    }
+    
     static func delete(trip: Trip) {
         CoreDataManager.context.delete(trip)
         self.save()

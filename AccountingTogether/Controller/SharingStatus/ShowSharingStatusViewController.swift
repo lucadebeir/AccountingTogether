@@ -15,19 +15,9 @@ class SharingStatusViewController: UIViewController {
     
     @IBOutlet weak var nameTripLabel: UILabel!
     
-    @IBOutlet var tableSharingStatusViewController: SharingStatusTableViewController!
-    
-    
     override func viewDidLoad() {
         self.nameTripLabel.text = self.tripSelected?.nameTrip
-        super.viewDidLoad()
-        if let trip = self.tripSelected {
-            self.tableSharingStatusViewController.sharingStatusSetViewModel = SharingStatusSetViewModel(delegate: self.tableSharingStatusViewController, trip: trip)
-            
-            
-        } else {
-            
-        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,10 +27,8 @@ class SharingStatusViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if let destination = segue.destination as? AddExpenseViewController {
-            destination.tableSharingStatusViewController = self.tableSharingStatusViewController
+            destination.tripSelected = self.tripSelected
         }
-        
     }
 }

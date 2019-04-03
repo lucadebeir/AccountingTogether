@@ -27,11 +27,17 @@ extension PayFor {
         set{ self.be = newValue }
     }
     
-    convenience init(priceAmount: Double, t: Traveller, e: Expense){
+    public var trip : Trip? {
+        get{ return self.belong }
+        set{ self.belong = newValue }
+    }
+    
+    convenience init(priceAmount: Double, t: Traveller, e: Expense, trip: Trip){
         self.init(context: CoreDataManager.context)
         self.amount = priceAmount
         self.traveller = t
         self.expense = e
+        self.trip = trip
     }
     
 }

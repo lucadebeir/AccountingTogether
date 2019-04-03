@@ -280,6 +280,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="z3Q-aY-xhs" id="ajV-hj-thb"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -300,6 +303,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="z3Q-aY-xhs" id="X1u-F3-DVm"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -336,6 +342,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FI5-fu-e3q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="z3Q-aY-xhs" userLabel="Delegate" customClass="AddExpenseViewController" customModule="AccountingTogether" customModuleProvider="target"/>
                 <customObject id="oNz-GK-s4l" customClass="TableTravellersExpenseViewController" customModule="AccountingTogether" customModuleProvider="target">
                     <connections>
                         <outlet property="tableView" destination="YdD-uF-pT0" id="dyZ-Eb-yRr"/>
@@ -457,8 +464,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Expense" id="Aix-jT-1WZ"/>
                     <connections>
-                        <outlet property="nameTripLabel" destination="TUh-qo-pEe" id="2YZ-SM-vVd"/>
-                        <outlet property="tableExpenseViewController" destination="ZrY-oa-tDz" id="do9-vK-F6K"/>
+                        <outlet property="nameTripLabel" destination="TUh-qo-pEe" id="HE2-NQ-7Fo"/>
+                        <outlet property="tableExpenseViewController" destination="ZrY-oa-tDz" id="Z2V-4S-SGa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxc-aU-ghT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -533,6 +540,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="i8s-4v-sLu" id="jQT-FS-kWF"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -550,6 +560,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="i8s-4v-sLu" id="2rQ-ac-Jsa"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -583,6 +596,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSF-2G-HiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="i8s-4v-sLu" userLabel="Delegate" customClass="AddTravellerViewController" customModule="AccountingTogether" customModuleProvider="target"/>
                 <exit id="i2c-BI-Tnb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1957.5999999999999" y="3602.698650674663"/>
@@ -966,7 +980,7 @@
         <!--Sharing status-->
         <scene sceneID="8HP-2p-A2r">
             <objects>
-                <viewController id="o9D-LE-AYh" customClass="ShowSharingStatusViewController" customModule="AccountingTogether" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="o9D-LE-AYh" customClass="SharingStatusViewController" customModule="AccountingTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n3L-0k-fe2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -987,35 +1001,87 @@
                                 <rect key="frame" x="16" y="142" width="343" height="372"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="MbE-oh-2xg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="showBalance" id="MbE-oh-2xg" customClass="SharingStatusTableViewCell" customModule="AccountingTogether" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MbE-oh-2xg" id="elt-Re-jaT">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="81" translatesAutoresizingMaskIntoConstraints="NO" id="RGN-ZT-gjI">
-                                                    <rect key="frame" x="15" y="11" width="313.5" height="20.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RGN-ZT-gjI">
+                                                    <rect key="frame" x="15" y="1" width="324.5" height="41"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameTraveller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7G-0y-IXx">
-                                                            <rect key="frame" x="0.0" y="0.0" width="108.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BalanceTraveller" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAB-qW-iEX">
-                                                            <rect key="frame" x="189.5" y="0.0" width="124" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ji8-dl-6Rb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="116" height="41"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameTraveller1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7G-0y-IXx">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="116" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="doit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLD-5t-vUf">
+                                                                    <rect key="frame" x="0.0" y="20.5" width="116" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BYQ-eV-ZMp">
+                                                            <rect key="frame" x="136" y="0.0" width="188.5" height="41"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="U4n-P2-7Be">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="188.5" height="20.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="BalanceTraveller" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAB-qW-iEX">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="147.5" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ax7-au-Zub">
+                                                                            <rect key="frame" x="177.5" y="0.0" width="11" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="Rp2-xv-9qS">
+                                                                    <rect key="frame" x="0.0" y="20.5" width="188.5" height="20.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="à" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5C-D2-TMO">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="9" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameTraveller2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Eg-x3-ypz">
+                                                                            <rect key="frame" x="70" y="0.0" width="118.5" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="amount" destination="sAB-qW-iEX" id="UmR-UK-Y7S"/>
+                                            <outlet property="nameTravellerPaidBy" destination="5Eg-x3-ypz" id="LiD-ep-Z7L"/>
+                                            <outlet property="nameTravellerPaidFor" destination="H7G-0y-IXx" id="ln5-Gx-Yqq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="SWh-C8-Yc4" id="Ghb-qx-sqb"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qp-Mf-pMC">
                                 <rect key="frame" x="16" y="20" width="44" height="36"/>
@@ -1061,9 +1127,15 @@
                     <tabBarItem key="tabBarItem" title="Sharing status" id="kWs-MN-8Ho"/>
                     <connections>
                         <outlet property="nameTripLabel" destination="c7Q-Ux-D6d" id="csU-4Q-Bfg"/>
+                        <outlet property="tableSharingStatusViewController" destination="SWh-C8-Yc4" id="YF4-1K-5YM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9I-HT-eUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="SWh-C8-Yc4" customClass="SharingStatusTableViewController" customModule="AccountingTogether" customModuleProvider="target">
+                    <connections>
+                        <outlet property="tableView" destination="fJF-lq-18S" id="GdS-04-Zb9"/>
+                    </connections>
+                </customObject>
                 <exit id="tvK-2I-J45" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1879.2" y="1752.7736131934034"/>
@@ -1103,7 +1175,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="AZz-Yz-WA0" id="0vx-b2-2SJ"/>
+                                    <outlet property="delegate" destination="NHa-hL-bkF" id="7Ho-TB-nZz"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZd-0g-CGI">
@@ -1171,6 +1243,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="O1q-0H-7fI" id="lWW-hA-0N6"/>
+                                    <outlet property="delegate" destination="AZz-Yz-WA0" id="Cnn-Yq-ZGR"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbm-3V-CwA">
@@ -1240,6 +1313,7 @@
                         <outlet property="tableView" destination="qTm-up-sOO" id="efS-rx-xP0"/>
                     </connections>
                 </customObject>
+                <customObject id="NHa-hL-bkF" userLabel="Delegate" customClass="AddTripViewController" customModule="AccountingTogether" customModuleProvider="target"/>
                 <exit id="jfm-ft-gdt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4997.6000000000004" y="-807.34632683658174"/>
@@ -1524,6 +1598,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="uZi-Of-DRQ" id="JW1-ug-9hM"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -1541,6 +1618,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="uZi-Of-DRQ" id="yYr-bc-Tez"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -1568,6 +1648,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZu-8y-WBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="uZi-Of-DRQ" userLabel="Delegate" customClass="AddRepaymentViewController" customModule="AccountingTogether" customModuleProvider="target"/>
                 <exit id="DeI-sx-39o" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="589.60000000000002" y="2659.5202398800602"/>

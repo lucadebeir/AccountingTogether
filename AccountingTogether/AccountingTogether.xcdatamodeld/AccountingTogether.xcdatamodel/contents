@@ -3,12 +3,13 @@
     <entity name="Expense" representedClassName="Expense" syncable="YES" codeGenerationType="class">
         <attribute name="amountExpense" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nameExpense" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="being" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PayFor" inverseName="be" inverseEntity="PayFor" syncable="YES"/>
+        <relationship name="being" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PayFor" inverseName="be" inverseEntity="PayFor" syncable="YES"/>
         <relationship name="paidBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="paye" inverseEntity="Traveller" syncable="YES"/>
     </entity>
     <entity name="PayFor" representedClassName="PayFor" syncable="YES" codeGenerationType="class">
         <attribute name="priceAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="be" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="being" inverseEntity="Expense" syncable="YES"/>
+        <relationship name="belong" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="contain" inverseEntity="Trip" syncable="YES"/>
         <relationship name="must" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="will" inverseEntity="Traveller" syncable="YES"/>
     </entity>
     <entity name="Repayment" representedClassName="Repayment" syncable="YES" codeGenerationType="class">
@@ -32,13 +33,14 @@
         <attribute name="dateEndTrip" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="imageTrip" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="nameTrip" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contain" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PayFor" inverseName="belong" inverseEntity="PayFor" syncable="YES"/>
         <relationship name="isComposedBy" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Traveller" inverseName="participates" inverseEntity="Traveller" syncable="YES"/>
     </entity>
     <elements>
         <element name="Expense" positionX="-534.90234375" positionY="-1289.5078125" width="128" height="105"/>
-        <element name="PayFor" positionX="-507.64453125" positionY="-1509.08203125" width="128" height="90"/>
+        <element name="PayFor" positionX="-507.64453125" positionY="-1509.08203125" width="128" height="105"/>
         <element name="Repayment" positionX="41.0546875" positionY="-1284.55859375" width="128" height="105"/>
         <element name="Traveller" positionX="-210.6875" positionY="-1516.09375" width="128" height="165"/>
-        <element name="Trip" positionX="-62.51953125" positionY="-1762.21875" width="128" height="118"/>
+        <element name="Trip" positionX="-62.51953125" positionY="-1762.21875" width="128" height="135"/>
     </elements>
 </model>

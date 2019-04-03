@@ -9,13 +9,18 @@
 import UIKit
 
 
-class AddTripViewController: UIViewController {
+class AddTripViewController: UIViewController, UITextFieldDelegate {
     
     var newTrip: Trip?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
 }

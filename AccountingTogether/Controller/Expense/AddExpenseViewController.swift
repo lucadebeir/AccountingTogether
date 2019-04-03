@@ -23,6 +23,7 @@ UIPickerViewDataSource  {
     var pickerDataPaidBy: [Traveller] = []
     
     var newExpense: Expense? = nil
+    var newPayFor: PayFor? = nil
     
     var travellerSelectedPayBy: Traveller? = nil
     
@@ -30,6 +31,7 @@ UIPickerViewDataSource  {
     
     @IBOutlet var addExpenseController: TableTravellersExpenseViewController!
     
+    var tableSharingStatusViewController: SharingStatusTableViewController!
     
     override func viewDidLoad() {
         if let expenseToUpdate = self.newExpense {
@@ -71,11 +73,13 @@ UIPickerViewDataSource  {
             self.newExpense = Expense(nameExpense: nameExpense, amountExpense: amountE!)
             self.newExpense?.paidBy = self.travellerSelectedPayBy
             for t in addExpenseController.selectedTravellers {
-                if (t != self.travellerSelectedPayBy) {
-                    PayFor(priceAmount: priceForEach, t: t, e: self.newExpense!)
-                }
+                self.newPayFor = PayFor(priceAmount: priceForEach, t: t, e: self.newExpense!, trip: self.tripSelected!)
+                CoreDataManager.save()
             }
             CoreDataManager.save()
+        }
+        if let destination = segue.destination as? ExpenseViewController {
+            destination.tableSharingStatusViewController = self.tableSharingStatusViewController
         }
         else if segue.identifier == "cancel"{
             if let expenseToCancel = self.newExpense {
