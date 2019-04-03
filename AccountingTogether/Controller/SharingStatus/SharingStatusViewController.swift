@@ -17,6 +17,7 @@ class ShowSharingStatusViewController: UIViewController {
     
     override func viewDidLoad() {
         self.nameTripLabel.text = self.tripSelected?.nameTrip
+        
     }
     
     override func didReceiveMemoryWarning() {
