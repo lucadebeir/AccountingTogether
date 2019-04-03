@@ -14,6 +14,7 @@
 		6D87C71E2254203600FDE964 /* Repayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87C71D2254203600FDE964 /* Repayment.swift */; };
 		6D87C7202254204200FDE964 /* RepaymentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87C71F2254204200FDE964 /* RepaymentSet.swift */; };
 		6D87C7222254212800FDE964 /* RepaymentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87C7212254212800FDE964 /* RepaymentDAO.swift */; };
+		6DD9A7F4225553D5006EDCFC /* TableTravellersRepaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9A7F3225553D5006EDCFC /* TableTravellersRepaymentViewController.swift */; };
 		F3349E9F224A782A00B3038B /* RepaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3349E9E224A782A00B3038B /* RepaymentTableViewCell.swift */; };
 		F3349EA1224B7D0E00B3038B /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3349EA0224B7D0E00B3038B /* TripViewController.swift */; };
 		F3349EA3224B7D9C00B3038B /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3349EA2224B7D9C00B3038B /* TripCell.swift */; };
@@ -95,6 +96,7 @@
 		6D87C71D2254203600FDE964 /* Repayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repayment.swift; sourceTree = "<group>"; };
 		6D87C71F2254204200FDE964 /* RepaymentSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentSet.swift; sourceTree = "<group>"; };
 		6D87C7212254212800FDE964 /* RepaymentDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentDAO.swift; sourceTree = "<group>"; };
+		6DD9A7F3225553D5006EDCFC /* TableTravellersRepaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTravellersRepaymentViewController.swift; sourceTree = "<group>"; };
 		F3349E9E224A782A00B3038B /* RepaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentTableViewCell.swift; sourceTree = "<group>"; };
 		F3349EA0224B7D0E00B3038B /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 		F3349EA2224B7D9C00B3038B /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
@@ -215,7 +217,7 @@
 		F33D1FB8224664AA00CEF876 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F3CBEDC1225465E50045B17B /* New Group */,
+				F3CBEDC1225465E50045B17B /* PayFor */,
 				6D87C71C2254200D00FDE964 /* Repayment */,
 				6D87C71B22541FF200FDE964 /* Expense */,
 				F36D5EA22252D0860001FF9A /* Traveller */,
@@ -279,8 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				F35EA1852249E75F009C021B /* AddExpenseViewController.swift */,
-				6D2E97892253D1EA003333A2 /* ExpenseTableViewController.swift */,
 				F396420F2253D3A100EAFBC9 /* ExpenseViewController.swift */,
+				6D2E97892253D1EA003333A2 /* ExpenseTableViewController.swift */,
 				F3CBEDBB225452360045B17B /* TableTravellersExpenseViewController.swift */,
 			);
 			path = Expense;
@@ -289,10 +291,11 @@
 		F35EA1742249CEB3009C021B /* Repayment */ = {
 			isa = PBXGroup;
 			children = (
-				F35EA1872249E783009C021B /* ShowRepaymentsViewController.swift */,
 				F35EA1892249E799009C021B /* AddRepaymentViewController.swift */,
+				F35EA1872249E783009C021B /* ShowRepaymentsViewController.swift */,
 				6D87C71322541B7000FDE964 /* RepaymentTableViewController.swift */,
 				6D87C71522541BEA00FDE964 /* RepaymentViewController.swift */,
+				6DD9A7F3225553D5006EDCFC /* TableTravellersRepaymentViewController.swift */,
 			);
 			path = Repayment;
 			sourceTree = "<group>";
@@ -349,12 +352,13 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		F3CBEDC1225465E50045B17B /* New Group */ = {
+		F3CBEDC1225465E50045B17B /* PayFor */ = {
 			isa = PBXGroup;
 			children = (
 				F3CBEDC2225465F60045B17B /* PayFor.swift */,
 				F3CBEDC8225505060045B17B /* PayForSet.swift */,
 			);
+			name = PayFor;
 			path = "New Group";
 			sourceTree = "<group>";
 		};
@@ -575,6 +579,7 @@
 				F33D1FC62246687E00CEF876 /* FormValidatorHelper.swift in Sources */,
 				F33D1FC22246676600CEF876 /* TripTableViewController.swift in Sources */,
 				F33D1FC0224666A100CEF876 /* EditTripViewController.swift in Sources */,
+				6DD9A7F4225553D5006EDCFC /* TableTravellersRepaymentViewController.swift in Sources */,
 				F33D1FBC224665A900CEF876 /* Trip.swift in Sources */,
 				6D87C7222254212800FDE964 /* RepaymentDAO.swift in Sources */,
 				F3BAA8C02250C2B600FA9F69 /* TravellerSetViewModel.swift in Sources */,

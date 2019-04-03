@@ -21,11 +21,7 @@ class ExpenseViewController: UIViewController {
     var tableSharingStatusViewController: SharingStatusTableViewController!
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? AddExpenseViewController {
-            destination.tripSelected = self.tripSelected
-        }
-    }
+    
     
     
     override func viewDidLoad() {
@@ -46,6 +42,14 @@ class ExpenseViewController: UIViewController {
         super.didReceiveMemoryWarning()
         
         // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? AddExpenseViewController {
+            destination.tripSelected = self.tripSelected
+        }
     }
     
     @IBAction func uwindToListExpense(segue: UIStoryboardSegue) {

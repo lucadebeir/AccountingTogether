@@ -54,12 +54,12 @@ class TripViewController: UIViewController {
                     self.tripSelected = self.tripTableVC.tripSetViewModel.get(tripAt: indexPath.row)
                 }
             }
-            guard let tabBarController = segue.destination as? UITabBarController, let destinationVC = tabBarController.viewControllers?[0] as? SharingStatusViewController, let destinationVC1 = tabBarController.viewControllers?[1] as? ExpenseViewController, let destinationVC2 = tabBarController.viewControllers?[2] as? ShowRepaymentViewController, let destinationVC3 = tabBarController.viewControllers?[3] as? TravellerViewController else {
+            guard let tabBarController = segue.destination as? UITabBarController, let destinationVC = tabBarController.viewControllers?[0] as? SharingStatusViewController, let destinationVC1 = tabBarController.viewControllers?[1] as? ExpenseViewController, let destinationVC2 = tabBarController.viewControllers?[2] as? RepaymentViewController, let destinationVC3 = tabBarController.viewControllers?[3] as? TravellerViewController else {
                 return
             }
             destinationVC.tripSelected = self.tripSelected
             destinationVC1.tripSelected = self.tripSelected
-            destinationVC2.tableTrip = self.tripSelected
+            destinationVC2.tripSelected = self.tripSelected
             destinationVC3.tripSelected = self.tripSelected
         }
         else if (segue.identifier == "editTrip"){

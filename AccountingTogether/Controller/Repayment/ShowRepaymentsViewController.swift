@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class ShowRepaymentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+/*class ShowRepaymentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var listRepayment: [Repayment]? = nil
     var repaymentSelected: Repayment? = nil
@@ -83,4 +83,4 @@ class ShowRepaymentViewController: UIViewController, UITableViewDataSource, UITa
         }
     }
     
-}
+}*/

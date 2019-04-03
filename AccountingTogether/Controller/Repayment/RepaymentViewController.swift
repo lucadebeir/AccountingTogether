@@ -14,6 +14,8 @@ class RepaymentViewController: UIViewController {
     var travellerSelected : Traveller?
     var tripSelected: Trip?
     
+    @IBOutlet weak var nameTripLabel: UILabel!
+    
     @IBOutlet var tableRepaymentViewController: RepaymentTableViewController!
     
     

@@ -50,6 +50,12 @@ class RepaymentTableViewController: NSObject, UITableViewDataSource, UITableView
     
     //MARK: - table view
     
+    ///
+    ///
+    /// - Parameters:
+    ///   - tableView:
+    ///   - section:
+    /// - Returns: Return the number of repayment in the table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.repaymentSetViewModel.count
     }

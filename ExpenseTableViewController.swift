@@ -48,7 +48,7 @@ class ExpenseTableViewController: NSObject, UITableViewDataSource, UITableViewDe
     }
     
     
-    //MARK: - table view
+    //MARK: - Table View
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.expenseSetViewModel.count
