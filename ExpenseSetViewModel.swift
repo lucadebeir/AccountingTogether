@@ -47,7 +47,7 @@ class ExpenseSetViewModel {
     }
     
     init(traveller: Traveller) {
-        if let data = traveller.bePaid {
+        if let data = traveller.paye {
             for e in data.allObjects as! [Expense] {
                 self.dataset.append(e)
             }

@@ -3,12 +3,12 @@
     <entity name="Expense" representedClassName="Expense" syncable="YES" codeGenerationType="class">
         <attribute name="amountExpense" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nameExpense" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="being" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PayFor" inverseName="be" inverseEntity="PayFor" syncable="YES"/>
         <relationship name="paidBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="paye" inverseEntity="Traveller" syncable="YES"/>
-        <relationship name="paidFor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="bePaid" inverseEntity="Traveller" syncable="YES"/>
     </entity>
-    <entity name="PayingFor" representedClassName="PayingFor" syncable="YES" codeGenerationType="class">
-        <relationship name="h" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" syncable="YES"/>
-        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" syncable="YES"/>
+    <entity name="PayFor" representedClassName="PayFor" syncable="YES" codeGenerationType="class">
+        <relationship name="be" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="being" inverseEntity="Expense" syncable="YES"/>
+        <relationship name="must" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="will" inverseEntity="Traveller" syncable="YES"/>
     </entity>
     <entity name="Repayment" representedClassName="Repayment" syncable="YES" codeGenerationType="class">
         <attribute name="amountRepayment" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -20,11 +20,11 @@
         <attribute name="arrivalDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="firstNameTraveller" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastNameTraveller" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="bePaid" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="paidFor" inverseEntity="Expense" syncable="YES"/>
         <relationship name="getARefund" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repayment" inverseName="refundFor" inverseEntity="Repayment" syncable="YES"/>
         <relationship name="participates" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="isComposedBy" inverseEntity="Trip" syncable="YES"/>
         <relationship name="paye" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="paidBy" inverseEntity="Expense" syncable="YES"/>
         <relationship name="refund" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repayment" inverseName="refundBy" inverseEntity="Repayment" syncable="YES"/>
+        <relationship name="will" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PayFor" inverseName="must" inverseEntity="PayFor" syncable="YES"/>
     </entity>
     <entity name="Trip" representedClassName="Trip" syncable="YES" codeGenerationType="class">
         <attribute name="dateBeginTrip" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -35,9 +35,9 @@
     </entity>
     <elements>
         <element name="Expense" positionX="-534.90234375" positionY="-1289.5078125" width="128" height="105"/>
+        <element name="PayFor" positionX="-507.64453125" positionY="-1509.08203125" width="128" height="75"/>
         <element name="Repayment" positionX="41.0546875" positionY="-1284.55859375" width="128" height="105"/>
         <element name="Traveller" positionX="-210.6875" positionY="-1516.09375" width="128" height="165"/>
-        <element name="Trip" positionX="-66.99609375" positionY="-1775.6015625" width="128" height="118"/>
-        <element name="PayingFor" positionX="-369" positionY="-1458" width="128" height="75"/>
+        <element name="Trip" positionX="-62.51953125" positionY="-1762.21875" width="128" height="118"/>
     </elements>
 </model>

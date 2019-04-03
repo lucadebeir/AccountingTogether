@@ -47,7 +47,7 @@ class RepaymentSetViewModel {
     }
     
     init(traveller: Traveller) {
-        if let data = traveller.bePaid {
+        if let data = traveller.paye {
             for e in data.allObjects as! [Repayment] {
                 self.dataset.append(e)
             }
