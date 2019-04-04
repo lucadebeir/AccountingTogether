@@ -47,6 +47,19 @@ class ExpenseDAO {
         
     }
     
+    static func createExpenseUpdates(paidBy: Traveller, e: Expense, selectedTravellers : TravellerSet, priceForEach : Double, trip: Trip){
+        
+        e.paidBy = paidBy
+        
+        for p in selectedTravellers {
+            if(p != paidBy){
+                _ = PayFor(priceAmount: priceForEach, t: p, e: e, trip: trip)
+                BalanceDAO.updateBalances(paidBy: paidBy, paidFor: p, amount: priceForEach)
+            }
+        }
+        CoreDataManager.save()
+    }
+    
     static func delete(expense: Expense) {
         CoreDataManager.context.delete(expense)
         self.save()

@@ -20,10 +20,10 @@ UIPickerViewDataSource  {
     
     @IBOutlet weak var pickerViewPaidBy: UIPickerView!
     
-    var pickerDataPaidBy: [Traveller] = []
+    var pickerDataPaidBy: [Traveller?] = []
     
-    var newExpense: Expense? = nil
-    var newPayFor: PayFor? = nil
+    var newExpense: Expense?
+    var newPayFor: PayFor?
     
     var travellerSelectedPayBy: Traveller? = nil
     
@@ -31,7 +31,7 @@ UIPickerViewDataSource  {
     
     @IBOutlet var addExpenseController: TableTravellersExpenseViewController!
     
-    var tableSharingStatusViewController: SharingStatusTableViewController!
+    var tableBalanceViewController: BalanceTableViewController!
     
     override func viewDidLoad() {
         if let expenseToUpdate = self.newExpense {
@@ -39,7 +39,7 @@ UIPickerViewDataSource  {
         }
         else if let _data = TripDAO.getTravellersOfATrip(trip: tripSelected!){
             
-            for t in _data.allObjects as! [Traveller]{
+            for t in _data.allObjects as! [Traveller] {
                 self.pickerDataPaidBy.append(t)
             }
         }
@@ -64,23 +64,22 @@ UIPickerViewDataSource  {
         // Pass the selected object to the new view controller.
         if segue.identifier == "addExpense" { //UNWIND LINK
             let nameExpense: String = self.nameTF.text!
-            guard let amountExpense = self.priceTF.text else { return }
+            let amountExpense = self.priceTF.text!
             let amountE = Double(amountExpense)
             
             //the price for each
             let priceForEach = amountE! / Double(self.addExpenseController.selectedTravellers.count())
             
             self.newExpense = Expense(nameExpense: nameExpense, amountExpense: amountE!)
-            self.newExpense?.paidBy = self.travellerSelectedPayBy
-            for t in addExpenseController.selectedTravellers {
-                self.newPayFor = PayFor(priceAmount: priceForEach, t: t, e: self.newExpense!, trip: self.tripSelected!)
-                CoreDataManager.save()
+            self.newExpense!.paidBy = self.travellerSelectedPayBy
+            
+            ExpenseDAO.createExpenseUpdates(paidBy: self.travellerSelectedPayBy!, e: self.newExpense!, selectedTravellers: self.addExpenseController.selectedTravellers, priceForEach: priceForEach, trip: tripSelected!)
+            
             }
-            CoreDataManager.save()
-        }
-        if let destination = segue.destination as? ExpenseViewController {
-            destination.tableSharingStatusViewController = self.tableSharingStatusViewController
-        }
+            if let destination = segue.destination as? BalanceViewController {
+                destination.tableBalanceViewController = self.tableBalanceViewController
+            }
+        
         else if segue.identifier == "cancel"{
             if let expenseToCancel = self.newExpense {
                 ExpenseDAO.delete(expense: expenseToCancel)
@@ -107,17 +106,17 @@ UIPickerViewDataSource  {
     
     // The number of rows of data
      func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-     return pickerDataPaidBy.count
+        return self.pickerDataPaidBy.count
      }
      
      // The data to return fopr the row and component (column) that's being passed in
      func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-     return pickerDataPaidBy[row].fullname
+        return self.pickerDataPaidBy[row]?.fullname
      }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         //the friend selected in the picker :
-        travellerSelectedPayBy = pickerDataPaidBy[row]
+        self.travellerSelectedPayBy = self.pickerDataPaidBy[row]
     }
     
 }

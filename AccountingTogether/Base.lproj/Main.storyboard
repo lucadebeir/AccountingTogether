@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3MN-cW-ogp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3MN-cW-ogp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -230,7 +230,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="OK"/>
                                 <connections>
-                                    <segue destination="Xyi-ca-ekG" kind="unwind" identifier="addExpense" unwindAction="uwindToListExpenseWithSegue:" id="qEd-F0-ojH"/>
+                                    <segue destination="Xyi-ca-ekG" kind="unwind" identifier="addExpense" unwindAction="uwindToListExpenseWithSegue:" id="O71-A3-Lbw"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gwm-4C-uDG">
@@ -244,6 +244,10 @@
                                     </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0aQ-qL-eu3">
                                         <rect key="frame" x="0.0" y="21.5" width="319" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="oNz-GK-s4l" id="i6I-U5-9Qf"/>
+                                            <outlet property="delegate" destination="oNz-GK-s4l" id="1H9-nL-BYG"/>
+                                        </connections>
                                     </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paid for :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRa-05-Sdn">
                                         <rect key="frame" x="0.0" y="237.5" width="319" height="21.5"/>
@@ -266,7 +270,7 @@
                                         </prototypes>
                                         <connections>
                                             <outlet property="dataSource" destination="oNz-GK-s4l" id="ca7-MJ-8yx"/>
-                                            <outlet property="delegate" destination="oNz-GK-s4l" id="Qfc-lU-1LN"/>
+                                            <outlet property="delegate" destination="oNz-GK-s4l" id="1at-Zg-2bd"/>
                                         </connections>
                                     </tableView>
                                 </subviews>
@@ -449,6 +453,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="ZrY-oa-tDz" id="3Qy-Ha-qde"/>
+                                    <outlet property="delegate" destination="ZrY-oa-tDz" id="cCC-Cz-KW3"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCS-HF-qSS">
@@ -996,7 +1001,7 @@
         <!--Sharing status-->
         <scene sceneID="8HP-2p-A2r">
             <objects>
-                <viewController id="o9D-LE-AYh" customClass="SharingStatusViewController" customModule="AccountingTogether" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="o9D-LE-AYh" customClass="BalanceViewController" customModule="AccountingTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n3L-0k-fe2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1013,80 +1018,6 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fJF-lq-18S">
-                                <rect key="frame" x="16" y="142" width="343" height="372"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="showBalance" id="MbE-oh-2xg" customClass="SharingStatusTableViewCell" customModule="AccountingTogether" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MbE-oh-2xg" id="elt-Re-jaT">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameTraveller1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7G-0y-IXx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="116" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="doit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLD-5t-vUf">
-                                                    <rect key="frame" x="124" y="0.0" width="29.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="BalanceTraveller" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAB-qW-iEX">
-                                                    <rect key="frame" x="206" y="0.0" width="124" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ax7-au-Zub">
-                                                    <rect key="frame" x="332" y="0.0" width="11" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="à" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5C-D2-TMO">
-                                                    <rect key="frame" x="0.0" y="22.5" width="9" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameTraveller2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Eg-x3-ypz">
-                                                    <rect key="frame" x="17" y="22.5" width="119" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="h5C-D2-TMO" firstAttribute="leading" secondItem="elt-Re-jaT" secondAttribute="leading" id="13A-a3-LzZ"/>
-                                                <constraint firstItem="5Eg-x3-ypz" firstAttribute="leading" secondItem="h5C-D2-TMO" secondAttribute="trailing" constant="8" id="4kc-XZ-OYa"/>
-                                                <constraint firstAttribute="trailing" secondItem="ax7-au-Zub" secondAttribute="trailing" id="6KY-l5-Wzx"/>
-                                                <constraint firstItem="sAB-qW-iEX" firstAttribute="centerY" secondItem="H7G-0y-IXx" secondAttribute="centerY" id="GTh-Kn-xhA"/>
-                                                <constraint firstItem="h5C-D2-TMO" firstAttribute="top" secondItem="H7G-0y-IXx" secondAttribute="bottom" constant="2" id="MTF-Hi-of1"/>
-                                                <constraint firstItem="H7G-0y-IXx" firstAttribute="leading" secondItem="elt-Re-jaT" secondAttribute="leading" id="TO1-YG-7HS"/>
-                                                <constraint firstItem="nLD-5t-vUf" firstAttribute="leading" secondItem="H7G-0y-IXx" secondAttribute="trailing" constant="8" id="VUu-1R-La3"/>
-                                                <constraint firstItem="ax7-au-Zub" firstAttribute="leading" secondItem="sAB-qW-iEX" secondAttribute="trailing" constant="2" id="clF-8R-Lh5"/>
-                                                <constraint firstItem="H7G-0y-IXx" firstAttribute="top" secondItem="elt-Re-jaT" secondAttribute="top" id="hXP-di-lhH"/>
-                                                <constraint firstItem="ax7-au-Zub" firstAttribute="centerY" secondItem="H7G-0y-IXx" secondAttribute="centerY" id="ils-hG-YcH"/>
-                                                <constraint firstItem="nLD-5t-vUf" firstAttribute="centerY" secondItem="H7G-0y-IXx" secondAttribute="centerY" id="jHF-JO-cvH"/>
-                                                <constraint firstItem="5Eg-x3-ypz" firstAttribute="centerY" secondItem="h5C-D2-TMO" secondAttribute="centerY" id="wjQ-1n-psY"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="amount" destination="sAB-qW-iEX" id="UmR-UK-Y7S"/>
-                                            <outlet property="nameTravellerPaidBy" destination="5Eg-x3-ypz" id="LiD-ep-Z7L"/>
-                                            <outlet property="nameTravellerPaidFor" destination="H7G-0y-IXx" id="ln5-Gx-Yqq"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="SWh-C8-Yc4" id="Ghb-qx-sqb"/>
-                                </connections>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qp-Mf-pMC">
                                 <rect key="frame" x="16" y="20" width="44" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -1106,6 +1037,44 @@
                                     <segue destination="0dG-b0-5kf" kind="presentation" id="nRG-y6-YSd"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fJF-lq-18S">
+                                <rect key="frame" x="16" y="142" width="343" height="372"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="showBalance" id="MbE-oh-2xg" customClass="SharingStatusTableViewCell" customModule="AccountingTogether" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MbE-oh-2xg" id="elt-Re-jaT">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7G-0y-IXx">
+                                                    <rect key="frame" x="15" y="11" width="261" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLD-5t-vUf">
+                                                    <rect key="frame" x="268" y="11" width="60" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="amount" destination="nLD-5t-vUf" id="Cha-LE-6Yd"/>
+                                            <outlet property="nameTravellerPaidBy" destination="H7G-0y-IXx" id="eUO-ud-FcS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="SWh-C8-Yc4" id="Ghb-qx-sqb"/>
+                                    <outlet property="delegate" destination="SWh-C8-Yc4" id="qSP-Xk-Z1u"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1131,11 +1100,11 @@
                     <tabBarItem key="tabBarItem" title="Sharing status" id="kWs-MN-8Ho"/>
                     <connections>
                         <outlet property="nameTripLabel" destination="c7Q-Ux-D6d" id="csU-4Q-Bfg"/>
-                        <outlet property="tableSharingStatusViewController" destination="SWh-C8-Yc4" id="YF4-1K-5YM"/>
+                        <outlet property="tableBalanceViewController" destination="SWh-C8-Yc4" id="nfJ-sP-ff5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9I-HT-eUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="SWh-C8-Yc4" customClass="SharingStatusTableViewController" customModule="AccountingTogether" customModuleProvider="target">
+                <customObject id="SWh-C8-Yc4" customClass="BalanceTableViewController" customModule="AccountingTogether" customModuleProvider="target">
                     <connections>
                         <outlet property="tableView" destination="fJF-lq-18S" id="GdS-04-Zb9"/>
                     </connections>
@@ -1247,7 +1216,6 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="O1q-0H-7fI" id="lWW-hA-0N6"/>
-                                    <outlet property="delegate" destination="AZz-Yz-WA0" id="Cnn-Yq-ZGR"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbm-3V-CwA">
@@ -1497,7 +1465,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mci-5q-Wuc" id="kgf-25-Xsz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         </tableViewCellContentView>
                                         <connections>

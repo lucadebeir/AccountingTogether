@@ -18,7 +18,7 @@ class ExpenseViewController: UIViewController {
     
     @IBOutlet var tableExpenseViewController: ExpenseTableViewController!
     
-    var tableSharingStatusViewController: SharingStatusTableViewController!
+    var tableBalanceViewController: BalanceTableViewController!
     
     
     
@@ -50,17 +50,17 @@ class ExpenseViewController: UIViewController {
         if let destination = segue.destination as? AddExpenseViewController {
             destination.tripSelected = self.tripSelected
         }
+        if let destination = segue.destination as? BalanceViewController {
+            destination.tripSelected = self.tripSelected
+            destination.tableBalanceViewController = self.tableBalanceViewController
+        }
     }
     
     @IBAction func uwindToListExpense(segue: UIStoryboardSegue) {
         if (segue.identifier == "addExpense") {
             let travellerController = segue.source as! AddExpenseViewController
-            if let expense = travellerController.newExpense {
+            if let expense = travellerController.newExpense{
                 self.tableExpenseViewController.expenseSetViewModel.add(expense: expense)
-                CoreDataManager.save()
-            }
-            if let payFor = travellerController.newPayFor {
-                self.tableSharingStatusViewController.sharingStatusSetViewModel.add(payFor: payFor)
                 CoreDataManager.save()
             }
         }

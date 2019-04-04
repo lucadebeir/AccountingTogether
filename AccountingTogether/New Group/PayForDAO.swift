@@ -42,6 +42,7 @@ class PayForDAO {
         
     }
     
+    
     static func delete(payFor: PayFor) {
         CoreDataManager.context.delete(payFor)
         self.save()

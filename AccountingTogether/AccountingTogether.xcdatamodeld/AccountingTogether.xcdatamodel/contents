@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Balance" representedClassName="Balance" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nameTravellerPaidFor" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relatedTo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traveller" inverseName="result" inverseEntity="Traveller" syncable="YES"/>
+    </entity>
     <entity name="Expense" representedClassName="Expense" syncable="YES" codeGenerationType="class">
         <attribute name="amountExpense" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nameExpense" optional="YES" attributeType="String" syncable="YES"/>
@@ -26,6 +31,7 @@
         <relationship name="participates" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="isComposedBy" inverseEntity="Trip" syncable="YES"/>
         <relationship name="paye" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="paidBy" inverseEntity="Expense" syncable="YES"/>
         <relationship name="refund" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repayment" inverseName="refundBy" inverseEntity="Repayment" syncable="YES"/>
+        <relationship name="result" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Balance" inverseName="relatedTo" inverseEntity="Balance" syncable="YES"/>
         <relationship name="will" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PayFor" inverseName="must" inverseEntity="PayFor" syncable="YES"/>
     </entity>
     <entity name="Trip" representedClassName="Trip" syncable="YES" codeGenerationType="class">
@@ -37,10 +43,11 @@
         <relationship name="isComposedBy" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Traveller" inverseName="participates" inverseEntity="Traveller" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Balance" positionX="-324" positionY="-1602" width="128" height="90"/>
         <element name="Expense" positionX="-534.90234375" positionY="-1289.5078125" width="128" height="105"/>
         <element name="PayFor" positionX="-507.64453125" positionY="-1509.08203125" width="128" height="105"/>
         <element name="Repayment" positionX="41.0546875" positionY="-1284.55859375" width="128" height="105"/>
-        <element name="Traveller" positionX="-210.6875" positionY="-1516.09375" width="128" height="165"/>
+        <element name="Traveller" positionX="-210.6875" positionY="-1516.09375" width="128" height="180"/>
         <element name="Trip" positionX="-62.51953125" positionY="-1762.21875" width="128" height="135"/>
     </elements>
 </model>

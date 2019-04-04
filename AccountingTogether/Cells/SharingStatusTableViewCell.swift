@@ -12,7 +12,6 @@ import UIKit
 class SharingStatusTableViewCell: UITableViewCell  {
     
     @IBOutlet weak var nameTravellerPaidBy: UILabel!
-    @IBOutlet weak var nameTravellerPaidFor: UILabel!
     @IBOutlet weak var amount: UILabel!
     
 }
